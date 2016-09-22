@@ -1,0 +1,84 @@
+8
+9
+Tree,/home/asc/samuel.maurus/scratch/smf/smf/java/SmfExperimentRunner/data/yummly/master_ingredients_ontology_mains_summer_american.json
+["fruit","onions","liquid products","garlic","herbs","vegetables","fruity vegetables","bulbs","pepper","animal products","spices","sauce","oil","ingredients","olive oil","seasoning","vinegar","meat","plant products","sugar","salt"]
+["peppers","onions","garlic","herbs","fruity vegetables","pepper","animal products","spices","oil","ingredients","seasoning","bread","meat","juice","liquid products","garlic cloves","vegetables","bulbs","dairy","tomatoes","sauce","olive oil","dough products","plant products","salt"]
+["onions","liquid products","herbs","vegetables","pepper","bulbs","fruity vegetables","animal products","spices","sauce","oil","ingredients","seasoning","meat","plant products","salt"]
+["peppers","onions","fruit","liquid products","herbs","vegetables","fruity vegetables","bulbs","pepper","animal products","spices","tomatoes","oil","olive oil","ingredients","seasoning","juice","meat","plant products","salt"]
+["onions","garlic cloves","liquid products","garlic","herbs","fish","vegetables","fruity vegetables","pepper","bulbs","animal products","spices","tomatoes","oil","olive oil","ingredients","seasoning","seafood","meat","plant products","salt"]
+["onions","garlic","liquid products","vegetables","fruity vegetables","pepper","bulbs","animal products","spices","sauce","chili","oil","ingredients","seasoning","meat","pork","plant products","salt"]
+["onions","peppers","liquid products","herbs","vegetables","dairy","fruity vegetables","pepper","bulbs","animal products","spices","sauce","oil","olive oil","ingredients","seasoning","bread","meat","dough products","plant products","salt"]
+["onions","fruit","garlic","liquid products","herbs","vegetables","bulbs","fruity vegetables","pepper","animal products","spices","oil","ingredients","seasoning","meat","plant products","salt"]
+Ordinal,6
+4
+4
+0
+4
+4
+5
+4
+0
+Ternary
+2
+0
+2
+0
+0
+2
+2
+0
+Boolean
+0
+0
+0
+0
+0
+1
+0
+0
+Boolean
+0
+1
+1
+0
+1
+1
+0
+1
+Boolean
+1
+0
+1
+0
+1
+0
+0
+1
+Boolean
+0
+0
+1
+0
+1
+0
+1
+0
+Boolean
+0
+1
+1
+0
+0
+1
+0
+1
+Boolean
+0
+1
+0
+1
+1
+0
+0
+1
+

@@ -1,0 +1,29 @@
+/* 
+ * File:   Semize.cpp
+ * Author: sam
+ * 
+ * Created on April 24, 2015, 1:49 PM
+ */
+
+#include "Semize.h"
+#include "DiscreteVectorBitwiseAndExecutorChunked.h"
+
+Semize::Semize(int** dataMatrix, int** dataMatrixTransposed, int numDataMatrixRows, int numDataMatrixCols, int k, int numScaleElements) {
+    this->dataMatrix = dataMatrix;
+    this->dataMatrixTransposed = dataMatrixTransposed;
+    this->n = numDataMatrixRows;
+    this->m = numDataMatrixCols;
+    this->k = k;
+    this->numScaleElements = numScaleElements;
+//    this->greedyCoverCalculator = new Gree
+//    DiscreteVectorValueSetter* discreteVectorValueSetter = new DiscreteVectorValueSetter(k, numScaleElements);
+    // todo: complete
+//    IDiscreteVectorBitwiseAndExecutor* discreteVectorBitwiseAndExecutor = new DiscreteVectorBitwiseAndExecutorChunked()
+}
+
+Semize::Semize(const Semize& orig) {
+}
+
+Semize::~Semize() {
+}
+

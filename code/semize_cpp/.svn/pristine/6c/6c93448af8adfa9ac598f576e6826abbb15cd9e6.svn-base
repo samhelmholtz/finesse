@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="95">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>DiscreteMatrix.h</itemPath>
+      <itemPath>DiscreteVectorBitMagician.h</itemPath>
+      <itemPath>DiscreteVectorStorageInfo.h</itemPath>
+      <itemPath>DiscreteVectorValueGetterInfo.h</itemPath>
+      <itemPath>DiscreteVectorValueSetterInfo.h</itemPath>
+      <itemPath>GreedyCoverCalculator.h</itemPath>
+      <itemPath>RandomizationRoundRunner.h</itemPath>
+      <itemPath>Semize.h</itemPath>
+      <itemPath>SemizeInitializer.h</itemPath>
+      <itemPath>Stochastic.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>DiscreteMatrix.cpp</itemPath>
+      <itemPath>DiscreteVectorBitMagician.cpp</itemPath>
+      <itemPath>DiscreteVectorStorageInfo.cpp</itemPath>
+      <itemPath>DiscreteVectorValueGetterInfo.cpp</itemPath>
+      <itemPath>DiscreteVectorValueSetterInfo.cpp</itemPath>
+      <itemPath>GreedyCoverCalculator.cpp</itemPath>
+      <itemPath>RandomizationRoundRunner.cpp</itemPath>
+      <itemPath>Semize.cpp</itemPath>
+      <itemPath>SemizeInitializer.cpp</itemPath>
+      <itemPath>Stochastic.cpp</itemPath>
+      <itemPath>main.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <commandLine>-std=c++0x -march=native -fopenmp -O3 -msse4.1</commandLine>
+        </ccTool>
+      </compileType>
+      <item path="DiscreteMatrix.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DiscreteMatrix.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DiscreteVectorBitMagician.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DiscreteVectorBitMagician.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DiscreteVectorStorageInfo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DiscreteVectorStorageInfo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DiscreteVectorValueGetterInfo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DiscreteVectorValueGetterInfo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DiscreteVectorValueSetterInfo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DiscreteVectorValueSetterInfo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="GreedyCoverCalculator.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GreedyCoverCalculator.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="RandomizationRoundRunner.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="RandomizationRoundRunner.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Semize.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Semize.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SemizeInitializer.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SemizeInitializer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Stochastic.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Stochastic.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+          <commandLine>-std=c++0x -march=native -fopenmp -O3</commandLine>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="DiscreteMatrix.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DiscreteMatrix.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DiscreteVectorBitMagician.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DiscreteVectorBitMagician.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DiscreteVectorStorageInfo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DiscreteVectorStorageInfo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DiscreteVectorValueGetterInfo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DiscreteVectorValueGetterInfo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DiscreteVectorValueSetterInfo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DiscreteVectorValueSetterInfo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="GreedyCoverCalculator.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GreedyCoverCalculator.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="RandomizationRoundRunner.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="RandomizationRoundRunner.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Semize.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Semize.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SemizeInitializer.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SemizeInitializer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Stochastic.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Stochastic.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

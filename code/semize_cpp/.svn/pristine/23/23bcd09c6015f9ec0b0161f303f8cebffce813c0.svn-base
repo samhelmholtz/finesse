@@ -1,0 +1,10 @@
+build/Debug/GNU-Linux-x86/DiscreteVectorBitwiseAndExecutorStandard.o: \
+ DiscreteVectorBitwiseAndExecutorStandard.cpp \
+ DiscreteVectorBitwiseAndExecutorStandard.h \
+ IDiscreteVectorBitwiseAndExecutor.h DiscreteVector.h
+
+DiscreteVectorBitwiseAndExecutorStandard.h:
+
+IDiscreteVectorBitwiseAndExecutor.h:
+
+DiscreteVector.h:

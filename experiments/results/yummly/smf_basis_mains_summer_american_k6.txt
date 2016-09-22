@@ -1,0 +1,66 @@
+6
+9
+Tree,/home/sam/IntelliJProjects/SmfExperimentRunner/data/yummly/master_ingredients_ontology_mains_summer_american.json
+["fruit","onions","peppers","liquid products","garlic","garlic cloves","herbs","vegetables","pepper","fruity vegetables","bulbs","animal products","tomatoes","spices","oil","olive oil","ingredients","seasoning","vinegar","meat","plant products","salt"]
+["fruit","onions","garlic","liquid products","herbs","vegetables","bulbs","pepper","fruity vegetables","dairy","animal products","spices","sauce","oil","olive oil","ingredients","seasoning","bread","meat","juice","dough products","plant products","salt"]
+["peppers","onions","liquid products","herbs","vegetables","bulbs","fruity vegetables","pepper","dairy","animal products","spices","sauce","oil","ingredients","olive oil","seasoning","bread","meat","dough products","plant products","salt"]
+["onions","garlic","herbs","fish","fruity vegetables","pepper","animal products","spices","oil","ingredients","seasoning","meat","juice","liquid products","garlic cloves","vegetables","bulbs","sauce","chili","olive oil","seafood","dough products","plant products","salt","black pepper"]
+["onions","liquid products","herbs","fish","vegetables","fruity vegetables","bulbs","pepper","animal products","spices","tomatoes","oil","ingredients","olive oil","seasoning","seafood","meat","juice","plant products","salt"]
+["onions","peppers","liquid products","herbs","vegetables","dairy","pepper","bulbs","fruity vegetables","animal products","spices","sauce","oil","ingredients","olive oil","seasoning","meat","dough products","plant products","salt"]
+Ordinal,6
+4
+4
+4
+3
+4
+5
+Ternary
+2
+0
+2
+0
+0
+2
+Boolean
+0
+0
+0
+1
+0
+0
+Boolean
+0
+0
+1
+0
+1
+1
+Boolean
+1
+0
+1
+0
+1
+0
+Boolean
+0
+1
+1
+0
+1
+0
+Boolean
+0
+1
+1
+0
+0
+1
+Boolean
+1
+0
+0
+1
+1
+0
+

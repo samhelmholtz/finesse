@@ -1,0 +1,93 @@
+9
+9
+Tree,/home/asc/samuel.maurus/scratch/smf/smf/java/SmfExperimentRunner/data/yummly/master_ingredients_ontology_mains_summer_american.json
+["fruit","garlic","liquid products","herbs","vegetables","pepper","bulbs","fruity vegetables","animal products","spices","oil","ingredients","seasoning","meat","cooking spray","plant products","salt"]
+["onions","fruit","liquid products","garlic","herbs","vegetables","fruity vegetables","bulbs","pepper","animal products","tomatoes","spices","oil","ingredients","seasoning","vinegar","meat","plant products","salt"]
+["onions","garlic","liquid products","vegetables","pepper","dairy","bulbs","animal products","spices","sauce","ingredients","seasoning","meat","dough products","plant products","salt"]
+["onions","peppers","garlic","herbs","fish","fruity vegetables","pepper","animal products","spices","oil","ingredients","seasoning","juice","meat","fruit","liquid products","garlic cloves","vegetables","dairy","bulbs","sauce","olive oil","seafood","dough products","plant products","salt"]
+["garlic","liquid products","garlic cloves","vegetables","fruity vegetables","bulbs","pepper","animal products","spices","sauce","oil","olive oil","ingredients","fresh lemon juice","seasoning","meat","juice","plant products","salt"]
+["onions","liquid products","vegetables","fruity vegetables","bulbs","pepper","animal products","spices","sauce","oil","ingredients","seasoning","vinegar","ketchup","meat","plant products","sugar","salt"]
+["onions","garlic","liquid products","herbs","vegetables","pepper","fruity vegetables","bulbs","dairy","animal products","tomatoes","spices","oil","olive oil","ingredients","seasoning","bread","meat","dough products","plant products","salt"]
+["onions","liquid products","vegetables","pepper","fruity vegetables","bulbs","animal products","spices","chili","sauce","oil","ingredients","seasoning","meat","pork","plant products","salt"]
+["onions","liquid products","herbs","vegetables","fruity vegetables","bulbs","pepper","animal products","spices","sauce","oil","olive oil","ingredients","seasoning","meat","plant products","salt"]
+Ordinal,6
+4
+4
+0
+4
+0
+4
+4
+5
+4
+Ternary
+0
+2
+2
+0
+2
+0
+0
+2
+2
+Boolean
+0
+0
+0
+0
+0
+0
+0
+1
+0
+Boolean
+1
+0
+1
+0
+1
+0
+1
+1
+0
+Boolean
+0
+1
+1
+0
+0
+1
+1
+0
+0
+Boolean
+1
+0
+1
+0
+1
+0
+0
+0
+1
+Boolean
+1
+0
+1
+0
+0
+1
+0
+1
+0
+Boolean
+0
+1
+0
+1
+1
+0
+1
+0
+0
+

@@ -1,0 +1,4 @@
+build/Debug/GNU-Linux-x86/DiscreteVector.o: DiscreteVector.cpp \
+ DiscreteVector.h
+
+DiscreteVector.h:

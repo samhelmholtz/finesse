@@ -1,0 +1,53 @@
+/* 
+ * File:   RandomizationRoundRunner.cpp
+ * Author: sam
+ * 
+ * Created on April 30, 2015, 9:06 AM
+ */
+
+#include <limits>
+#include <string.h>
+
+#include "RandomizationRoundRunner.h"
+#include "limits.h"
+#include "Semize.h"
+#include <iostream>
+
+
+RandomizationRoundRunner::RandomizationRoundRunner(Semize* semize, int n, int m, int k) {
+    this->semize = semize;
+    this->n = n;
+    this->m = m;
+    this->k = k;
+}
+
+RandomizationRoundRunner::RandomizationRoundRunner(const RandomizationRoundRunner& orig) {
+}
+
+RandomizationRoundRunner::~RandomizationRoundRunner() {
+}
+
+void RandomizationRoundRunner::Run(int* usageMatrix, int* basisMatrixTransposed, double* objectiveMeasure, int numRandomizationRounds) {
+    double bestMeasure = std::numeric_limits<double>::max();
+    int* tempUsageMatrix = new int[n*k];    
+    int* tempBasisMatrixTransposed = new int[m*k];
+    double tempObjectiveMeasure;
+
+    for (int i = 0; i < numRandomizationRounds; i++) {
+        this->semize->Run(tempUsageMatrix, tempBasisMatrixTransposed, &tempObjectiveMeasure);
+        std::cout << "Iteration " << i << ": " << tempObjectiveMeasure;
+        if (tempObjectiveMeasure < bestMeasure) {
+            std::cout << " (best so far)";
+            // Update best solutions
+            memcpy(usageMatrix, tempUsageMatrix, sizeof(int)*(this->k*this->n));
+            memcpy(basisMatrixTransposed, tempBasisMatrixTransposed, sizeof(int)*(this->k*this->m));            
+            *objectiveMeasure = tempObjectiveMeasure;
+            bestMeasure = tempObjectiveMeasure;
+        }
+        std::cout << std::endl;
+    }
+    
+    // Cleanup    
+    delete[] tempUsageMatrix;    
+    delete[] tempBasisMatrixTransposed;
+}

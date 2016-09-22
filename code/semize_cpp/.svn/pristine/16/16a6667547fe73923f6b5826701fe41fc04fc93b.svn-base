@@ -1,0 +1,21 @@
+/* 
+ * File:   IDiscreteVectorBitwiseAndExecutor.h
+ * Author: sam
+ *
+ * Created on April 23, 2015, 9:57 AM
+ */
+
+#ifndef IDISCRETEVECTORBITWISEANDEXECUTOR_H
+#define	IDISCRETEVECTORBITWISEANDEXECUTOR_H
+
+#include "DiscreteVector.h"
+
+
+class IDiscreteVectorBitwiseAndExecutor {
+public:
+    virtual ~IDiscreteVectorBitwiseAndExecutor(){};
+    virtual void BitwiseAnd(DiscreteVector* vector1, DiscreteVector* vector2, DiscreteVector* result) = 0;
+};
+
+#endif	/* IDISCRETEVECTORBITWISEANDEXECUTOR_H */
+

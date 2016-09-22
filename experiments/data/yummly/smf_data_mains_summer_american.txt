@@ -1,0 +1,2676 @@
+296
+9
+Tree,/home/sam/IntelliJProjects/SmfExperimentRunner/data/yummly/master_ingredients_ontology_mains_summer_american.json
+["coarse salt","herbs","eggplant","fruity vegetables","pepper","dried oregano","cheese","animal products","spices","basil","oil","ingredients","seasoning","ground pepper","bread","large eggs","oregano","hard","chunky tomato sauce","dried basil","liquid products","vegetables","dairy","sauce","olive oil","eggs","ketchup","plain dry bread crumb","shredded mozzarella cheese","dough products","plant products","grated parmesan cheese","pasta filata","salt"]
+["peppers","onions","thyme","liquid products","herbs","vegetables","fruity vegetables","bulbs","animal products","oil","ingredients","fresh thyme","olive oil","freshly ground pepper","seasoning","meat","pork","plant products","rib roast","purple onion"]
+["onions","whole wheat buns","garlic","pepper","cheese","animal products","spices","oil","ingredients","chicken","seasoning","paprika","bread","meat","bbq sauce","hard","liquid products","smoked paprika","onion powder","vegetables","dairy","bulbs","sharp cheddar cheese","sauce","olive oil","garlic powder","dough products","ground chicken breast","plant products","salt","black pepper"]
+["coarse salt","pepper","animal products","spices","chicken breast halves","sauce","barbecue sauce","ingredients","chicken","seasoning","ground pepper","meat","bbq sauce","salt"]
+["salt and ground black pepper","garlic","herbs","beef","fruity vegetables","pepper","animal products","spices","basil","corn","oil","ingredients","seasoning","corn kernels","bread","juice","meat","baguette","liquid products","lime juice","avocado","vegetables","bulbs","mayonnaise","tomatoes","sauce","olive oil","grains","dough products","plant products"]
+["mustard","garlic","apple cider vinegar","fish","pepper","animal products","spices","ingredients","seasoning","meat","worcestershire sauce","ground mustard","fruit","brown sugar","liquid products","balsamic vinegar","onion powder","vegetables","bulbs","salmon fillets","sauce","vinegar","seafood","ketchup","garlic powder","plant products","fresh blueberries","salt","sugar","berries"]
+["water","water products","garlic","liquid products","herbs","vegetables","onion powder","chicken-flavored soup powder","bulbs","whole turkey","animal products","parsley","spices","ingredients","seasoning","paprika","garlic powder","meat","chopped parsley","plant products","turkey","poultry seasoning"]
+["onions","garlic","animal products","oil","ingredients","chicken","distilled vinegar","seasoning","molasses","canola oil","meat","chicken legs","nectar products","worcestershire sauce","brown sugar","liquid products","vegetables","bulbs","sauce","adobo sauce","vinegar","ketchup","plant products","salt","sugar"]
+["mustard","garlic","white vinegar","pepper","animal products","cayenne pepper","spices","ingredients","chicken","seasoning","paprika","chili powder","boneless skinless chicken breast halves","juice","meat","worcestershire sauce","water","water products","brown sugar","liquid products","dry mustard","vegetables","vegetable juice cocktail","bulbs","sauce","chili","vinegar","ketchup","plant products","salt","sugar"]
+["onions","garlic","herbs","rolled oats","fruity vegetables","pepper","cayenne pepper","spices","corn","oil","ingredients","seasoning","corn kernels","beans","jalapeno chilies","bread","bread crumbs","garlic cloves","liquid products","vegetables","bulbs","green onions","chili","cumin","vegetable oil","black beans","curry powder","grains","dough products","plant products","oats","yellow onion","salt"]
+["onions","fruit","buns","garlic","herbs","vegetables","bulbs","cheese","dairy","pepper","animal products","spices","sauce","ingredients","seasoning","butter","bread","garlic powder","meat","dough products","bbq sauce","pineapple","plant products","oregano","purple onion","black pepper"]
+["fruit","liquid products","mild white fish","fish","fresh lime juice","vegetables","salsa","animal products","leaves","peaches","sauce","honey","oil","ingredients","olive oil","seasoning","salad greens","tilapia fillets","seafood","juice","meat","plant products","prepar salsa","nectar products","salt"]
+["onions","mustard","whole wheat buns","garlic","herbs","fish","pepper","animal products","spices","basil","panko breadcrumbs","ingredients","seasoning","paprika","dijon mustard","jalapeno chilies","bread","meat","large eggs","purple onion","tilapia","egg whites","dried basil","fruit","garlic cloves","smoked paprika","avocado","vegetables","onion powder","bulbs","lime","chili","cilantro","eggs","citrus","seafood","melons","dough products","watermelon","plant products","black pepper","salt"]
+["liquid products","dry rub","animal products","spices","sauce","oil","barbecue sauce","ingredients","olive oil","seasoning","meat","pork","pork ribs","bbq sauce","salt"]
+["worcestershire sauce","water","water products","mustard","brown sugar","liquid products","hot pepper sauce","dairy","animal products","spices","sauce","ingredients","seasoning","cider vinegar","pork baby back ribs","butter","vinegar","ketchup","pork","meat","red wine vinegar","prepared mustard","sugar","salt"]
+["tumeric","peppers","onions","garlic","herbs","eggplant","bell pepper","fruity vegetables","pepper","spices","parsley","oil","ingredients","zucchini","seasoning","paprika","seeds","water","water products","liquid products","garlic cloves","garbanzo","vegetables","bulbs","cilantro stems","harissa","sauce","olive oil","cilantro","tomato sauce","paste","ketchup","plant products","salt","black pepper"]
+["garlic cloves","garlic","liquid products","herbs","flat leaf parsley","vegetables","provolone cheese","eggplant","fruity vegetables","bulbs","semi hard","cheese","dairy","animal products","parsley","green olives","oil","ingredients","extra-virgin olive oil","seasoning","pizza doughs","dough","dough products","plant products","olives"]
+["coarse salt","pepper","animal products","spices","sauce","barbecue sauce","ingredients","chicken","seasoning","ground pepper","meat","bbq sauce","salt"]
+["onions","mustard","beef","burger buns","pepper","cheese","animal products","spices","oil","ingredients","seasoning","bread","meat","whole grain mustard","pickles","purple onion","hard","worcestershire sauce","liquid products","ground beef","cheddar cheese","vegetables","ground black pepper","bulbs","dairy","mayonnaise","sauce","olive oil","ketchup","condiments","dough products","plant products","salt"]
+["fresh basil","peppers","chees fresh mozzarella","liquid products","herbs","vegetables","eggplant","fruity vegetables","dairy","cheese","animal products","basil","sauce","oil","ingredients","olive oil","freshly ground pepper","parmigiano reggiano cheese","seasoning","plant products","pasta filata","hard"]
+["light brown sugar","coarse salt","peppers","liquid products","vegetables","pork spareribs","fruity vegetables","animal products","spices","safflower oil","sauce","chili","oil","barbecue sauce","ingredients","freshly ground pepper","seasoning","chili powder","pork","meat","bbq sauce","plant products","sugar","salt"]
+["basil leaves","onions","garlic","herbs","boneless skinless chicken breasts","cheese","animal products","basil","oil","ingredients","chicken","seasoning","dough","meat","sweet onion","fruit","brown sugar","garlic cloves","liquid products","vegetables","mozzarella cheese","bulbs","dairy","blackberries","peaches","fresh mozzarella","olive oil","pizza doughs","butter","dough products","pasta filata","plant products","berries","sugar"]
+["onions","mustard","garlic","herbs","fruity vegetables","cheese","animal products","leaves","spices","parsley","oil","ingredients","fresh parsley","seasoning","lettuce","bread","hamburger buns","meat","bbq sauce","hard","bread crumbs","liquid products","vegetables","cheddar cheese","bulbs","dairy","mayonnaise","tomatoes","sauce","olive oil","dough products","plant products","turkey","ground turkey","spicy brown mustard","yellow onion","salt"]
+["pizza sauce","garlic","crushed garlic","vegetables","mozzarella cheese","fruity vegetables","dairy","cheese","bulbs","animal products","sauce","ingredients","zucchini","butter","pasta filata","plant products"]
+["peppers","cheese","fruity vegetables","eggplant","animal products","ingredients","seasoning","bread","part-skim mozzarella cheese","hard","egg whites","bread crumbs","water","water products","liquid products","vegetables","dairy","sauce","freshly ground pepper","eggs","marinara sauce","dough products","pasta filata","grated parmesan cheese","plant products","salt"]
+["sour cream","peppers","half \u0026 half","fruity vegetables","pepper","cheese","semi hard","animal products","unsalted butter","spices","corn","oil","ingredients","seasoning","bread","fruit","cremini mushrooms","liquid products","avocado","vegetables","monterey jack","lime","corn tortillas","dairy","sweet corn","sauce","cream","olive oil","adobo sauce","citrus","grains","poblano peppers","butter","dough products","plant products","mushrooms","salt"]
+["liquid products","herbs","beef","flat leaf parsley","dairy","animal products","parsley","spices","creole seasoning","oil","ingredients","vegetable oil","seasoning","butter","meat","rib eye steaks"]
+["fruit","hot sauce","garlic","liquid products","balsamic vinegar","vegetables","bulbs","blackberries","animal products","sauce","ingredients","baby back ribs","molasses","seasoning","vinegar","ketchup","meat","pork","plant products","nectar products","berries","sugar","salt"]
+["dark brown sugar","onions","garlic","beef","animal products","prepared coleslaw","ingredients","seasoning","paprika","coleslaw","bread","hamburger buns","meat","liquid products","vegetables","boneless beef chuck roast","bulbs","sauce","cider vinegar","vinegar","ketchup","dough products","plant products","salt","sugar"]
+["coarse salt","peppers","garlic","herbs","white vinegar","fruity vegetables","animal products","oil","ingredients","seasoning","chopped fresh chives","grape tomatoes","chives","large eggs","liquid products","garlic cloves","vegetables","bulbs","tomatoes","olive oil","freshly ground pepper","eggs","vinegar","spinach","plant products","salt"]
+["black mustard seeds","garlic","mint leaves","herbs","potatoes","fruity vegetables","pepper","cayenne pepper","spices","corn","lemon juice","oil","ingredients","seasoning","corn kernels","juice","coconut milk","seeds","green chile","tubers","chopped cilantro","liquid products","waxy potatoes","vegetables","bulbs","tomatoes","chili","vegetable oil","cumin seed","cilantro","grains","plant products","salt"]
+["fish sauce","onions","mint leaves","herbs","beef","sticky rice","lemongrass","animal products","spices","ingredients","beef tenderloin","seasoning","juice","meat","chile powder","spring onions","rice","liquid products","lime juice","shallots","vegetables","bulbs","sauce","chili","grains","plant products","sugar"]
+["green bell pepper","coarse salt","peppers","onions","garlic","rolled oats","fruity vegetables","pepper","animal products","spices","oil","ingredients","seasoning","ground pepper","milk","meat","turkey bacon","garlic cloves","liquid products","chili sauce","vegetables","dairy","bulbs","sauce","vegetable oil","evaporated milk","grains","turkey","plant products","oats","ground turkey","yellow onion","salt"]
+["green bell pepper","okra","peppers","onions","garlic","herbs","fish","(14.5 oz.) diced tomatoes","fruity vegetables","animal products","bay leaves","spices","parsley","creole seasoning","oil","ingredients","seasoning","canola oil","juice","meat","white rice","all-purpose flour","rice","garlic cloves","liquid products","flat leaf parsley","shrimp","vegetables","crabmeat","bulbs","tomatoes","crab","red bell pepper","freshly ground pepper","bottled clam juice","flour","grains","file powder","seafood","pork","andouille sausage","dough products","plant products","yellow onion"]
+["roma tomatoes","onions","thyme","garlic","herbs","tofu","coconut oil","fruity vegetables","animal products","yellow squash","corn","oil","ingredients","zucchini","seasoning","corn kernels","squash","fruit","cremini mushrooms","garlic cloves","liquid products","vegetables","bulbs","tomatoes","eggs","grains","vinegar","plant products","firm tofu","yellow onion","mushrooms","salt"]
+["coarse salt","peppers","onions","garlic","roots","vegetables","fruity vegetables","bulbs","animal products","sauce","barbecue sauce","ingredients","baby back ribs","freshly ground pepper","seasoning","meat","pork","celery","bbq sauce","carrots","stems","plant products","salt"]
+["okra","onions","cayenne","liquid products","chicken stock","vegetables","fruity vegetables","bulbs","animal products","tomatoes","spices","oil","ingredients","vegetable oil","chicken","seasoning","meat","plant products","salt"]
+["onions","mustard","whiskey","pepperidge farm puff pastry","cheese","pepper","animal products","spices","ingredients","chicken","seasoning","dough","meat","cookies","hard","worcestershire sauce","water","water products","chicken breasts","hot sauce","brown sugar","liquid products","vegetables","cheddar cheese","bulbs","dairy","sauce","cider vinegar","alcohol","vinegar","ketchup","dough products","scallions","plant products","salt","sugar","black pepper"]
+["fresh basil","peppers","onions","garlic","herbs","fruity vegetables","cheese","animal products","penne","basil","yellow squash","oil","ingredients","zucchini","seasoning","squash","hard","fruit","garlic cloves","liquid products","vegetables","dairy","bulbs","pasta","tomatoes","olive oil","freshly ground pepper","dough products","grated parmesan cheese","plant products","salt"]
+["fruit","cayenne","liquid products","fish","sherry vinegar","vegetables","blackberries","animal products","spices","sauce","watercress","cod fillets","oil","ingredients","vegetable oil","seasoning","vinegar","seafood","meat","jam","plant products","berries"]
+["sweet onion","peppers","onions","liquid products","herbs","beef","vegetables","fresh rosemary","eggplant","fruity vegetables","bulbs","animal products","oil","tri tip","ingredients","olive oil","freshly ground pepper","zucchini","seasoning","meat","plant products","orange bell pepper"]
+["chopped cilantro fresh","onions","herbs","fish","jamaican jerk season","animal products","spices","mahi mahi fillets","oil","ingredients","seasoning","juice","meat","purple onion","fruit","grate lime peel","liquid products","avocado","fresh lime juice","vegetables","bulbs","lime","olive oil","cilantro","citrus","cantaloupe","seafood","melons","plant products"]
+["onions","thyme","garlic","herbs","pepper","animal products","spices","corn","oil","ingredients","seasoning","milk","celery","chopped fresh chives","stems","chives","water products","seafood stock","liquid products","vegetables","minced garlic","bulbs","dairy","sweet corn","white pepper","fresh thyme leaves","olive oil","skim milk","grains","butter","plant products","white onion","salt"]
+["mustard","onions","beef","fruity vegetables","animal products","spices","oil","ingredients","sirloin steak","seasoning","meat","fruit","balsamic vinegar","liquid products","vegetables","bulbs","beefsteak tomatoes","tomatoes","extra-virgin olive oil","citrus","vinegar","scallions","plant products","salt","sugar","lemon"]
+["onions","liquid products","balsamic vinegar","vegetables","dry bread crumbs","eggplant","fruity vegetables","bulbs","pepper","tomatoes","spices","oil","ingredients","olive oil","seasoning","vinegar","bread","dough products","plant products","salt"]
+["peppers","garlic","herbs","beef","loos pack fresh basil leav","fruity vegetables","cheese","animal products","pinenuts","basil","oil","filet mignon","ingredients","seasoning","bread","meat","hard","water","water products","garlic cloves","liquid products","vegetables","nuts","dairy","bulbs","beefsteak tomatoes","toast","tomatoes","olive oil","freshly ground pepper","parmigiano reggiano cheese","dough products","plant products"]
+["peppers","herbs","eggplant","fruity vegetables","dried oregano","cheese","animal products","oil","ingredients","seasoning","bread","oregano","hard","bread crumbs","water","water products","liquid products","vegetables","dairy","sauce","olive oil","freshly ground pepper","parmigiano reggiano cheese","eggs","tomato sauce","ketchup","dough products","shredded mozzarella cheese","pasta filata","plant products","salt"]
+["garlic","fish","pepper","animal products","cayenne pepper","spices","oil","creole seasoning","ingredients","seasoning","meat","all-purpose flour","liquid products","shrimp","hot pepper sauce","onion powder","vegetables","minced garlic","dairy","bulbs","sauce","flour","seafood","butter","garlic powder","dough products","plant products","creole style seasoning","black pepper"]
+["fresh basil","onions","garlic","herbs","fish","fruity vegetables","pepper","cheese","animal products","spices","basil","oil","ingredients","fresh lemon juice","zucchini","seasoning","juice","meat","grape tomatoes","seeds","olive oil cooking spray","liquid products","garbanzo","vegetables","ground black pepper","bulbs","dairy","salmon fillets","tomatoes","soft","feta cheese","sea salt","seafood","plant products","yellow onion","salt"]
+["peppers","onions","large shrimp","fish","fruity vegetables","pepper","animal products","spices","corn","oil","fresh lemon juice","ingredients","seasoning","corn kernels","pesto","bread","juice","meat","liquid products","vegetables","bulbs","mayonnaise","sauce","red bell pepper","extra-virgin olive oil","grains","seafood","dough products","scallions","plant products","hot dog bun","salt"]
+["marinade","peppers","mustard","onions","herbs","fruity vegetables","cheese","animal products","spices","ingredients","seasoned bread crumbs","seasoning","bread","hamburger buns","meat","large eggs","hard","vegetables","dairy","bulbs","sauce","freshly ground pepper","eggs","dough products","parmesan cheese","turkey","plant products","ground turkey","chopped green bell pepper","salt"]
+["fresh basil","onions","herbs","beef","buttermilk","fruity vegetables","animal products","basil","corn","oil","ingredients","seasoning","corn kernels","bread","meat","cutlet","purple onion","bread crumbs","liquid products","vegetables","bulbs","dairy","tomatoes","extra-virgin olive oil","flour","grains","butter","dough products","plant products","salt"]
+["onions","mustard","garlic","herbs","pepper","animal products","cayenne pepper","spices","cornmeal","ingredients","chicken","molasses","seasoning","paprika","dijon mustard","kosher salt","meat","bbq sauce","ground chicken","fresh cilantro","nectar products","worcestershire sauce","hot sauce","brown sugar","liquid products","dry mustard","vegetables","bulbs","sauce","barbecue sauce","cilantro","flour","cider vinegar","vinegar","ketchup","garlic powder","pork","dough products","scallions","plant products","finely chopped onion","sugar","salt"]
+["onions","dark brown sugar","garlic","pepper","animal products","ground allspice","spices","oil","ingredients","chipotle chile powder","seasoning","paprika","soy sauce","meat","water","water products","garlic cloves","ginger","liquid products","vegetables","nuts","bulbs","ground cumin","sauce","chili","vegetable oil","baby back ribs","cider vinegar","vinegar","ketchup","chopped onion","pork","peeled fresh ginger","plant products","sugar","black pepper","salt"]
+["peppers","onions","garlic","mint leaves","herbs","fruity vegetables","animal products","oil","ingredients","seasoning","pork loin","meat","fresh cilantro","purple onion","fruit","liquid products","garlic cloves","vegetables","bulbs","red bell pepper","olive oil","freshly ground pepper","cilantro","pork","fresh pineapple","plant products","pineapple","salt"]
+["peppers","onions","fish","fruity vegetables","pepper","animal products","spices","oil","ingredients","seasoning","bread","juice","meat","horseradish","liquid products","roots","fresh lime juice","avocado","vegetables","tuna steaks","bulbs","mayonnaise","tomatoes","sauce","green onions","olive oil","ground red pepper","sourdough bread","seafood","dough products","plant products","salt","black pepper"]
+["coarse salt","peppers","large shrimp","garlic","herbs","fish","fruity vegetables","animal products","unsalted butter","fresh lemon juice","ingredients","seasoning","bread","juice","meat","baguette","worcestershire sauce","hot sauce","garlic cloves","liquid products","fresh rosemary","vegetables","dairy","bulbs","sauce","freshly ground pepper","seafood","butter","dough products","plant products","salt"]
+["peppers","onions","garlic","herbs","beef","pepper","fruity vegetables","animal products","spices","oil","ingredients","seasoning","meat","red wine vinegar","liquid products","crushed red pepper","spanish onion","vegetables","bulbs","tomatoes","coriander leaf","extra-virgin olive oil","vinegar","boneless sirloin steak","plant products","salt","black pepper"]
+["peppers","onions","thyme","herbs","beef","bacon slices","fruity vegetables","animal products","parsley","bread crumb fresh","ingredients","seasoning","bread","meat","bbq sauce","chopped fresh thyme","ground beef","flat leaf parsley","vegetables","bulbs","sauce","barbecue sauce","freshly ground pepper","pork","ground pork","dough products","plant products","yellow onion","salt"]
+["coarse salt","onions","liquid products","balsamic vinegar","flat iron steaks","beef","cherry tomatoes","vegetables","fruity vegetables","bulbs","pepper","animal products","tomatoes","spices","oil","ingredients","olive oil","seasoning","ground pepper","vinegar","meat","scallions","plant products","salt"]
+["fresh basil","peppers","onions","herbs","provolone cheese","fruity vegetables","cheese","semi hard","animal products","cornmeal","basil","oil","ingredients","zucchini","seasoning","dough","grape tomatoes","purple onion","hard","liquid products","vegetables","dairy","bulbs","tomatoes","sauce","olive oil","freshly ground pepper","parmigiano reggiano cheese","flour","pizza doughs","tomato sauce","ketchup","dough products","plant products"]
+["mustard","onions","English mustard","garlic","beef","fruity vegetables","pepper","animal products","leaves","spices","bread crumb fresh","ingredients","seasoning","lettuce","bread","meat","large eggs","onion powder","vegetables","ground black pepper","bulbs","tomatoes","sauce","extra-lean ground beef","eggs","tomato sauce","ketchup","garlic powder","dough products","plant products","salt"]
+["mustard","cayenne","onions","animal products","spices","oil","ingredients","seasoning","bread","meat","large eggs","lump crab meat","worcestershire sauce","kaiser rolls","liquid products","dry mustard","dry bread crumbs","vegetables","bulbs","mayonnaise","sauce","crab","vegetable oil","eggs","seafood","dough products","scallions","plant products"]
+["onions","mustard","garlic","herbs","pepper","animal products","bay leaves","spices","ingredients","cola","seasoning","dijon mustard","meat","soft drinks","clove","worcestershire sauce","brown sugar","liquid products","vegetables","dairy","bulbs","sauce","baby back ribs","butter","ketchup","pork","plant products","black peppercorns","salt","sugar"]
+["peppers","garlic","herbs","fish","fruity vegetables","animal products","basil","corn","oil","orzo","ingredients","zucchini","seasoning","corn kernels","meat","water","water products","garlic cloves","balsamic vinegar","liquid products","vegetables","bulbs","pasta","tomatoes","freshly ground pepper","extra-virgin olive oil","halibut fillets","grains","vinegar","seafood","fresh basil leaves","dough products","plant products","heirloom tomatoes","salt"]
+["onions","vegetables","biscuit baking mix","ground black pepper","fruity vegetables","bulbs","cheese","pepper","dairy","animal products","tomatoes","spices","ingredients","zucchini","seasoning","eggs","dough","milk","chopped onion","dough products","plant products","grated parmesan cheese","hard","salt"]
+["plum tomatoes","peppers","mustard","onions","herbs","fish","fruity vegetables","animal products","arugula","pinenuts","spices","oil","fresh tarragon","ingredients","zucchini","seasoning","dijon mustard","meat","purple onion","fruit","liquid products","vegetables","nuts","bulbs","tomatoes","olive oil","freshly ground pepper","halibut fillets","citrus","seafood","plant products","salt","lemon"]
+["dark brown sugar","mustard","garlic","apple cider vinegar","pepper","animal products","spices","oil","ingredients","chicken","seasoning","dijon mustard","meat","nectar products","worcestershire sauce","water","mild molasses","water products","hot sauce","garlic cloves","liquid products","vegetables","bulbs","sauce","vegetable oil","vinegar","ketchup","plant products","chicken parts","salt","sugar","black pepper"]
+["thyme","garlic","herbs","fish","cherry tomatoes","fruity vegetables","pepper","animal products","spices","oil","fresh lemon juice","ingredients","seasoning","juice","meat","chopped fresh thyme","garlic cloves","liquid products","vegetables","bulbs","salmon fillets","tomatoes","olive oil","seafood","cooking spray","plant products","salt","black pepper"]
+["mustard","peppers","garlic","mint leaves","herbs","beef","fruity vegetables","animal products","leaves","spices","corn","oil","ingredients","cucumber","seasoning","corn kernels","flank steak","dijon mustard","meat","worcestershire sauce","mixed greens","kirby cucumbers","liquid products","garlic cloves","yellow bell pepper","vegetables","bulbs","sauce","freshly ground pepper","extra-virgin olive oil","grains","plant products"]
+["peppers","garlic","cheese","semi hard","fruity vegetables","animal products","oil","ingredients","seasoning","pesto","bread","portabello mushroom","balsamic vinegar","liquid products","garlic cloves","monterey jack","vegetables","dairy","bulbs","italian rolls","mayonnaise","tomatoes","sauce","olive oil","freshly ground pepper","vinegar","dough products","plant products","mushrooms","salt"]
+["coarse salt","liquid products","herbs","mint leaves","champagne vinegar","ground black pepper","pepper","lamb","animal products","spices","oil","olive oil","ingredients","seasoning","vinegar","meat","rack of lamb","sugar","salt"]
+["peppers","onions","garlic","fruity vegetables","brown firmly light packed sugar","animal products","spices","oil","ingredients","chicken","seasoning","canola oil","kosher salt","meat","seeds","fruit","garlic cloves","liquid products","ginger","plums","vegetables","bulbs","chili","coriander seeds","freshly ground pepper","extra-virgin olive oil","fresh ginger","plant products","yellow onion","salt","sugar"]
+["peppers","thyme","garlic","herbs","fish","potatoes","fruity vegetables","animal products","oil","ingredients","seasoning","meat","tubers","fruit","liquid products","garlic cloves","vegetables","bulbs","tomatoes","sauce","olive oil","fresh thyme","freshly ground pepper","citrus","seafood","tomatoes on the vine","branzino","plant products","vinaigrette","lemon"]
+["garlic","herbs","fish","pepper","animal products","spices","oil","fresh lemon juice","ingredients","seasoning","large garlic cloves","juice","meat","fresh oregano","oregano","fruit","liquid products","vegetables","bulbs","olive oil","shell-on shrimp","citrus","seafood","plant products","salt","black pepper","lemon"]
+["peppers","onions","garlic","sea scallops","buttermilk","frozen shelled edamame","fruity vegetables","pepper","animal products","spices","corn","oil","ingredients","seasoning","corn kernels","beans","large garlic cloves","meat","liquid products","yellow bell pepper","shallots","vegetables","dairy","bulbs","olive oil","cider vinegar","grains","vinegar","seafood","butter","tarragon","plant products","black pepper"]
+["onions","peppers","cherry tomatoes","pepper","fruity vegetables","animal products","spices","corn","oil","chicken","fresh lemon juice","ingredients","seasoning","corn kernels","beans","meat","juice","liquid products","vegetables","bulbs","tomatoes","sauce","green onions","olive oil","red bell pepper","freshly ground pepper","black beans","grains","plant products"]
+["coarse salt","peppers","onions","garlic","herbs","dill","fruity vegetables","cheese","animal products","parsley","oil","ingredients","zucchini","seasoning","marjoram","large eggs","liquid products","flat leaf parsley","golden zucchini","vegetables","dairy","bulbs","tomatoes","soft","olive oil","feta cheese","freshly ground pepper","eggs","scallions","plant products","salt"]
+["water products","fruit","hot sauce","liquid products","ground black pepper","lime","pepper","animal products","spices","apple jelly","sauce","chili","oil","olive oil","ingredients","chili flakes","seasoning","citrus","meat","kosher salt","melons","duck","watermelon","plant products","salt"]
+["light brown sugar","mustard","garlic","whole milk","herbs","beef","pepper","animal products","spices","parsley","oil","ingredients","fresh parsley","seasoning","ground meat","dijon mustard","milk","bread","meat","large eggs","worcestershire sauce","saltines","liquid products","vegetables","onion powder","bulbs","dairy","sauce","eggs","cider vinegar","vinegar","ketchup","garlic powder","dough products","plant products","sugar","salt"]
+["garlic cloves","garlic","chopped fresh mint","herbs","mint leaves","vegetables","bulbs","pepper","salsa","animal products","spices","sauce","ingredients","pork tenderloin","cumin seed","seasoning","meat","pork","seeds","plant products","black peppercorns","salt"]
+["onions","peppers","beef","fruity vegetables","animal products","yellow squash","oil","ingredients","zucchini","flank steak","meat","broccoli","bbq sauce","squash","white rice","purple onion","water","water products","fruit","rice","liquid products","yellow bell pepper","vegetables","bulbs","sauce","green onions","barbecue sauce","red bell pepper","vegetable oil","freshly ground pepper","grains","plant products"]
+["onions","garlic","herbs","beef","fruity vegetables","pepper","animal products","spices","oil","ingredients","seasoning","jalapeno chilies","juice","meat","squash","purple onion","olive oil cooking spray","fruit","liquid products","fresh lime juice","vegetables","summer squash","ground black pepper","bulbs","tomatoes","chili","coriander leaf","olive oil","sea salt","plant products","tenderloin steaks","salt"]
+["coarse salt","peppers","liquid products","herbs","beef","vegetables","fruity vegetables","animal products","tomatoes","basil","italian bread","oil","ingredients","freshly ground pepper","extra-virgin olive oil","seasoning","bread","meat","fresh basil leaves","sirloin","dough products","plant products","salt"]
+["peppers","onions","mustard","herbs","fresh spinach","fruity vegetables","pepper","animal products","leaves","spices","oil","ingredients","fresh lemon juice","chile pepper","seasoning","white wine vinegar","frisee","dijon mustard","juice","meat","fresh oregano","stems","oregano","asparagus spears","liquid products","shallots","vegetables","ground black pepper","bulbs","radicchio","squid","chili","red bell pepper","olive oil","sea salt","vinegar","seafood","asparagus","spinach","plant products","salt"]
+["herbs","yoghurt","animal products","arugula","spices","oil","fresh lemon juice","ingredients","chicken","seasoning","mango chutney","juice","meat","seeds","water","water products","fruit","liquid products","mango","dairy","peaches","roasting chickens","nonfat yogurt","extra-virgin olive oil","curry powder","plant products"]
+["peppers","garlic","herbs","cherry tomatoes","fresh parmesan cheese","pappardelle","fruity vegetables","bacon slices","cheese","animal products","arugula","oil","fresh lemon juice","ingredients","seasoning","juice","meat","grape tomatoes","hard","garlic cloves","liquid products","crushed red pepper","vegetables","dairy","bulbs","pasta","tomatoes","extra-virgin olive oil","pork","dough products","plant products","salt"]
+["onions","thyme","garlic","herbs","caviar","fish","potatoes","pepper","halibut","animal products","bay leaves","spices","oil","ingredients","seasoning","bay leaf","meat","red wine vinegar","seeds","tubers","liquid products","vegetables","bulbs","mayonnaise","sauce","coriander seeds","fresh thyme","extra-virgin olive oil","vinegar","seafood","scallions","plant products","yellow onion","black peppercorns","salt"]
+["peppers","onions","beef","chuck","cold cut","fruity vegetables","cheese","animal products","unsalted butter","leaves","ingredients","seasoning","bread","meat","hamburger buns","kosher salt","purple onion","hard","lettuce leaves","liquid products","vegetables","cheddar cheese","bulbs","dairy","mayonnaise","tomatoes","sauce","freshly ground pepper","cider vinegar","vinegar","butter","paste","ketchup","dough products","plant products","relish","salt"]
+["garlic","pepper","animal products","spices","oil","ingredients","chicken","seasoning","boneless skinless chicken breast halves","milk","meat","bbq sauce","all-purpose flour","water","water products","liquid products","vegetables","minced garlic","bulbs","dairy","sauce","mesquite flavored seasoning mix","barbecue sauce","flour","eggs","butter","dough products","plant products","salt","black pepper"]
+["peppers","onions","garlic","beef","cherry tomatoes","fruity vegetables","pepper","animal products","unsalted butter","spices","corn","oil","ingredients","seasoning","chili powder","boneless rib eye steaks","juice","meat","cuban peppers","garlic cloves","liquid products","fresh lime juice","vegetables","bulbs","dairy","tomatoes","chili","olive oil","grains","butter","plant products","salt","black pepper"]
+["peppers","mustard","garlic","liquid products","vegetables","ground black pepper","fruity vegetables","bulbs","pepper","animal products","spices","lemon juice","oil","red bell pepper","chicken","olive oil","ingredients","seasoning","boneless skinless chicken breast halves","dijon mustard","meat","juice","plant products","salt"]
+["mustard","onions","peppers","fruity vegetables","animal products","spices","oil","ingredients","seasoning","canola oil","coleslaw","dijon mustard","beans","bread","kosher salt","meat","black-eyed peas","bbq sauce","crusty rolls","liquid products","vegetables","bulbs","sauce","freshly ground pepper","dough products","turkey","plant products","ground turkey","salt"]
+["ham","okra","garlic","herbs","bell pepper","animal products","bay leaves","parsley","spices","ingredients","all-purpose flour","clove","water products","roots","dairy","butter","chopped parsley","pork","plant products","salt","black pepper","cayenne","onions","peppers","thyme","pepper","fruity vegetables","chicken broth","oil","seasoning","peppercorns","kosher salt","meat","celery","cooked rice","stems","worcestershire sauce","rice","liquid products","vegetables","bulbs","sauce","green onions","vegetable oil","fresh thyme","flour","grains","dough products","carrots","turkey","cooked turkey","yellow onion"]
+["garlic","apple cider vinegar","apple cider","pepper","animal products","cayenne pepper","spices","lemon juice","ingredients","seasoning","paprika","chili powder","seasoning salt","jalapeno chilies","ground cinnamon","kosher salt","juice","meat","chips","brown sugar","liquid products","hot pepper sauce","vegetables","onion powder","nuts","pork spareribs","bulbs","ground cumin","sauce","chili","vinegar","garlic powder","pork","plant products","sugar","black pepper","salt"]
+["cayenne","pepper","animal products","spices","oil","ingredients","fresh lemon juice","chicken","prepared horseradish","seasoning","cane syrup","jalapeno chilies","kosher salt","juice","meat","chicken thighs","bbq sauce","horseradish","nectar products","liquid products","roots","vegetables","mayonnaise","sauce","chili","barbecue sauce","vegetable oil","cider vinegar","vinegar","chiles","plant products","salt","black pepper"]
+["chicken","ingredients","meat","animal products","chicken breast halves"]
+["onions","garlic","herbs","beef","strip steaks","pepper","animal products","spices","corn","oil","ingredients","seasoning","paprika","chili powder","jalapeno chilies","juice","meat","stems","liquid products","lime juice","avocado","vegetables","nuts","ground black pepper","bulbs","ground cumin","sweet corn","green onions","chili","olive oil","cilantro","sea salt","grains","garlic powder","asparagus","plant products","salt"]
+["onions","garlic","mint leaves","herbs","boneless skinless chicken breasts","fruity vegetables","pepper","animal products","spices","oil","ingredients","chicken","cucumber","seasoning","jalapeno chilies","kosher salt","meat","red wine vinegar","purple onion","fruit","liquid products","vegetables","minced garlic","ground black pepper","bulbs","lime","chili","extra-virgin olive oil","citrus","cantaloupe","vinegar","melons","plant products","honeydew melon","salt","sugar"]
+["onions","salt and ground black pepper","mint leaves","herbs","potatoes","fruity vegetables","pepper","fresh mint","cheese","animal products","spices","oil","ingredients","zucchini","seasoning","bread","all-purpose flour","tubers","sweet onion","liquid products","dry bread crumbs","vegetables","bulbs","dairy","soft","olive oil","feta cheese","flour","eggs","dough products","plant products"]
+["green bell pepper","peppers","onions","mustard","garlic","herbs","fruity vegetables","pepper","dried oregano","animal products","spices","lemon juice","ingredients","seasoning","pork loin","dijon mustard","juice","meat","bbq sauce","oregano","worcestershire sauce","brown sugar","granulated garlic","liquid products","vegetables","nuts","canned tomatoes","bulbs","red chili powder","ground cumin","tomatoes","sauce","chili","barbecue sauce","cider vinegar","vinegar","pork","plant products","black pepper","sugar","salt"]
+["cayenne","cracked black pepper","thyme","garlic","herbs","fish","pepper","animal products","unsalted butter","spices","ingredients","seasoning","meat","oregano","worcestershire sauce","water","water products","fruit","liquid products","shrimp","vegetables","bulbs","dairy","sauce","citrus","seafood","butter","plant products","lemon","salt"]
+["water","okra","water products","rice","liquid products","frozen corn kernels","vegetables","chopped tomatoes","fruity vegetables","pepper","bacon slices","animal products","tomatoes","spices","corn","creole seasoning","ingredients","seasoning","grains","meat","pork","cooked rice","plant products"]
+["onions","herbs","pepper","animal products","spices","oil","ingredients","seasoning","fat free less sodium chicken broth","meat","water products","fruit","liquid products","balsamic vinegar","shallots","vegetables","bulbs","dairy","blackberries","chopped fresh sage","pork tenderloin","vinegar","butter","pork","cooking spray","plant products","berries","salt","sugar","black pepper"]
+["olive oil spray","onions","garlic","mint leaves","herbs","eggplant","fruity vegetables","pepper","cayenne pepper","spices","parsley","lemon juice","oil","ingredients","brown lentils","fresh parsley","seasoning","paprika","allspice","bread","juice","spanish paprika","seeds","bread crumbs","liquid products","vegetables","ground black pepper","bulbs","baby eggplants","ground flaxseed","tomatoes","cumin","dough products","plant products","salt"]
+["dried basil","onions","liquid products","herbs","vegetables","fruity vegetables","bulbs","pepper","lamb","animal products","tomatoes","lamb loin chops","basil","spices","oil","ingredients","seasoning","meat","cooking spray","plant products","black pepper","salt"]
+["onions","herbs","chipotles in adobo","animal products","spices","pork butt","ingredients","seasoning","sweet cherries","jalapeno chilies","meat","bbq sauce","soft drinks","dr pepper","sweet onion","chopped cilantro","fruit","brown sugar","liquid products","vegetables","bulbs","lime","peaches","sauce","chili","cilantro","flour","citrus","pork","dough products","plant products","cherries","salt","sugar"]
+["fresh basil","garlic","mint leaves","herbs","eggplant","cheese","fruity vegetables","animal products","pinenuts","basil","oil","ingredients","seasoning","dough","hard","liquid products","garlic cloves","vegetables","nuts","dairy","bulbs","olive oil","flour","dough products","parmesan cheese","plant products","salt"]
+["chicken cutlets","coarse salt","plum tomatoes","garlic","pepper","bacon slices","cheese","fruity vegetables","animal products","leaves","spices","chicken","ingredients","seasoning","ground pepper","meat","avocado","vegetables","romaine lettuce","dairy","bulbs","tomatoes","sauce","soft","feta cheese","pork","plant products","vinaigrette","salt"]
+["coarse salt","peppers","eggplant","cheese","fruity vegetables","animal products","oil","bread crumb fresh","ingredients","seasoning","bread","large eggs","all-purpose flour","hard","liquid products","vegetables","mozzarella cheese","dairy","sauce","vegetable oil","freshly ground pepper","flour","eggs","marinara sauce","dough products","pasta filata","plant products","pecorino romano cheese","salt"]
+["liquid products","crust pizza refriger","herbs","vegetables","fruity vegetables","beefsteak tomatoes","animal products","arugula","tomatoes","oil","ingredients","olive oil","seasoning","dough","prosciutto","pork","meat","dough products","plant products"]
+["garlic","herbs","lime rind","fruity vegetables","animal products","spices","oil","ingredients","seasoning","chili powder","large egg whites","beans","bread","hamburger buns","fresh oregano","large eggs","oregano","fruit","liquid products","vegetables","bulbs","lime","chili","olive oil","black beans","eggs","citrus","dough products","plant products","chopped garlic","salt"]
+["fresh basil","mushroom caps","peppers","onions","garlic","herbs","cheese","fruity vegetables","animal products","basil","oil","ingredients","seasoning","white wine vinegar","part-skim mozzarella cheese","sweet onion","liquid products","garlic cloves","yellow bell pepper","vegetables","dairy","bulbs","red bell pepper","olive oil","freshly ground pepper","vinegar","pasta filata","plant products","mushrooms","salt"]
+["sour cream","peppers","onions","mustard","cayenne","fruity vegetables","animal products","unsalted butter","spices","oil","ingredients","chopped celery","seasoning","bread","meat","celery","stems","large eggs","lump crab meat","worcestershire sauce","saltines","liquid products","dry mustard","vegetables","bulbs","dairy","scallion greens","sauce","crab","cream","vegetable oil","eggs","seafood","butter","dough products","plant products","finely chopped onion","chopped green bell pepper","salt"]
+["cayenne","thyme","garlic","herbs","pepper","animal products","spices","oil","ingredients","chicken","seasoning","paprika","milk","meat","all-purpose flour","liquid products","vegetables","bulbs","dairy","cumin","breast","flour","eggs","garlic powder","dough products","plant products","salt","black pepper"]
+["coarse salt","peppers","fruit","boneless magret duck breast halves","plums","vegetables","fruity vegetables","animal products","ingredients","freshly ground pepper","seasoning","meat","duck","plant products","sugar","salt"]
+["worcestershire sauce","peppers","garlic cloves","garlic","liquid products","fish","shrimp","chili sauce","vegetables","fruity vegetables","bulbs","animal products","sauce","oil","ingredients","fresh lemon juice","olive oil","ground red pepper","seafood","juice","meat","plant products"]
+["mustard","onions","garlic","pepper","animal products","spices","oil","ingredients","chicken","seasoning","meat","worcestershire sauce","brown sugar","liquid products","hot pepper sauce","dry mustard","vegetables","bulbs","sauce","vegetable oil","vinegar","ketchup","plant products","salt","sugar","black pepper"]
+["fruit","liquid products","avocado","sea scallops","fresh lime juice","vegetables","ground black pepper","pepper","animal products","spices","oil","ingredients","extra-virgin olive oil","seasoning","seafood","meat","juice","melons","hass avocado","plant products","honeydew melon","salt"]
+["onions","garlic","liquid products","herbs","sea scallops","vegetables","bulbs","dairy","animal products","parsley","ingredients","fresh lemon juice","seasoning","fresh parsley","butter","seafood","juice","meat","plant products","salt"]
+["italian seasoning","onions","garlic","fresh parmesan cheese","eggplant","fruity vegetables","pepper","cheese","animal products","spices","oil","ingredients","seasoning","part-skim mozzarella cheese","hard","liquid products","garlic cloves","vegetables","dairy","bulbs","sauce","tomato sauce","ketchup","chopped onion","cooking spray","pasta filata","plant products","mushrooms","salt","black pepper"]
+["onions","mint leaves","herbs","pepper","fresh mint","fruity vegetables","animal products","spices","oil","ingredients","fresh green bean","seasoning","beans","meat","water","water products","liquid products","vegetables","bulbs","lamb","sauce","olive oil","lamb stew meat","tomato sauce","ketchup","plant products","salt"]
+["peppers","fruit","liquid products","balsamic vinegar","fish","vegetables","fruity vegetables","animal products","oil","ingredients","olive oil","freshly ground pepper","seasoning","halibut fillets","paste","vinegar","seafood","strawberries","meat","compote","plant products","berries","sugar"]
+["herbs","fish","cherry tomatoes","pepper","fruity vegetables","animal products","arugula","spices","oil","ingredients","seasoning","meat","stems","liquid products","asparagus spears","vegetables","ground black pepper","salmon fillets","tomatoes","sauce","olive oil","seafood","asparagus","plant products","vinaigrette","salt"]
+["coarse salt","garlic","fresh marjoram","herbs","pepper","salsa","animal products","spices","oil","ingredients","seasoning","orange zest","marjoram","meat","orange","fruit","liquid products","vegetables","bulbs","sauce","olive oil","pork tenderloin","citrus","ground white pepper","pork","plant products","chopped garlic","salt"]
+["onions","fruity vegetables","animal products","leaves","spices","oil","ingredients","seasoning","chili powder","large egg whites","bread","meat","sandwich buns","lettuce leaves","liquid products","vidalia onion","vegetables","bulbs","tomatoes","chili","eggs","grains","dough products","cooking spray","turkey","plant products","oats","ground turkey","salt"]
+["garlic","liquid products","herbs","vegetables","mozzarella cheese","fruity vegetables","bulbs","cheese","dairy","animal products","oil","ingredients","olive oil","zucchini","seasoning","pizza doughs","dough","large garlic cloves","fresh oregano","dough products","plant products","pasta filata","oregano","salt"]
+["onions","herbs","fish","pepper","animal products","spices","oil","fresh lemon juice","ingredients","seasoning","juice","meat","black cod fillets","grated lemon peel","fruit","sherry wine vinegar","liquid products","shallots","vegetables","bulbs","olive oil","citrus","vinegar","seafood","plant products","salt","lemon"]
+["light brown sugar","pork shoulder roast","salt and ground black pepper","onions","garlic","pepper","animal products","spices","honey","ingredients","chopped celery","seasoning","chili powder","meat","celery","bbq sauce","stems","nectar products","worcestershire sauce","water","water products","liquid products","hot pepper sauce","vegetables","bulbs","sauce","chili","barbecue sauce","ketchup","pork","chopped onion","plant products","sugar"]
+["liquid products","white corn","fish","vegetables","succotash","ground black pepper","fruity vegetables","pepper","salmon fillets","animal products","spices","corn","oil","ingredients","olive oil","seasoning","grains","sea salt","beans","seafood","meat","plant products","fava beans","salt"]
+["onions","thyme","garlic","herbs","crawfish","fish","animal products","parsley","ingredients","fresh parsley","seasoning","mirlitons","bread","meat","large eggs","hot sauce","garlic cloves","dry bread crumbs","vegetables","dairy","bulbs","sauce","eggs","seafood","butter","dough products","plant products","finely chopped onion","salt"]
+["worcestershire sauce","water","water products","onions","liquid products","chuck","beef","white vinegar","vegetables","fruity vegetables","bulbs","pepper","animal products","tomatoes","spices","sauce","ingredients","tomatoes with juice","seasoning","vinegar","meat","plant products","sugar","salt"]
+["onions","mustard","herbs","fish","pepper","animal products","fillet red snapper","spices","parsley","oil","orzo","ingredients","fresh lemon juice","fresh parsley","seasoning","dijon mustard","juice","meat","liquid products","shallots","vegetables","bulbs","pasta","extra-virgin olive oil","seafood","cooking spray","dough products","plant products","orange juice","salt","black pepper"]
+["chopped fresh thyme","thyme","liquid products","herbs","ground black pepper","pepper","animal products","roasting chickens","parsley","spices","oil","chicken","fresh lemon juice","ingredients","seasoning","fresh parsley","meat","juice","cooking spray","salt"]
+["baby spinach","fruit","liquid products","feta cheese crumbles","nectarines","vegetables","ground black pepper","cheese","dairy","pepper","animal products","spices","sauce","soft","oil","ingredients","pork tenderloin","seasoning","light balsamic vinaigrette","meat","pork","spinach","cooking spray","plant products","vinaigrette"]
+["basil leaves","garlic","yoghurt","herbs","fish","fruity vegetables","pepper","animal products","leaves","spices","basil","parsley","lemon juice","oil","ingredients","cucumber","grated lemon zest","fresh parsley","seasoning","plain low-fat yogurt","juice","meat","chopped fresh chives","chives","fruit","garlic cloves","liquid products","vegetables","mango","bulbs","dairy","salmon fillets","salad greens","citrus","seafood","cooking spray","plant products","lemon","black pepper","salt"]
+["worcestershire sauce","coarse salt","peppers","onions","fruit","mustard","beef","dry mustard","vegetables","strip steaks","nuts","fruity vegetables","bulbs","animal products","ground cumin","spices","sauce","ingredients","freshly ground pepper","seasoning","citrus","meat","scallions","plant products","lemon","salt"]
+["garlic","large shrimp","fish","pepper","animal products","unsalted butter","spices","oil","fresh lemon juice","ingredients","seasoning","chili powder","juice","meat","worcestershire sauce","garlic cloves","liquid products","vegetables","dairy","bulbs","sauce","chili","olive oil","seafood","butter","plant products","salt","black pepper"]
+["peppers","onions","ancho powder","fruity vegetables","cheese","animal products","spices","oil","ingredients","seasoning","bread","wheat germ","meat","hard","wheat","kaiser rolls","liquid products","cheddar cheese","vegetables","nuts","bulbs","ground turkey breast","dairy","ground cumin","sauce","ground red pepper","grains","ketchup","dough products","cooking spray","maui onion","turkey","plant products","salt"]
+["onions","pepper","animal products","spices","oil","fresh lemon juice","ingredients","chicken","chopped celery","seasoning","boneless skinless chicken breast halves","chopped pecans","juice","meat","celery","stems","canola mayonnaise","fruit","liquid products","light sour cream","vegetables","nuts","ground black pepper","bulbs","dairy","dried cranberries","mayonnaise","sauce","green onions","cream","olive oil","cooking spray","plant products","salt","berries"]
+["fresh basil","peppers","onions","garlic","herbs","fruity vegetables","cheese","semi hard","animal products","yellow squash","spices","basil","parsley","oil","ingredients","fresh parsley","seasoning","meat","squash","large eggs","purple onion","fruit","garlic cloves","liquid products","yellow bell pepper","vegetables","bulbs","lobster","dairy","cream","red bell pepper","olive oil","freshly ground pepper","shredded swiss cheese","eggs","saffron threads","sea salt","seafood","plant products","whipping cream","salt"]
+["fresh basil","plum tomatoes","onions","thyme","garlic","herbs","tofu","eggplant","fruity vegetables","pepper","spices","basil","oil","ingredients","zucchini","seasoning","chopped fresh thyme","liquid products","roots","vegetables","nuts","minced garlic","ground black pepper","bulbs","ground cumin","tomatoes","sauce","reduced fat firm tofu","coulis","tomato sauce","paste","ketchup","cooking spray","carrots","plant products","finely chopped onion","salt"]
+["peppers","onions","large shrimp","herbs","fish","fruity vegetables","pepper","animal products","spices","oil","ingredients","seasoning","jalapeno chilies","juice","meat","purple onion","fruit","brown sugar","liquid products","lime juice","vegetables","nuts","ground black pepper","bulbs","peaches","ground cumin","chili","coriander leaf","red bell pepper","vegetable oil","seafood","plant products","chopped green bell pepper","salt","sugar"]
+["light brown sugar","onions","garlic","pepper","animal products","spices","ingredients","seasoning","molasses","meat","nectar products","liquid products","vegetables","bulbs","sauce","baby back ribs","cider vinegar","vinegar","ketchup","pork","chopped onion","plant products","salt","sugar","black pepper","chopped garlic"]
+["cayenne","herbs","dried oregano","fruity vegetables","spices","oil","ingredients","seasoning","bread","beans","hamburger buns","oregano","chopped cilantro","liquid products","vegetables","nuts","mayonnaise","ground cumin","sauce","vegetable oil","cilantro","black beans","plain dry bread crumb","dough products","plant products"]
+["onions","peppers","fish","cherry tomatoes","pepper","fruity vegetables","animal products","spices","oil","ingredients","seasoning","meat","bbq sauce","purple onion","fish fillets","liquid products","yellow bell pepper","vegetables","ground black pepper","deveined shrimp","bulbs","tomatoes","sauce","olive oil","seafood","plant products","salt","orange bell pepper"]
+["coarse salt","peppers","fruity vegetables","animal products","oil","lemon juice","ingredients","seasoning","bread","juice","meat","large eggs","lump crab meat","worcestershire sauce","saltines","hot sauce","peanut oil","liquid products","vegetables","tartar sauce","mayonnaise","sauce","crab","freshly ground pepper","eggs","seafood","dough products","plant products","salt"]
+["coarse salt","garlic","herbs","fish","lemon slices","animal products","oil","fresh lemon juice","ingredients","seasoning","striped bass","juice","meat","fronds","fruit","garlic cloves","liquid products","vegetables","bulbs","olive oil","citrus","seafood","plant products","salt","lemon"]
+["thyme","whole milk","herbs","cherry tomatoes","fruity vegetables","pepper","cheese","animal products","spices","corn","ingredients","seasoning","corn kernels","dough","milk","large eggs","all-purpose flour","hard","crème fraîche","chopped fresh thyme","vegetables","cheddar cheese","ground black pepper","dairy","tomatoes","soft","flour","eggs","grains","dough products","plant products","salt"]
+["mustard","garlic","beef","white vinegar","pepper","animal products","cayenne pepper","spices","ingredients","boneless chuck roast","seasoning","meat","worcestershire sauce","water","water products","brown sugar","liquid products","dry mustard","vegetables","ground black pepper","bulbs","sauce","vinegar","ketchup","plant products","salt","sugar"]
+["peppers","cracked black pepper","garlic","large shrimp","herbs","fish","fruity vegetables","pepper","animal products","spices","honey","oil","fresh lemon juice","ingredients","seasoning","soy sauce","juice","meat","sesame seeds","seeds","chives","nectar products","fruit","garlic cloves","liquid products","crushed red pepper","nectarines","vegetables","bulbs","sauce","olive oil","seafood","pork","prosciutto","plant products"]
+["fruit","brown sugar","liquid products","plums","pepper","animal products","spices","oil","chicken","ingredients","seasoning","boneless skinless chicken breast halves","alcohol","vinegar","meat","cooking spray","red wine vinegar","plant products","pinot noir","black pepper","sugar","salt"]
+["sour cream","peppers","onions","fruity vegetables","animal products","pinenuts","spices","chicken","ingredients","seasoning","seasoning salt","cooked chicken breasts","meat","celery","stems","fruit","rice","cooked white rice","vegetables","nuts","dairy","bulbs","peaches","mayonnaise","sauce","cream","green onions","red bell pepper","curry powder","grains","plant products","salt"]
+["mushroom caps","onions","herbs","pepper","spices","parsley","lemon juice","oil","ingredients","seasoning","ground pepper","juice","whole wheat couscous","wheat","water products","liquid products","balsamic vinegar","vegetables","bulbs","green onions","olive oil","coulis","grains","vinegar","paste","vegetable stock","parsley leaves","plant products","mushrooms","salt"]
+["green bell pepper","coarse salt","peppers","onions","beef","chuck","fruity vegetables","pepper","animal products","spices","creole seasoning","ingredients","seasoning","ground pepper","bread","bottled chili sauce","meat","chorizo sausage","large eggs","vegetables","dry bread crumbs","bulbs","dairy","sauce","cream","eggs","pork","ground pork","dough products","heavy cream","plant products","salt"]
+["liquid products","fish","pepper","salmon fillets","animal products","spices","oil","ingredients","seasoning","seafood","meat","cooking spray","salt"]
+["onions","chopped fresh mint","mint leaves","herbs","cherry tomatoes","frozen shelled edamame","dill","fruity vegetables","pepper","boiling water","spices","parsley","oil","ingredients","fresh lemon juice","seasoning","beans","kosher salt","juice","fresh dill","wheat","water products","bulgur","liquid products","flat leaf parsley","vegetables","ground black pepper","bulbs","tomatoes","green onions","extra-virgin olive oil","grains","plant products","salt"]
+["mustard","thyme","garlic","herbs","beef","fruity vegetables","pepper","animal products","leaves","spices","ingredients","seasoning","dijon mustard","bread","kosher salt","meat","chopped fresh thyme","kaiser rolls","garlic cloves","vegetables","ground black pepper","bulbs","beefsteak tomatoes","leav lettuc romain","tomatoes","ground sirloin","dough products","plant products","salt"]
+["mustard","onions","garlic","fruity vegetables","animal products","leaves","spices","oil","ingredients","seasoning","chili powder","bread","hamburger buns","meat","bbq sauce","lettuce leaves","liquid products","dry bread crumbs","vegetables","bulbs","tomatoes","sauce","chili","barbecue sauce","garlic powder","chopped onion","dough products","cooking spray","prepared mustard","turkey","plant products","ground turkey","salt"]
+["green bell pepper","chopped cilantro fresh","peppers","herbs","vegetables","fruity vegetables","animal products","tomatoes","spices","corn","chili","fresh tomato salsa","ingredients","seasoning","corn kernels","cilantro","grains","pork baby back ribs","beans","meat","pork","black-eyed peas","plant products"]
+["onions","herbs","fish","fruity vegetables","pepper","animal products","spices","basil","corn","oil","ingredients","seasoning","beans","kosher salt","meat","bbq sauce","liquid products","vegetables","bulbs","salmon fillets","sauce","frozen corn","barbecue sauce","olive oil","grains","seafood","green beans","fresh basil leaves","scallions","plant products","salt","black pepper"]
+["peppers","onions","fruit","liquid products","vegetables","fruity vegetables","bulbs","pepper","animal products","yellow squash","spices","sauce","oil","red bell pepper","ingredients","chicken","seasoning","boneless skinless chicken breast halves","meat","cooking spray","squash","plant products","purple onion","black pepper","salt"]
+["fresh basil","peppers","onions","garlic","herbs","beef","cherry tomatoes","fruity vegetables","pepper","animal products","unsalted butter","spices","basil","corn","oil","ingredients","seasoning","chili powder","boneless rib eye steaks","juice","meat","cuban peppers","garlic cloves","liquid products","fresh lime juice","vegetables","bulbs","dairy","tomatoes","chili","olive oil","grains","butter","plant products","salt","black pepper"]
+["onions","fish","shrimp","cherry tomatoes","vegetables","bulbs","fruity vegetables","animal products","veggies","tomatoes","sauce","green onions","ingredients","seafood","meat","plant products","vinaigrette","mushrooms"]
+["coarse salt","dark brown sugar","cracked black pepper","apple cider vinegar","pepper","boneless pork shoulder","animal products","cayenne pepper","spices","oil","ingredients","seasoning","paprika","coleslaw","bread","hamburger buns","meat","bbq sauce","worcestershire sauce","water","water products","liquid products","vegetables","sauce","barbecue sauce","vegetable oil","vinegar","pork","dough products","plant products","salt","sugar"]
+["green bell pepper","peppers","onions","liquid products","vegetables","ground black pepper","fruity vegetables","bulbs","pepper","animal products","spices","sauce","oil","barbecue sauce","ingredients","olive oil","chicken","seasoning","boneless skinless chicken breast halves","meat","bbq sauce","plant products","purple onion","salt"]
+["coarse salt","herbs","fruity vegetables","animal products","unsalted butter","basil","corn","ingredients","zucchini","seasoning","corn kernels","meat","squash","all-purpose flour","leeks","water","water products","fruit","liquid products","vegetables","summer squash","bulbs","lobster","dairy","flour","grains","seafood","butter","fresh basil leaves","dough products","plant products","salt"]
+["onions","garlic","herbs","animal products","oil","ingredients","chicken","seasoning","boneless skinless chicken breast halves","meat","purple onion","fruit","hot sauce","brown sugar","liquid products","plums","vegetables","nuts","bulbs","ground cumin","sauce","vegetable oil","cilantro","cider vinegar","vinegar","garlic powder","plant products","salt","sugar"]
+["green bell pepper","chopped cilantro fresh","peppers","onions","herbs","cherry tomatoes","fruity vegetables","pepper","cheese","animal products","yellow squash","spices","oil","ingredients","fresh lemon juice","couscous","zucchini","seasoning","ground cinnamon","juice","seeds","squash","wheat","water","water products","fruit","liquid products","feta cheese crumbles","garbanzo","hot pepper sauce","vegetables","nuts","ground black pepper","bulbs","dairy","ground cumin","tomatoes","sauce","soft","red bell pepper","extra-virgin olive oil","cilantro","grains","cooking spray","plant products","salt"]
+["onions","garlic","apple cider vinegar","pepper","animal products","spices","ingredients","chicken","seasoning","paprika","juice","meat","worcestershire sauce","water","water products","hot sauce","liquid products","lime juice","vegetables","nuts","bulbs","ground cumin","sauce","chili","vinegar","chopped onion","chipotle chile","plant products","salt","black pepper"]
+["green bell pepper","sweet onion","okra","peppers","onions","cajun seasoning","liquid products","fish","shrimp","vegetables","fruity vegetables","bulbs","animal products","tomatoes","spices","sauce","oil","ingredients","olive oil","seasoning","seafood","meat","plant products","heirloom tomatoes","vinaigrette"]
+["basil leaves","onions","herbs","beef","fruity vegetables","pepper","animal products","spices","basil","oil","ingredients","seasoning","meat","red wine vinegar","purple onion","liquid products","vegetables","ground black pepper","bulbs","tomatoes","olive oil","vinegar","cooking spray","boneless sirloin steak","plant products","salt"]
+["garlic","mint leaves","herbs","yoghurt","fish","pepper","fruity vegetables","animal products","spices","ingredients","cucumber","seasoning","plain low-fat yogurt","meat","garlic cloves","dried mint flakes","vegetables","nuts","ground black pepper","dairy","bulbs","salmon fillets","ground cumin","mint sprigs","seafood","plant products","salt"]
+["garlic","animal products","spices","honey","ingredients","seasoning","chili powder","pork baby back ribs","meat","nectar products","fruit","balsamic vinegar","liquid products","ginger","garlic cloves","hot pepper sauce","vegetables","bulbs","blackberries","sauce","chili","vinegar","ketchup","pork","peeled fresh ginger","plant products","salt","berries"]
+["mustard","cayenne","tofu","animal products","spices","oil","ingredients","seasoning","dijon mustard","soy sauce","bread","raw cashews","seeds","large eggs","pumpkin seeds","liquid products","dry bread crumbs","vegetables","nuts","ground cumin","sauce","italian bread","olive oil","eggs","dough products","plant products","firm tofu","sliced mushrooms","salt","mushrooms"]
+["fresh basil","peppers","onions","herbs","fish","cherry tomatoes","fruity vegetables","pepper","capers","animal products","leaves","spices","basil","oil","ingredients","cucumber","seasoning","grated lemon zest","meat","fruit","balsamic vinegar","liquid products","yellow bell pepper","shallots","vegetables","ground black pepper","bulbs","tomatoes","olive oil","citrus","vinegar","seafood","sole fillet","plant products","salt","lemon"]
+["fruit","herbs","mint leaves","pork spareribs","blackberries","animal products","mint sprigs","sauce","ingredients","seasoning","meat","pork","plant products","berries"]
+["pickle relish","mustard","onions","garlic","potatoes","white vinegar","pepper","sliced green onions","animal products","spices","oil","ingredients","chicken","seasoning","dijon mustard","meat","pickles","canola mayonnaise","tubers","chicken breasts","garlic cloves","liquid products","vegetables","ground black pepper","bulbs","mayonnaise","sauce","vinegar","cooking spray","plant products","yukon gold potatoes","salt","sugar"]
+["peppers","garlic","fish","fruity vegetables","pepper","animal products","spices","oil","ingredients","seasoning","chili powder","canola oil","bread","juice","meat","whole wheat tortillas","fruit","lime wedges","garlic cloves","liquid products","fresh lime juice","ground cayenne pepper","vegetables","nuts","ground black pepper","bulbs","lime","ground cumin","chili","whitefish fillets","citrus","paste","seafood","dough products","relish","plant products","salt"]
+["pickle relish","peppers","onions","mustard","herbs","fruity vegetables","pepper","capers","animal products","leaves","spices","parsley","oil","ingredients","fresh lemon juice","fresh parsley","seasoning","salt free cajun creole seasoning","large egg whites","parsley sprigs","bread","meat","juice","pickles","white bread","low-fat mayonnaise","large eggs","lump crab meat","lemon wedge","fruit","liquid products","creole mustard","hot pepper sauce","vegetables","ground black pepper","bulbs","mayonnaise","sauce","crab","red bell pepper","vegetable oil","eggs","citrus","seafood","dough products","plant products","finely chopped onion","lemon"]
+["onions","garlic","beef","pepper","fruity vegetables","animal products","leaves","spices","ingredients","seasoning","bread","hamburger buns","meat","large eggs","purple onion","worcestershire sauce","lettuce leaves","dry bread crumbs","vegetables","bulbs","mayonnaise","tomatoes","sauce","minced onion","eggs","ketchup","dough products","plant products","salt"]
+["chopped cilantro fresh","shredded reduced fat cheddar cheese","cracked black pepper","herbs","fruity vegetables","pepper","cheese","animal products","spices","oil","ingredients","seasoning","large egg whites","large eggs","hard","water","water products","chopped cilantro","liquid products","vegetables","dairy","tomatoes","cilantro","eggs","cooking spray","plant products","salt"]
+["onions","cayenne","thyme","garlic","herbs","pepper","animal products","spices","oil","ingredients","fresh lemon juice","seasoning","paprika","bread","juice","meat","celery","stems","large eggs","all-purpose flour","lump crab meat","liquid products","vegetables","tomato paste","dry bread crumbs","bulbs","mayonnaise","sauce","crab","chili","vegetable oil","flour","eggs","paste","seafood","dried thyme","dough products","plant products","salt"]
+["dark brown sugar","white vinegar","pepper","animal products","spices","ingredients","chicken","seasoning","paprika","meat","bbq sauce","seeds","water","worcestershire sauce","water products","liquid products","vegetables","ground black pepper","hungarian sweet paprika","celery seed","sauce","barbecue sauce","vinegar","plant products","salt","sugar"]
+["peppers","garlic","dry red wine","herbs","fruity vegetables","pepper","animal products","spices","oil","ingredients","chicken","seasoning","boneless skinless chicken breast halves","sweet cherries","meat","fruit","garlic cloves","liquid products","crushed red pepper","vegetables","bulbs","cumin","alcohol","cherry preserves","cooking spray","plant products","cherries","salt","black pepper"]
+["fresh basil","chicken cutlets","garlic","herbs","fruity vegetables","pepper","animal products","spices","basil","yellow squash","oil","fresh lemon juice","ingredients","chicken","seasoning","ground pepper","juice","meat","squash","fruit","garlic cloves","liquid products","vegetables","bulbs","tomatoes","chicken breast halves","olive oil","plant products","salt"]
+["onions","mustard","liquid products","potatoes","vegetables","bulbs","pepper","animal products","red potato","spices","chicken","ingredients","fresh lemon juice","chopped celery","seasoning","dijon mustard","meat","juice","celery","smoked chicken sausages","stems","plant products","purple onion","tubers","black pepper","salt"]
+["coarse salt","mustard","garlic","beef","pepper","animal products","spices","oil","ingredients","beef tenderloin","seasoning","dijon mustard","meat","horseradish","emerils original essence","worcestershire sauce","liquid products","roots","vegetables","ground black pepper","bulbs","sauce","olive oil","plant products","salt","chopped garlic"]
+["plain breadcrumbs","liquid products","herbs","fish","pink salmon","dill","pepper","animal products","mayonnaise","spices","sauce","lemon juice","ingredients","seasoning","eggs","seafood","bread","meat","hamburger buns","juice","fresh dill","dough products","large eggs","salt"]
+["peppers","garlic","lager","fruity vegetables","animal products","oil","fresh lemon juice","ingredients","seasoning","meat","juice","fruit","liquid products","granulated garlic","vegetables","bulbs","peaches","sauce","baby back ribs","freshly ground pepper","extra-virgin olive oil","whole cloves","alcohol","ketchup","pork","plant products","salt"]
+["cake","peppers","garlic cloves","garlic","liquid products","beef","vegetables","fruity vegetables","bulbs","animal products","sauce","oil","sirloin roast","ingredients","olive oil","freshly ground pepper","seasoning","meat","dough products","plant products","salt"]
+["bass fillets","onions","mint leaves","herbs","fish","pepper","animal products","spices","oil","ingredients","fresh lemon juice","seasoning","table salt","juice","meat","water","water products","fruit","liquid products","shallots","fine sea salt","vegetables","bulbs","peaches","extra-virgin olive oil","seafood","cooking spray","plant products","salt","sugar","black pepper"]
+["coarse salt","peppers","onions","garlic","herbs","yoghurt","eggplant","fruity vegetables","cheese","animal products","spices","parsley","oil","ingredients","seasoning","ground cinnamon","meat","fresh oregano","large eggs","oregano","hard","olive oil cooking spray","ground nutmeg","liquid products","peel tomato whole","flat leaf parsley","vegetables","tomato paste","bulbs","dairy","tomatoes","nonfat yogurt","freshly ground pepper","eggs","paste","plant products","grated parmesan cheese","turkey","ground turkey","yellow onion","salt"]
+["garlic","herbs","fish","cherry tomatoes","fruity vegetables","pepper","animal products","spices","oil","ingredients","couscous","zucchini","seasoning","meat","olives","wheat","liquid products","garlic cloves","fresh rosemary","vegetables","pitted kalamata olives","bulbs","tomatoes","olive oil","halibut fillets","grains","seafood","plant products","salt","black pepper"]
+["plum tomatoes","peppers","onions","thyme","garlic","herbs","fish","fruity vegetables","cheese","pepper","dried oregano","animal products","spices","parsley","oil","ingredients","fresh lemon juice","fresh parsley","seasoning","juice","meat","oregano","olives","medium shrimp","garlic cloves","liquid products","yellow bell pepper","feta cheese crumbles","vegetables","pitted kalamata olives","bulbs","dairy","pasta","tomatoes","angel hair","green onions","soft","red bell pepper","white pepper","olive oil","seafood","dried thyme","dough products","plant products"]
+["medium shrimp","peppers","fruit","garlic","liquid products","crushed red pepper","fish","fresh lime juice","vegetables","mango","fruity vegetables","bulbs","pepper","animal products","spices","oil","ingredients","olive oil","seasoning","seafood","juice","meat","pineapple","plant products","salt"]
+["pickle relish","onions","mustard","white vinegar","animal products","spices","ingredients","seasoning","bread","chopped ham","meat","pickles","yellow mustard","worcestershire sauce","water","water products","brown sugar","liquid products","kaiser rolls","vegetables","dairy","bulbs","sauce","vinegar","butter","ketchup","pork","dough products","plant products","sugar"]
+["green bell pepper","okra","peppers","thyme","garlic","herbs","fruity vegetables","pepper","animal products","bay leaves","spices","basil","cayenne pepper","oil","chicken","ingredients","seasoning","bay leaf","meat","celery","stems","all-purpose flour","water","dried basil","water products","liquid products","peel tomato whole","vegetables","ground black pepper","bulbs","tomatoes","vegetable oil","flour","file powder","pork","andouille sausage","dried thyme","dough products","plant products","chicken parts","salt"]
+["light brown sugar","fruit","garlic","pineapple slices","liquid products","lime juice","vegetables","onion powder","bulbs","animal products","spices","chili","ingredients","seasoning","chili powder","jalapeno chilies","garlic powder","pork","meat","juice","pineapple","plant products","sugar","salt"]
+["onions","peppers","white vinegar","fruity vegetables","animal products","oil","ingredients","chicken","cucumber","seasoning","boneless skinless chicken breast halves","meat","purple onion","water","water products","radishes","liquid products","roots","vegetables","bulbs","freshly ground pepper","vinegar","cooking spray","plant products","salt","sugar"]
+["fresh basil","plum tomatoes","herbs","fruity vegetables","pepper","cheese","animal products","yellow squash","spices","basil","oil","ingredients","zucchini","seasoning","bread","fresh oregano","squash","oregano","hard","pizza crust","fruit","liquid products","balsamic vinegar","vegetables","ground black pepper","dairy","tomatoes","olive oil","vinegar","cooking spray","dough products","plant products","pecorino romano cheese","salt"]
+["chopped fresh mint","mint leaves","herbs","pepper","fruity vegetables","animal products","spices","parsley","oil","ingredients","chicken","fresh parsley","seasoning","white wine vinegar","beans","meat","walnuts","chicken breasts","liquid products","vegetables","nuts","olive oil","vinegar","green beans","plant products","chopped walnuts","salt","black pepper"]
+["garlic","beef","pepper","animal products","leaves","spices","oil","ingredients","seasoning","bread","hamburger buns","meat","bbq sauce","large eggs","reduced-fat sour cream","liquid products","vegetables","dry bread crumbs","minced garlic","bulbs","dairy","mayonnaise","sauce","cream","chili","lean ground beef","barbecue sauce","eggs","cider vinegar","cabbage","vinegar","chipotle chile","cooking spray","dough products","plant products","reduced fat mayonnaise","salt","sugar","black pepper"]
+["onions","mint leaves","herbs","fish","pepper","animal products","spices","rice vinegar","oil","ingredients","seasoning","meat","purple onion","fruit","brown sugar","pink grapefruit","liquid products","mahimahi","vegetables","bulbs","peaches","vinegar","seafood","cooking spray","plant products","salt","sugar","black pepper"]
+["green bell pepper","coarse salt","peppers","onions","garlic","rolled oats","fruity vegetables","pepper","animal products","spices","oil","ingredients","seasoning","ground pepper","milk","meat","turkey bacon","garlic cloves","liquid products","chili sauce","vegetables","dairy","bulbs","sauce","vegetable oil","evaporated milk","grains","turkey","plant products","oats","ground turkey","yellow onion","salt"]
+["mustard","garlic","pepper","animal products","spices","prepared coleslaw","honey","lemon juice","ingredients","chicken","seasoning","coleslaw","bread","juice","hamburger buns","meat","nectar products","brown sugar","steak sauce","liquid products","vegetables","minced garlic","bulbs","sauce","ketchup","prepared mustard","dough products","plant products","salt","sugar","flavoring"]
+["coarse salt","large shrimp","fish","pepper","animal products","yellow squash","spices","kalamata","oil","lemon juice","ingredients","grated lemon zest","seasoning","short pasta","ground pepper","juice","meat","squash","olives","baby spinach","fruit","liquid products","vegetables","pasta","extra-virgin olive oil","citrus","seafood","spinach","dough products","plant products","salt","lemon"]
+["garlic cloves","garlic","liquid products","balsamic vinegar","cherry tomatoes","vegetables","fruity vegetables","bulbs","pepper","lamb chops","lamb","animal products","tomatoes","spices","honey","ingredients","seasoning","vinegar","meat","red wine vinegar","plant products","nectar products","black pepper","salt"]
+["green bell pepper","peppers","beef","cherry tomatoes","pepper","fruity vegetables","animal products","spices","yellow squash","oil","ingredients","beef tenderloin","seasoning","meat","squash","worcestershire sauce","fruit","liquid products","vegetables","tomatoes","sauce","cooking spray","plant products","salt","black pepper","mushrooms"]
+["herbs","fish","dill","fruity vegetables","pepper","cheese","semi hard","animal products","spices","oil","ingredients","seasoning","baking potatoes","large egg whites","meat","fresh dill","large eggs","smoked salmon","liquid products","vegetables","dairy","tomatoes","goat cheese","eggs","seafood","cooking spray","plant products","salt"]
+["chopped cilantro fresh","salad","onions","herbs","pepper","sliced green onions","animal products","leaves","spices","ingredients","seasoning","meat","fruit","mixed greens","plums","vegetables","nuts","ground black pepper","bulbs","peaches","pork tenderloin","almonds","cilantro","pork","plant products","salt"]
+["basil leaves","herbs","whole wheat hamburger buns","pepper","animal products","spices","basil","oil","ingredients","chicken","seasoning","boneless skinless chicken breast halves","bread","juice","meat","fruit","liquid products","fresh lime juice","ground black pepper","mayonnaise","sauce","cooking spray","dough products","fresh pineapple","plant products","pineapple","light mayonnaise","salt"]
+["onions","mustard","baby arugula","herbs","fruity vegetables","semi hard","cheese","animal products","arugula","spices","oil","ingredients","seasoning","dijon mustard","bread","large eggs","walnuts","toasted walnuts","water","water products","liquid products","shallots","sherry vinegar","walnut oil","vegetables","dry bread crumbs","nuts","bulbs","dairy","tomatoes","goat cheese","olive oil","eggs","vinegar","dough products","plant products"]
+["peppers","garlic","herbs","fish","fruity vegetables","animal products","spices","parsley","oil","lemon juice","creole seasoning","ingredients","seasoning","paprika","bread","french bread","juice","meat","oregano","worcestershire sauce","fruit","hot sauce","garlic cloves","liquid products","shrimp","chili sauce","vegetables","bulbs","dairy","sauce","olive oil","ground red pepper","citrus","seafood","butter","chopped parsley","dough products","plant products","lemon"]
+["coarse salt","peppers","onions","thyme","herbs","cherry tomatoes","eggplant","fruity vegetables","cheese","vegetable oil cooking spray","animal products","oil","ingredients","fresh lemon juice","zucchini","seasoning","bread","fresh part-skim mozzarella","juice","fresh leav oregano","seeds","oregano","wheat","balsamic vinegar","liquid products","garbanzo","vegetables","bulbs","dairy","tomatoes","fresh thyme leaves","freshly ground pepper","extra-virgin olive oil","grains","vinegar","lavash","dough products","plant products","pasta filata","salt"]
+["emerils original essence","coarse salt","onions","fruit","garlic","crawfish","herbs","fish","vegetables","bulbs","deveined shrimp","pepper","animal products","bay leaves","spices","cayenne pepper","sauce","ingredients","seasoning","citrus","seafood","meat","plant products","lemon","salt"]
+["chopped fresh mint","mint leaves","herbs","fruity vegetables","pepper","animal products","spices","oil","ingredients","fresh lemon juice","grated lemon zest","seasoning","beans","juice","meat","leg of lamb","lemon wedge","water","water products","fruit","liquid products","vegetables","ground black pepper","lamb","extra-virgin olive oil","citrus","cooking spray","plant products","fava beans","lemon","salt"]
+["onions","garlic","herbs","beef","fruity vegetables","flour tortillas","animal products","leaves","spices","oil","ingredients","zucchini","seasoning","flank steak","jalapeno chilies","bread","meat","olive oil cooking spray","radishes","fruit","liquid products","roots","vidalia onion","vegetables","romaine lettuce","bulbs","lime","tomatoes","chili","coriander leaf","olive oil","citrus","dough products","plant products","salt"]
+["ham","plum tomatoes","garlic","white vinegar","fruity vegetables","pepper","animal products","spices","oil","ingredients","seasoning","bread","meat","large eggs","garlic cloves","liquid products","vegetables","bulbs","tomatoes","italian bread","olive oil","eggs","vinegar","pork","dough products","plant products","mushrooms","salt","black pepper"]
+["fresh basil","chicken cutlets","onions","herbs","animal products","spices","basil","oil","ingredients","chicken","seasoning","jalapeno chilies","juice","meat","purple onion","fruit","brown sugar","liquid products","fresh lime juice","plums","vegetables","nuts","bulbs","ground cumin","chili","olive oil","plant products","salt","sugar"]
+["onions","beef","pepper","fruity vegetables","animal products","spices","ingredients","molasses","seasoning","seasoning salt","meat","purple onion","nectar products","fruit","green tomatoes","balsamic vinegar","liquid products","vegetables","bulbs","peaches","tomatoes","vinegar","boneless sirloin steak","plant products","salt"]
+["coarse salt","peppers","onions","whole wheat buns","fruity vegetables","pepper","cheese","animal products","english cucumber","spices","oil","ingredients","cucumber","zucchini","seasoning","bread","garlic sauce","large eggs","hard","portabello mushroom","liquid products","shallots","roots","whole wheat breadcrumbs","vegetables","bulbs","dairy","quinoa","sauce","radish sprouts","freshly ground pepper","extra-virgin olive oil","red pepper flakes","eggs","grains","dough products","grated parmesan cheese","plant products","mushrooms","salt"]
+["peppers","mustard","onions","herbs","beef","fruity vegetables","animal products","shitake mushroom","spices","oil","ingredients","fresh lemon juice","zucchini","seasoning","dijon mustard","juice","meat","red wine vinegar","stems","oregano","purple onion","liquid products","vegetables","bulbs","red bell pepper","freshly ground pepper","extra-virgin olive oil","vinegar","porterhouse steaks","asparagus","scallions","plant products","mushrooms","salt"]
+["peppers","onions","cracked black pepper","garlic","herbs","beef","fruity vegetables","pepper","animal products","spices","parsley","oil","ingredients","fresh parsley","seasoning","parsley sprigs","kosher salt","meat","red wine vinegar","purple onion","fruit","garlic cloves","liquid products","vegetables","nuts","bulbs","peaches","ground cumin","red bell pepper","olive oil","vinegar","cooking spray","boneless sirloin steak","plant products","salt"]
+["peppers","agents","fish","fruity vegetables","animal products","leaves","greek seasoning","spices","oil","ingredients","seasoning","beer","bread","hamburger buns","meat","large eggs","all-purpose flour","baking powder","lettuce leaves","liquid products","grouper","vegetables","tartar sauce","yellow corn meal","tomatoes","sauce","vegetable oil","freshly ground pepper","flour","eggs","alcohol","seafood","dough products","plant products","salt"]
+["herbs","fruity vegetables","pepper","cheese","vegetable oil cooking spray","animal products","spices","basil","oil","ingredients","seasoning","ground pepper","dough","fruit","liquid products","vegetables","dairy","peaches","tomatoes","fresh mozzarella","olive oil","pizza doughs","fresh basil leaves","dough products","pasta filata","plant products","salt"]
+["okra","onions","thyme","garlic","herbs","fruity vegetables","pepper","animal products","bay leaves","cayenne pepper","spices","parsley","oil","ingredients","chopped celery","fresh parsley","seasoning","beans","meat","celery","black-eyed peas","stems","all-purpose flour","water","water products","liquid products","cooked ham","vegetables","ground black pepper","chopped tomatoes","bulbs","tomatoes","vegetable oil","flour","chopped onion","pork","dried thyme","dough products","plant products","salt"]
+["onions","peppers","herbs","potatoes","eggplant","pepper","cheese","fruity vegetables","animal products","spices","oil","ingredients","zucchini","seasoning","bread","sweet potatoes","hard","tubers","asiago","liquid products","fresh rosemary","vegetables","dairy","bulbs","red bell pepper","olive oil","prebaked pizza crusts","dough products","plant products","salt"]
+["coarse salt","plum tomatoes","liquid products","beef","fresh lime juice","vegetables","strip steaks","nuts","fruity vegetables","pepper","animal products","ground cumin","tomatoes","spices","chili","oil","ingredients","seasoning","ground pepper","jalapeno chilies","meat","juice","plant products","salt"]
+["basil leaves","plum tomatoes","peppers","herbs","cheese","fruity vegetables","animal products","basil","corn","ingredients","seasoning","corn kernels","pesto","bread","hard","vegetables","dairy","tomatoes","italian pizza crust","fresh mozzarella","sauce","freshly ground pepper","grains","dough products","pasta filata","grated parmesan cheese","plant products","salt","sugar"]
+["fresh basil","herbs","beef","haricots verts","fruity vegetables","pepper","animal products","arugula","spices","basil","oil","ingredients","seasoning","white wine vinegar","flank steak","beans","bread","french bread","meat","large eggs","water","water products","liquid products","vegetables","ground black pepper","tomatoes","extra-virgin olive oil","eggs","vinegar","cooking spray","dough products","plant products","salt","sugar"]
+["coarse salt","herbs","cherry tomatoes","fruity vegetables","pepper","animal products","spices","parsley","oil","ingredients","couscous","zucchini","fresh parsley","seasoning","ground pepper","meat","ground coriander","lemon wedge","wheat","fruit","liquid products","lamb rib chops","vegetables","lamb","tomatoes","coriander leaf","olive oil","citrus","grains","plant products","salt","lemon"]
+["chopped cilantro fresh","onions","herbs","fish","animal products","spices","apricots","oil","ingredients","fresh lemon juice","seasoning","jalapeno chilies","kosher salt","juice","meat","seeds","purple onion","fruit","liquid products","brown mustard seeds","vegetables","bulbs","chili","vegetable oil","cilantro","habanero chile","halibut fillets","citrus","seafood","plant products","lemon","salt"]
+["water","light brown sugar","water products","liquid products","herbs","fish","vegetables","dill","eggplant","fruity vegetables","salmon fillets","animal products","granulated sugar","oil","olive oil","ingredients","seasoning","seafood","meat","kosher salt","fresh dill","plant products","sugar","salt"]
+["onions","mustard","herbs","potatoes","boneless skinless chicken breasts","fruity vegetables","pepper","animal products","spices","parsley","oil","chicken","fresh tarragon","ingredients","fresh lemon juice","fresh parsley","seasoning","dijon mustard","beans","meat","juice","dried tarragon leaves","all-purpose flour","tubers","liquid products","shallots","vegetables","ground black pepper","bulbs","olive oil","flour","cider vinegar","vinegar","green beans","dough products","plant products","yukon gold potatoes","salt"]
+["onions","mint leaves","herbs","fruity vegetables","pepper","fresh mint","animal products","leaves","spices","ingredients","fresh lemon juice","chicken","cucumber","seasoning","white wine vinegar","cooked chicken breasts","chopped pecans","juice","meat","purple onion","fruit","lettuce leaves","liquid products","nectarines","vegetables","nuts","ground black pepper","bulbs","vinegar","plant products","salt","sugar"]
+["mustard","garlic","fish","fresh spinach","pepper","animal products","spices","oil","fresh lemon juice","ingredients","seasoning","fresh orange juice","juice","meat","orange","fruit","garlic cloves","balsamic vinegar","liquid products","honey mustard","vegetables","bulbs","salmon fillets","olive oil","citrus","vinegar","seafood","spinach","cooking spray","plant products","black pepper"]
+["mustard","garlic","yoghurt","fish","pepper","cheese","animal products","leaves","spices","oil","fresh lemon juice","ingredients","seasoning","dijon mustard","juice","meat","hard","worcestershire sauce","garlic cloves","liquid products","vegetables","romaine lettuce","ground black pepper","bulbs","dairy","salmon fillets","sauce","seafood","cooking spray","fat free yogurt","plant products","grated parmesan cheese","salt"]
+["herbs","fish","fruity vegetables","pepper","animal products","spices","parsley","oil","ingredients","trout fillet","zucchini","seasoning","meat","fruit","liquid products","flat leaf parsley","vegetables","ground black pepper","mayonnaise","sauce","anchovy paste","olive oil","citrus","lemon zest","sea salt","seafood","paste","plant products","salt","lemon"]
+["peppers","fruit","dark brown sugar","liquid products","balsamic vinegar","crushed red pepper","fish","vegetables","fruity vegetables","salmon fillets","animal products","peaches","fresh raspberries","oil","ingredients","seasoning","seafood","vinegar","meat","cooking spray","plant products","berries","sugar","salt"]
+["fresh basil","onions","plum tomatoes","herbs","fruity vegetables","basil","kalamata","oil","ingredients","bread crumb fresh","seasoning","bread","olives","water","water products","liquid products","shallots","spaghettini","vegetables","bulbs","pasta","tomatoes","extra-virgin olive oil","fresh basil leaves","dough products","plant products"]
+["light brown sugar","peppers","thyme","garlic","herbs","fruity vegetables","dried oregano","animal products","spices","oil","ingredients","fresh lemon juice","chicken","seasoning","chili powder","juice","meat","oregano","red chili peppers","garlic cloves","liquid products","vegetables","nuts","bulbs","ground cumin","chili","olive oil","dried thyme","plant products","sugar","salt"]
+["green bell pepper","okra","peppers","onions","thyme","garlic","herbs","fish","fruity vegetables","pepper","animal products","bay leaves","cayenne pepper","spices","oil","ingredients","chopped celery","seasoning","bay leaf","meat","celery","stems","all-purpose flour","water products","rice","liquid products","shrimp","cooked white rice","vegetables","ground black pepper","hot water","bulbs","tomatoes","green onions","red bell pepper","vegetable oil","flour","eggs","grains","seafood","dried thyme","dough products","plant products","salt"]
+["saltines","cayenne","mustard","liquid products","fennel bulb","herbs","vegetables","fruity vegetables","bulbs","mayonnaise","spices","sauce","oil","ingredients","fresh lemon juice","olive oil","zucchini","seasoning","bread","juice","dough products","plant products","chives"]
+["coarse salt","onions","garlic","herbs","beef","potatoes","pepper","animal products","leaves","spices","parsley","oil","ingredients","seasoning","white wine vinegar","ground pepper","flank steak","meat","tubers","garlic cloves","liquid products","flat leaf parsley","vegetables","romaine lettuce","bulbs","mayonnaise","sauce","olive oil","vinegar","scallions","plant products","reduced fat mayonnaise","vinaigrette","salt"]
+["dark brown sugar","onions","animal products","spices","oil","ingredients","seasoning","chili powder","meat","vegetable oil spray","balsamic vinegar","liquid products","vegetables","nuts","bulbs","rib pork chops","ground cumin","sauce","chili","tomato sauce","vinegar","ketchup","pork","chopped onion","andouille sausage","plant products","sugar"]
+["herbs","broccoli florets","dried oregano","cheese","fruity vegetables","animal products","lemon juice","ingredients","zucchini","seasoning","juice","broccoli","stems","oregano","fruit","liquid products","feta cheese crumbles","vegetables","dairy","pasta","green peas","soft","citrus","lemon rind","asparagus","dough products","plant products","campanelle","peas","salt","lemon"]
+["sea scallops","animal products","leaves","spices","oil","ingredients","Boston lettuce","seasoning","mango chutney","meat","juice","fruit","liquid products","fresh lime juice","avocado","vegetables","mango","olive oil","salad greens","rub","seafood","cooking spray","fresh pineapple","plant products","pineapple"]
+["peppers","onions","frozen corn kernels","cooked chicken","fruity vegetables","pepper","animal products","leaves","spices","corn","oil","ingredients","chicken","seasoning","beans","bread","juice","meat","red wine vinegar","bbq sauce","purple onion","radishes","liquid products","lime juice","roots","vegetables","bulbs","tomatoes","sauce","barbecue sauce","baby greens","red bell pepper","olive oil","kidney beans","grains","vinegar","dough products","tortilla chips","plant products","salt"]
+["onions","mint leaves","herbs","fish","cherry tomatoes","fruity vegetables","pepper","fresh mint","animal products","spices","basil","honey","oil","ingredients","fresh lemon juice","seasoning","jalapeno chilies","kosher salt","juice","meat","purple onion","nectar products","fruit","liquid products","vegetables","ground black pepper","bulbs","salmon fillets","peaches","tomatoes","chili","extra-virgin olive oil","seafood","fresh basil leaves","cooking spray","plant products","salt"]
+["mustard","onions","garlic","pepper","animal products","spices","fresh lemon juice","ingredients","chicken","chopped celery","seasoning","juice","meat","celery","stems","worcestershire sauce","chicken breasts","brown sugar","liquid products","dry mustard","vegetables","dairy","bulbs","sauce","butter","ketchup","plant products","salt","sugar"]
+["peppers","onions","herbs","fish","fruity vegetables","animal products","oil","ingredients","seasoning","meat","purple onion","fish fillets","fruit","lime wedges","liquid products","vegetables","lime","bulbs","coriander leaf","olive oil","freshly ground pepper","flour","citrus","seafood","paste","dough products","plant products","relish","salt"]
+["onions","lime rind","herbs","serrano chile","cold water","pepper","animal products","spices","parsley","honey","oil","ingredients","seasoning","parsley sprigs","kosher salt","juice","meat","purple onion","nectar products","water products","jicama","fruit","liquid products","roots","plums","fresh lime juice","vegetables","ground black pepper","bulbs","lime","chili","extra-virgin olive oil","pork tenderloin","citrus","pork","plant products","salt"]
+["garlic","animal products","spices","ingredients","seasoning","molasses","meat","nectar products","serrano","liquid products","ginger","vegetables","minced garlic","bulbs","chili","sauce","pork tenderloin","cider vinegar","vinegar","ketchup","pork","peeled fresh ginger","plant products","salt","sugar"]
+["fresh basil","onions","garlic","herbs","fish","fruity vegetables","pepper","animal products","spices","basil","green olives","oil","ingredients","fresh lemon juice","grated lemon zest","seasoning","juice","meat","fresh oregano","oregano","olives","fruit","garlic cloves","liquid products","shallots","vegetables","ground black pepper","bulbs","beefsteak tomatoes","tomatoes","extra-virgin olive oil","citrus","halibut fillets","seafood","cooking spray","plant products","lemon","salt"]
+["chopped cilantro fresh","onions","garlic","herbs","pepper","animal products","spices","oil","ingredients","seasoning","center cut pork chops","chili powder","canola oil","jalapeno chilies","juice","meat","sweet onion","fruit","liquid products","fresh lime juice","vegetables","ground black pepper","bulbs","chili","cilantro","garlic powder","pork","melons","cooking spray","watermelon","plant products","honeydew melon","salt"]
+["peppers","onions","thyme","roast red peppers, drain","garlic","herbs","cherry tomatoes","eggplant","fruity vegetables","cheese","pepper","vegetable oil cooking spray","animal products","yellow squash","cayenne pepper","spices","cornmeal","oil","ingredients","fresh lemon juice","seasoning","juice","chopped fresh chives","stems","squash","chives","hard","chopped fresh thyme","fruit","liquid products","balsamic vinegar","vegetables","bulbs","dairy","tomatoes","olive oil","polenta","flour","vinegar","asparagus","dough products","scallions","plant products","grated parmesan cheese","italian eggplant"]
+["peppers","onions","garlic","lime rind","mint leaves","herbs","fish","serrano chile","fruity vegetables","fresh mint","animal products","spices","honey","apricots","oil","ingredients","fresh lemon juice","seasoning","sweet cherries","juice","meat","purple onion","nectar products","fruit","lime wedges","garlic cloves","liquid products","nectarines","plums","fresh lime juice","vegetables","bulbs","lime","dairy","mint sprigs","green onions","chili","ground red pepper","citrus","seafood","jumbo shrimp","butter","cooking spray","plant products","cherries","salt"]
+["plum tomatoes","onions","garlic","herbs","fish","pepper","lemongrass","fruity vegetables","animal products","spices","oil","ingredients","seasoning","meat","large garlic cloves","halibut steak","liquid products","shallots","vegetables","bulbs","tomatoes","olive oil","seafood","plant products","salt","black pepper"]
+["coarse salt","onions","cooked chicken","fruity vegetables","pepper","cheese","semi hard","animal products","spices","oil","ingredients","chicken","zucchini","seasoning","flour for dusting","ground pepper","dough","meat","bbq sauce","liquid products","vegetables","bulbs","dairy","shredded Monterey Jack cheese","sauce","barbecue sauce","olive oil","flour","pizza doughs","dough products","plant products","salt"]
+["onions","chopped fresh mint","mint leaves","herbs","lime rind","fish","fruity vegetables","animal products","spices","oil","ingredients","cucumber","seasoning","jalapeno chilies","juice","meat","grape tomatoes","fish fillets","fruit","liquid products","fresh lime juice","vegetables","nuts","bulbs","lime","ground cumin","tomatoes","green onions","chili","olive oil","citrus","seafood","plant products","salt"]
+["onions","thyme","herbs","fish","fruity vegetables","pepper","animal products","spices","oil","ingredients","seasoning","jalapeno chilies","meat","fresh cilantro","poblano chiles","liquid products","vegetables","bulbs","salmon fillets","tomatoes","chili","fresh thyme","olive oil","cilantro","seafood","plant products","black pepper","salt"]
+["okra","peppers","onions","garlic","herbs","bacon","fruity vegetables","pepper","animal products","bay leaves","cayenne pepper","spices","parsley","lemon juice","oil","ingredients","chicken","fresh parsley","seasoning","juice","meat","celery","stems","frozen okra","white rice","all-purpose flour","worcestershire sauce","water","water products","rice","brown sugar","liquid products","chicken stock","hot pepper sauce","vegetables","bulbs","smoked sausage","tomatoes","sauce","red bell pepper","vegetable oil","tomatoes with juice","flour","grains","pork","dough products","plant products","sugar"]
+["green bell pepper","coarse salt","garlic","herbs","fish","animal products","bay leaves","parsley","spices","cayenne pepper","ingredients","beer","all-purpose flour","emerils original essence","medium shrimp","fish fillets","cooked white rice","alcohol","file powder","seafood","dried thyme","plant products","salt","chopped garlic","onions","peppers","thyme","shucked oysters","pepper","fruity vegetables","shrimp stock","oil","chopped celery","seasoning","meat","celery","stems","worcestershire sauce","rice","liquid products","flat leaf parsley","vegetables","bulbs","sauce","crab","vegetable oil","flour","grains","dough products","scallions","finely chopped onion"]
+["thyme","garlic","herbs","cherry tomatoes","fruity vegetables","pepper","animal products","spices","oil","ingredients","fresh lemon juice","zucchini","seasoning","juice","meat","large garlic cloves","leg of lamb","liquid products","fresh rosemary","vegetables","bulbs","lamb","tomatoes","fresh thyme leaves","olive oil","plant products","salt","black pepper"]
+["onions","cracked black pepper","herbs","fish","cherry tomatoes","fruity vegetables","pepper","animal products","spices","grated orange","ingredients","fresh chives","seasoning","fresh orange juice","juice","meat","chives","poblano chiles","wheat","orange","fruit","liquid products","shallots","shrimp","vegetables","bulbs","dairy","tomatoes","chili","bulgur wheat","citrus","grains","seafood","butter","plant products","salt"]
+["peppers","onions","garlic","herbs","fish","fruity vegetables","sliced green onions","pepper","animal products","arugula","spices","oil","ingredients","fresh lemon juice","seasoning","paprika","juice","meat","fresh oregano","oregano","fruit","garlic cloves","liquid products","vegetables","ground black pepper","bulbs","peaches","red bell pepper","olive oil","halibut fillets","seafood","habanero pepper","cooking spray","plant products","salt"]
+["peppers","onions","herbs","beef","potatoes","eggplant","fruity vegetables","pepper","animal products","spices","parsley","roasted red peppers","oil","ingredients","fresh parsley","seasoning","meat","grape tomatoes","fingerling potatoes","large eggs","purple onion","tubers","steak","liquid products","sherry vinegar","vegetables","ground black pepper","bulbs","tomatoes","extra-virgin olive oil","eggs","vinegar","plant products","salt"]
+["onions","baby arugula","herbs","pepper","animal products","leaves","arugula","spices","parsley","apricots","oil","fresh tarragon","ingredients","chicken","fresh parsley","seasoning","white wine vinegar","boneless skinless chicken breast halves","meat","purple onion","fruit","liquid products","vegetables","ground black pepper","bulbs","olive oil","salad greens","vinegar","cooking spray","plant products","salt"]
+["coarse salt","mustard","onions","garlic","mint leaves","herbs","butterhead lettuce","chicken drumsticks","fruity vegetables","fresh mint","animal products","leaves","spices","oil","ingredients","fresh lemon juice","chicken","seasoning","dijon mustard","boneless skinless chicken breast halves","juice","meat","fresh peas","liquid products","shallots","vegetables","minced garlic","bulbs","extra-virgin olive oil","plant products","peas","salt"]
+["chopped cilantro fresh","peppers","garlic","herbs","fruity vegetables","flour tortillas","animal products","leaves","spices","oil","ingredients","chicken","cucumber","seasoning","soy sauce","bread","juice","meat","creamy peanut butter","water","water products","garlic cloves","liquid products","ginger","fresh lime juice","vegetables","romaine lettuce","bulbs","low sodium soy sauce","chicken breast halves","sauce","red bell pepper","olive oil","ground red pepper","cilantro","paste","peeled fresh ginger","dough products","plant products","salt","sugar"]
+["salad","onions","garlic","pepper","animal products","leaves","spices","oil","ingredients","seasoning","juice","meat","liquid products","shallots","fresh lime juice","vegetables","nuts","ground black pepper","minced garlic","bulbs","ground cumin","olive oil","pork tenderloin","pork","cooking spray","plant products","salt"]
+["onions","mustard","beef","white vinegar","roast beef","bacon","pepper","animal products","spices","ingredients","seasoning","bread","juice","meat","worcestershire sauce","liquid products","kaiser rolls","vegetables","bulbs","sauce","vinegar","ketchup","pork","prepared mustard","dough products","plant products","apple juice","salt","sugar"]
+["onions","mustard","herbs","fish","pepper","animal products","fillet red snapper","spices","parsley","oil","orzo","ingredients","fresh lemon juice","fresh parsley","seasoning","dijon mustard","juice","meat","liquid products","shallots","vegetables","bulbs","pasta","extra-virgin olive oil","seafood","cooking spray","dough products","plant products","orange juice","salt","black pepper"]
+["onions","fish","cherry tomatoes","vegetables","fruity vegetables","bulbs","pepper","animal products","salmon fillets","tomatoes","pearl onions","spices","ingredients","seasoning","seafood","meat","fresh peas","plant products","peas","salt"]
+["onions","garlic","herbs","fruity vegetables","animal products","parsley","oil","ingredients","zucchini","fresh parsley","seasoning","bread","milk","meat","all-purpose flour","bread crumbs","liquid products","vegetables","dairy","bulbs","razor clams","flour","eggs","seafood","butter","dough products","plant products","salt"]
+["coarse salt","plum tomatoes","garlic","herbs","fish","fruity vegetables","pepper","animal products","spices","basil","oil","ingredients","seasoning","jalapeno chilies","juice","meat","chopped cilantro","green tomatoes","garlic cloves","ginger","liquid products","shrimp","fresh lime juice","vegetables","bulbs","tomatoes","chili","vegetable oil","cilantro","seafood","plant products","black pepper","sugar","salt"]
+["peppers","onions","garlic","beef","fruity vegetables","cheese","animal products","bread crumb fresh","ingredients","zucchini","sausages","seasoning","bread","chopped pecans","meat","large eggs","hard","hot sauce","garlic cloves","hot sausage","cheddar cheese","vegetables","nuts","bulbs","dairy","sharp cheddar cheese","sauce","cream","freshly ground pepper","eggs","butter","pork","dough products","heavy cream","plant products","salt"]
+["peppers","onions","thyme","herbs","eggplant","fruity vegetables","pepper","cheese","semi hard","animal products","pinenuts","spices","oil","ingredients","zucchini","seasoning","pesto","bread","chopped fresh thyme","sweet onion","liquid products","vegetables","nuts","dairy","bulbs","sauce","goat cheese","red bell pepper","olive oil","pesto sauce","prebaked pizza crusts","dough products","plant products","salt"]
+["peppers","onions","garlic","herbs","beef","fruity vegetables","pepper","animal products","spices","yellow squash","oil","ingredients","zucchini","seasoning","pesto","meat","red wine vinegar","squash","oregano","fruit","garlic cloves","liquid products","vegetables","bulbs","sauce","green onions","red bell pepper","vinegar","cooking spray","boneless sirloin steak","plant products","salt","black pepper"]
+["onions","garlic","lime rind","mint leaves","herbs","serrano chile","fruity vegetables","pepper","fresh mint","french rolls","animal products","leaves","spices","oil","chicken","ingredients","seasoning","bread","juice","meat","fruit","lettuce leaves","garlic cloves","liquid products","vidalia onion","fresh lime juice","vegetables","nuts","ground black pepper","bulbs","lime","mayonnaise","ground cumin","tomatoes","sauce","chili","chicken breast tenders","citrus","alcohol","dark rum","cooking spray","dough products","plant products","reduced fat mayonnaise","salt","sugar"]
+["light brown sugar","onions","pepper","animal products","spices","oil","ingredients","seasoning","kosher salt","meat","bone-in pork chops","seeds","sweet onion","fruit","liquid products","ginger","plums","vegetables","mustard seeds","bulbs","coriander seeds","vegetable oil","cider vinegar","fresh ginger","vinegar","pork","plant products","salt","sugar"]
+["coarse salt","onions","garlic","fish","fruity vegetables","pepper","animal products","spices","corn","oil","ingredients","zucchini","seasoning","corn kernels","chili powder","ground pepper","meat","fruit","lime wedges","garlic cloves","liquid products","vegetables","bulbs","lime","salmon fillets","tomatoes","chili","fresh tomato salsa","olive oil","citrus","grains","seafood","scallions","plant products","salt"]
+["french sandwich rolls","peppers","onions","mustard","garlic","herbs","fish","fruity vegetables","sliced green onions","animal products","leaves","spices","parsley","roasted red peppers","creole seasoning","lemon juice","oil","ingredients","fresh parsley","seasoning","jalapeno chilies","bread","juice","meat","lettuce leaves","garlic cloves","liquid products","creole mustard","shrimp","vegetables","bulbs","catfish fillets","mayonnaise","tomatoes","sauce","chili","olive oil","seafood","dough products","plant products","reduced fat mayonnaise"]
+["onions","fruity vegetables","pepper","bacon slices","cheese","animal products","spices","ingredients","seasoning","dough","bread","meat","hard","sweet onion","shredded sharp cheddar cheese","refrigerated piecrusts","dry bread crumbs","vegetables","dairy","bulbs","mayonnaise","tomatoes","sauce","pork","dough products","grated parmesan cheese","plant products","salt"]
+["fresh basil","garlic","herbs","fish","fruity vegetables","pepper","animal products","spices","basil","oil","ingredients","seasoning","juice","meat","grape tomatoes","fruit","lime wedges","liquid products","avocado","fresh lime juice","vegetables","minced garlic","ground black pepper","bulbs","lime","tomatoes","olive oil","halibut fillets","citrus","seafood","cooking spray","plant products","salt"]
+["onions","garlic","dry red wine","herbs","beef","pepper","animal products","spices","basil","oil","ingredients","seasoning","flank steak","soy sauce","bread","meat","garlic cloves","liquid products","vidalia onion","vegetables","bulbs","low sodium soy sauce","sauce","italian bread","alcohol","paste","cooking spray","dough products","plant products","relish","salt","black pepper"]
+["baby arugula","herbs","beef","pepper","cheese","animal products","arugula","spices","honey","oil","fresh lemon juice","ingredients","seasoning","flank steak","juice","meat","nectar products","semi soft","fruit","liquid products","plums","ground black pepper","dairy","olive oil","crumbled blue cheese","cooking spray","plant products","salt"]
+["onions","herbs","beef","fruity vegetables","pepper","animal products","spices","oil","tomato yellow","fresh tarragon","ingredients","seasoning","flank steak","juice","meat","purple onion","liquid products","fresh lime juice","avocado","vegetables","bulbs","tomatoes","extra-virgin olive oil","cooking spray","plant products","salt","black pepper"]
+["hot sauce","liquid products","roots","vegetables","pepper","brown firmly light packed sugar","animal products","spices","sauce","ingredients","prepared horseradish","bourbon whiskey","seasoning","pork baby back ribs","alcohol","ketchup","pork","meat","plant products","horseradish","sugar","salt"]
+["fresh basil","mustard","thyme","herbs","agents","fresh parmesan cheese","fruity vegetables","cheese","dried oregano","animal products","buds","arugula","spices","basil","oil","ingredients","seasoning","artichoke hearts","dijon mustard","part-skim mozzarella cheese","all-purpose flour","oregano","hard","dry yeast","water products","liquid products","balsamic vinegar","vegetables","dairy","warm water","tomatoes","olive oil","flour","vinegar","dough products","dried thyme","cooking spray","plant products","pasta filata","sugar","salt"]
+["onions","sliced green onions","boiling water","pepper","animal products","spices","oil","fresh lemon juice","ingredients","couscous","seasoning","center cut pork chops","grated lemon zest","juice","meat","roasted almonds","wheat","water products","fruit","liquid products","vegetables","nuts","ground black pepper","bulbs","olive oil","almonds","citrus","grains","pork","cooking spray","plant products","cherries","salt","lemon"]
+["onions","chopped fresh mint","lime rind","mint leaves","herbs","fruity vegetables","pepper","animal products","english cucumber","spices","oil","ingredients","chicken","cucumber","seasoning","boneless skinless chicken breast halves","jalapeno chilies","kosher salt","juice","meat","purple onion","nectar products","fruit","liquid products","fresh lime juice","vegetables","agave nectar","ground black pepper","bulbs","lime","mint sprigs","chili","extra-virgin olive oil","citrus","cantaloupe","melons","cooking spray","plant products","honeydew melon","salt"]
+["plum tomatoes","onions","garlic","herbs","beef","fruity vegetables","pepper","animal products","spices","yellow squash","oil","ingredients","zucchini","seasoning","pesto","meat","red wine vinegar","squash","oregano","fruit","liquid products","vegetables","minced garlic","bulbs","tomatoes","sauce","green onions","vinegar","beef tenderloin steaks","cooking spray","plant products","salt","black pepper"]
+["coarse salt","peppers","onions","mustard","mint leaves","herbs","fish","fruity vegetables","fresh mint","animal products","swordfish steaks","spices","oil","ingredients","seasoning","white wine vinegar","dijon mustard","jalapeno chilies","meat","purple onion","fruit","liquid products","nectarines","vegetables","bulbs","chili","freshly ground pepper","extra-virgin olive oil","vinegar","seafood","plant products","salt"]
+["fresh basil","peppers","onions","garlic","herbs","provolone cheese","eggplant","fruity vegetables","pepper","cheese","semi hard","animal products","spices","basil","oil","ingredients","seasoning","fresh oregano","medium egg noodles","oregano","garlic cloves","liquid products","balsamic vinegar","vegetables","ground black pepper","bulbs","dairy","pasta","tomatoes","red bell pepper","olive oil","vinegar","cooking spray","dough products","plant products","yellow onion","salt"]
+Ordinal,6
+5
+5
+5
+4
+5
+5
+5
+5
+4
+5
+5
+4
+5
+5
+5
+5
+5
+3
+5
+4
+5
+5
+4
+5
+5
+5
+4
+5
+5
+5
+5
+5
+4
+5
+5
+4
+4
+5
+4
+5
+0
+5
+4
+5
+4
+5
+5
+5
+0
+5
+4
+4
+0
+5
+5
+5
+5
+0
+5
+4
+5
+4
+4
+5
+4
+4
+0
+3
+4
+5
+5
+3
+5
+5
+5
+3
+5
+5
+0
+5
+3
+0
+0
+3
+0
+4
+4
+5
+0
+4
+3
+5
+3
+5
+5
+3
+4
+4
+5
+5
+4
+5
+4
+4
+4
+3
+4
+5
+3
+4
+3
+5
+4
+5
+3
+4
+4
+5
+3
+4
+5
+5
+4
+4
+3
+4
+4
+4
+5
+3
+4
+4
+4
+4
+4
+4
+4
+5
+4
+4
+4
+4
+4
+5
+4
+4
+4
+5
+5
+5
+4
+3
+5
+4
+4
+3
+4
+3
+4
+2
+4
+4
+5
+4
+5
+3
+4
+4
+4
+5
+4
+3
+3
+5
+4
+4
+4
+4
+4
+4
+4
+4
+4
+5
+4
+4
+3
+3
+4
+4
+3
+3
+4
+4
+4
+4
+5
+5
+4
+3
+5
+3
+4
+4
+3
+4
+4
+5
+3
+4
+4
+4
+3
+4
+4
+3
+3
+3
+5
+4
+4
+4
+3
+4
+4
+4
+4
+4
+3
+4
+4
+3
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+5
+4
+3
+5
+3
+4
+4
+4
+4
+3
+4
+5
+4
+4
+4
+4
+4
+4
+3
+3
+5
+5
+5
+4
+4
+4
+4
+3
+4
+4
+3
+4
+3
+5
+3
+4
+4
+4
+4
+4
+4
+4
+4
+4
+3
+4
+4
+4
+4
+4
+4
+4
+3
+4
+Ternary
+2
+1
+0
+2
+2
+2
+2
+2
+2
+2
+0
+0
+0
+1
+2
+2
+2
+1
+2
+1
+2
+2
+0
+0
+2
+2
+1
+2
+1
+0
+2
+2
+2
+1
+2
+2
+2
+2
+0
+0
+1
+0
+2
+2
+2
+1
+1
+2
+0
+0
+0
+2
+2
+2
+1
+1
+0
+1
+1
+0
+1
+2
+0
+1
+1
+2
+1
+2
+2
+2
+1
+2
+1
+1
+2
+2
+1
+2
+1
+2
+1
+1
+0
+2
+2
+0
+0
+2
+1
+2
+0
+2
+0
+1
+2
+1
+2
+2
+1
+2
+1
+0
+2
+2
+1
+0
+1
+2
+0
+2
+2
+2
+2
+2
+0
+2
+2
+2
+0
+0
+2
+2
+0
+0
+2
+0
+2
+0
+2
+0
+2
+2
+0
+2
+2
+0
+2
+2
+1
+2
+2
+2
+0
+2
+0
+0
+0
+2
+1
+2
+2
+2
+0
+0
+2
+1
+2
+0
+0
+2
+0
+1
+2
+0
+2
+1
+2
+0
+2
+2
+2
+2
+0
+2
+2
+0
+1
+2
+2
+2
+0
+1
+2
+2
+2
+2
+0
+2
+2
+1
+2
+2
+1
+0
+0
+2
+0
+2
+2
+0
+2
+0
+0
+0
+2
+2
+0
+2
+2
+0
+2
+0
+2
+1
+2
+2
+0
+2
+2
+0
+2
+2
+2
+0
+2
+0
+2
+2
+0
+2
+2
+2
+0
+2
+2
+0
+0
+2
+0
+0
+2
+1
+2
+0
+2
+2
+0
+0
+0
+0
+1
+2
+2
+2
+2
+0
+2
+2
+2
+2
+0
+2
+2
+1
+2
+2
+2
+2
+2
+2
+2
+2
+1
+0
+1
+0
+2
+2
+2
+2
+2
+0
+0
+1
+2
+0
+2
+0
+0
+1
+2
+2
+0
+2
+2
+2
+Boolean
+0
+0
+0
+0
+0
+0
+0
+0
+1
+1
+0
+0
+0
+0
+1
+0
+0
+0
+0
+0
+1
+0
+0
+0
+0
+0
+0
+1
+0
+0
+1
+0
+0
+0
+0
+0
+0
+0
+0
+1
+0
+0
+0
+1
+0
+0
+0
+1
+0
+0
+0
+0
+0
+0
+0
+0
+1
+0
+0
+0
+0
+0
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+0
+0
+0
+0
+0
+1
+0
+0
+0
+1
+1
+0
+1
+1
+0
+0
+1
+0
+0
+0
+0
+1
+0
+0
+0
+0
+0
+0
+1
+1
+0
+0
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+0
+1
+0
+1
+0
+0
+0
+1
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+0
+0
+0
+0
+1
+0
+1
+1
+0
+1
+0
+0
+0
+0
+0
+0
+0
+0
+1
+1
+0
+0
+0
+1
+1
+0
+0
+1
+0
+0
+0
+1
+1
+0
+0
+0
+0
+0
+0
+1
+0
+0
+0
+1
+0
+0
+0
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+0
+0
+0
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+0
+0
+0
+0
+0
+0
+0
+1
+1
+1
+0
+0
+0
+1
+0
+0
+0
+0
+0
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+0
+0
+1
+1
+0
+0
+1
+0
+1
+0
+0
+0
+0
+0
+0
+1
+0
+0
+0
+0
+0
+0
+Boolean
+0
+0
+0
+0
+1
+1
+0
+1
+1
+1
+0
+0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+0
+1
+1
+0
+1
+1
+1
+1
+1
+1
+1
+1
+0
+1
+1
+1
+0
+0
+0
+0
+0
+0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+0
+1
+0
+0
+0
+1
+1
+1
+1
+1
+1
+1
+1
+0
+1
+1
+0
+1
+1
+1
+0
+1
+1
+1
+1
+0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+0
+0
+1
+0
+1
+0
+0
+0
+1
+1
+0
+0
+1
+1
+0
+0
+1
+0
+1
+1
+0
+1
+1
+1
+1
+1
+0
+0
+1
+1
+1
+1
+0
+1
+0
+1
+0
+1
+1
+0
+1
+0
+1
+1
+1
+1
+1
+0
+1
+1
+1
+0
+1
+1
+1
+1
+0
+0
+0
+0
+0
+0
+1
+1
+1
+0
+0
+1
+0
+1
+1
+1
+0
+1
+1
+0
+0
+1
+1
+1
+1
+0
+1
+0
+0
+1
+0
+0
+1
+0
+1
+0
+1
+1
+0
+1
+0
+1
+1
+0
+0
+1
+1
+0
+0
+0
+1
+0
+1
+1
+1
+0
+1
+1
+1
+0
+1
+1
+1
+1
+1
+1
+1
+1
+0
+1
+1
+0
+1
+1
+1
+1
+0
+0
+1
+1
+0
+1
+0
+1
+1
+0
+1
+0
+0
+1
+1
+0
+0
+1
+1
+1
+0
+1
+0
+1
+1
+0
+1
+1
+0
+1
+1
+1
+0
+0
+1
+1
+1
+1
+0
+1
+0
+1
+1
+1
+0
+1
+1
+1
+1
+0
+1
+1
+1
+1
+0
+1
+1
+1
+1
+1
+0
+1
+1
+0
+0
+0
+0
+0
+1
+Boolean
+0
+0
+1
+1
+1
+1
+0
+1
+1
+1
+0
+1
+0
+1
+1
+1
+1
+1
+0
+1
+1
+1
+1
+0
+1
+0
+0
+1
+1
+0
+1
+0
+1
+0
+1
+0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+0
+1
+0
+1
+1
+1
+1
+1
+1
+0
+1
+1
+1
+0
+1
+1
+1
+1
+1
+1
+1
+0
+1
+0
+1
+1
+1
+0
+0
+0
+1
+1
+1
+0
+1
+0
+1
+1
+1
+0
+0
+1
+1
+1
+1
+0
+0
+1
+0
+1
+1
+0
+0
+1
+1
+1
+0
+0
+1
+1
+1
+1
+0
+1
+0
+0
+1
+1
+0
+0
+1
+1
+1
+1
+0
+1
+1
+1
+1
+0
+1
+1
+0
+1
+0
+0
+1
+0
+0
+0
+1
+1
+0
+0
+0
+0
+1
+1
+1
+1
+1
+0
+0
+1
+1
+1
+1
+1
+0
+1
+0
+1
+0
+1
+0
+1
+0
+0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+0
+1
+0
+0
+0
+1
+1
+0
+1
+0
+1
+0
+0
+0
+1
+1
+0
+1
+1
+1
+0
+1
+1
+0
+1
+1
+0
+1
+1
+1
+1
+1
+0
+1
+1
+1
+1
+1
+1
+0
+1
+1
+0
+1
+0
+1
+1
+0
+0
+1
+1
+1
+0
+1
+1
+1
+1
+0
+1
+1
+0
+1
+0
+0
+1
+1
+1
+0
+1
+0
+0
+1
+1
+0
+1
+1
+1
+0
+1
+1
+0
+1
+1
+1
+1
+1
+1
+1
+1
+0
+0
+0
+1
+1
+1
+1
+0
+0
+1
+0
+1
+1
+0
+1
+1
+0
+1
+1
+1
+1
+1
+1
+0
+1
+0
+1
+1
+1
+1
+0
+1
+1
+Boolean
+0
+0
+0
+1
+1
+1
+0
+0
+0
+1
+0
+0
+1
+0
+0
+1
+1
+1
+1
+0
+1
+1
+1
+0
+1
+1
+1
+0
+1
+0
+0
+1
+1
+1
+1
+0
+1
+1
+0
+0
+0
+0
+0
+0
+0
+1
+0
+0
+1
+0
+1
+0
+1
+1
+1
+1
+0
+0
+1
+0
+0
+0
+1
+0
+1
+0
+1
+1
+1
+1
+0
+0
+1
+0
+1
+1
+1
+0
+1
+1
+1
+1
+0
+0
+1
+1
+0
+1
+1
+1
+0
+0
+1
+1
+1
+0
+1
+0
+0
+1
+1
+1
+0
+1
+0
+0
+0
+1
+0
+1
+0
+1
+1
+0
+1
+0
+1
+1
+1
+1
+0
+1
+1
+1
+1
+1
+1
+1
+0
+1
+0
+0
+0
+1
+1
+1
+0
+0
+1
+0
+1
+0
+0
+0
+1
+0
+0
+1
+1
+0
+0
+0
+0
+0
+1
+1
+0
+1
+1
+1
+1
+0
+0
+0
+0
+0
+1
+0
+1
+1
+0
+0
+1
+0
+1
+0
+1
+1
+1
+0
+1
+0
+0
+1
+0
+1
+0
+1
+1
+0
+0
+1
+1
+0
+0
+0
+1
+0
+0
+0
+0
+1
+1
+1
+1
+1
+0
+0
+1
+1
+1
+0
+1
+1
+0
+0
+1
+1
+1
+0
+0
+0
+1
+0
+1
+1
+0
+0
+0
+1
+1
+1
+1
+0
+0
+0
+1
+1
+0
+1
+1
+1
+1
+0
+1
+0
+0
+0
+1
+1
+1
+0
+1
+1
+1
+0
+0
+0
+0
+0
+0
+1
+1
+1
+1
+1
+1
+0
+0
+0
+1
+1
+0
+0
+1
+1
+0
+1
+1
+0
+1
+0
+1
+1
+0
+1
+1
+1
+1
+0
+0
+1
+0
+0
+1
+0
+Boolean
+0
+0
+1
+1
+1
+1
+0
+1
+1
+1
+0
+0
+1
+1
+1
+0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+0
+1
+1
+1
+1
+1
+1
+0
+1
+0
+1
+1
+1
+0
+0
+0
+0
+0
+0
+0
+1
+1
+0
+1
+1
+1
+1
+1
+0
+1
+1
+0
+0
+0
+1
+1
+1
+1
+1
+1
+1
+1
+0
+1
+1
+0
+1
+0
+1
+1
+1
+1
+0
+1
+1
+1
+1
+0
+0
+0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+0
+0
+0
+1
+0
+1
+0
+1
+1
+0
+1
+0
+1
+0
+0
+1
+1
+1
+1
+0
+1
+1
+0
+1
+1
+1
+0
+0
+1
+1
+1
+0
+1
+0
+1
+1
+1
+1
+0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+0
+1
+0
+1
+1
+1
+0
+0
+1
+0
+0
+0
+1
+1
+1
+0
+1
+1
+0
+1
+1
+1
+1
+0
+1
+0
+0
+1
+1
+1
+1
+0
+0
+1
+1
+1
+1
+0
+1
+0
+1
+1
+1
+1
+1
+1
+0
+1
+0
+0
+0
+1
+1
+0
+1
+0
+0
+1
+1
+1
+1
+1
+1
+0
+1
+0
+1
+0
+1
+1
+1
+1
+1
+1
+1
+0
+1
+0
+0
+1
+1
+1
+0
+0
+1
+1
+0
+0
+0
+1
+0
+0
+1
+1
+0
+0
+1
+0
+0
+0
+1
+1
+0
+0
+0
+1
+1
+0
+1
+1
+1
+0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+0
+0
+1
+1
+1
+1
+1
+0
+1
+0
+1
+1
+1
+1
+0
+1
+0
+1
+1
+1
+1
+1
+1
+1
+1
+0
+1
+0
+1
+Boolean
+0
+0
+0
+0
+1
+0
+0
+1
+1
+1
+0
+0
+1
+0
+0
+1
+1
+0
+0
+0
+0
+1
+1
+0
+0
+0
+0
+1
+1
+1
+1
+0
+1
+1
+1
+0
+1
+1
+1
+1
+0
+1
+0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+0
+0
+1
+1
+1
+1
+0
+1
+1
+1
+1
+1
+1
+1
+0
+0
+1
+1
+1
+0
+0
+1
+1
+0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+0
+1
+0
+0
+0
+1
+1
+0
+1
+0
+1
+1
+1
+1
+1
+1
+1
+1
+0
+0
+1
+0
+1
+0
+1
+1
+1
+1
+1
+0
+1
+1
+0
+1
+1
+0
+1
+0
+1
+1
+1
+1
+0
+1
+1
+1
+0
+0
+1
+1
+1
+1
+1
+1
+0
+1
+0
+1
+1
+1
+1
+0
+0
+0
+1
+1
+1
+0
+1
+1
+1
+0
+0
+0
+0
+0
+1
+1
+1
+1
+1
+1
+1
+1
+0
+1
+0
+1
+1
+0
+1
+0
+1
+1
+0
+0
+1
+1
+1
+0
+1
+1
+1
+1
+1
+1
+0
+1
+0
+1
+1
+0
+1
+1
+1
+1
+0
+1
+0
+1
+1
+1
+1
+1
+0
+1
+1
+0
+1
+0
+1
+1
+1
+1
+1
+1
+1
+0
+1
+1
+0
+0
+1
+0
+1
+1
+0
+0
+1
+1
+1
+1
+1
+0
+1
+0
+1
+1
+1
+0
+0
+0
+0
+1
+1
+1
+1
+0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+0
+1
+1
+1
+1
+0
+1
+0
+1
+1
+1
+1
+1
+1
+1
+1
+0
+0
+1
+1
+0
+1
+0
+0
+1
+

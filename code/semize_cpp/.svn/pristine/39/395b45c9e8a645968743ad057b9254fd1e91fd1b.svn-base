@@ -1,0 +1,28 @@
+/* 
+ * File:   RandomizationRoundRunner.h
+ * Author: sam
+ *
+ * Created on April 30, 2015, 9:06 AM
+ */
+
+#ifndef RANDOMIZATIONROUNDRUNNER_H
+#define	RANDOMIZATIONROUNDRUNNER_H
+
+#include "Semize.h"
+
+
+class RandomizationRoundRunner {
+public:
+    RandomizationRoundRunner(Semize* semize, int n, int m, int k);
+    RandomizationRoundRunner(const RandomizationRoundRunner& orig);
+    virtual ~RandomizationRoundRunner();
+    void Run(int* usageMatrix, int* basisMatrixTransposed, double* objectiveMeasure, int numRandomizationRounds);
+private:
+    Semize* semize;    
+    int n;
+    int m;
+    int k;
+};
+
+#endif	/* RANDOMIZATIONROUNDRUNNER_H */
+

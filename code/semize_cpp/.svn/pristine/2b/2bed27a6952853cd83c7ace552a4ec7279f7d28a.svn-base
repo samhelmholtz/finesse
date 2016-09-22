@@ -1,0 +1,48 @@
+/* 
+ * File:   DiscreteVectorValueGetter.cpp
+ * Author: sam
+ * 
+ * Created on April 28, 2015, 3:42 PM
+ */
+
+#include "DiscreteVectorValueGetter.h"
+#include "IDiscreteVectorBitwiseAndExecutor.h"
+
+DiscreteVectorValueGetter::DiscreteVectorValueGetter(int k, int s) {
+
+    this->getterInfos = new DiscreteVectorValueGetterInfo*[k];
+    for (int i = 0; i < k; i++) {
+        this->getterInfos[i] = new DiscreteVectorValueGetterInfo(i, k, s);
+    }
+    this->k = k;    
+}
+
+DiscreteVectorValueGetter::DiscreteVectorValueGetter(const DiscreteVectorValueGetter& orig) {
+}
+
+DiscreteVectorValueGetter::~DiscreteVectorValueGetter() {
+    for (int i = 0; i < k; i++) {
+        delete this->getterInfos[i];
+    }
+    delete[] this->getterInfos;
+}
+
+int DiscreteVectorValueGetter::GetValue(DiscreteVector* vector, int index) {
+
+    // For getting the value, we can use a combination of masks and the popcnt intrinsic
+    // E.g. If our DiscreteVector is represented by two vector elements:                    00..011, 110...0
+    // and the mask that indicates which bits are used to store the value in question is:   00..001, 100...0
+    // then we can first AND our mask with the vector to give:                              00..001, 100...0
+    // and then do a popcount across the entire discrete vector, which will give 2 (two bits set)
+    // and then we know that represents three on the ordinal scale, so we return that
+
+    DiscreteVectorValueGetterInfo* getterInfo = this->getterInfos[index];
+    int popCnt = 0;
+    for (int i = 0; i < getterInfo->numDiscreteVectorElementIndicesToConsider; i++) {       
+        int indexOfUlongToModify = getterInfo->discreteVectorElementIndicesToConsider[i];
+        unsigned long long andResult = vector->entries[indexOfUlongToModify] & getterInfo->correspondingBitwiseAndMasksToUseForClearing[indexOfUlongToModify];
+        popCnt += __builtin_popcountll(andResult);
+    }
+    return popCnt;
+}
+

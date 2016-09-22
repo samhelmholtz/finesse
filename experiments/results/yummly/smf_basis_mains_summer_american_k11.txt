@@ -1,0 +1,111 @@
+11
+9
+Tree,/home/asc/samuel.maurus/scratch/smf/smf/java/SmfExperimentRunner/data/yummly/master_ingredients_ontology_mains_summer_american.json
+["liquid products","garlic","garlic cloves","herbs","fish","vegetables","fruity vegetables","bulbs","pepper","animal products","spices","oil","fresh lemon juice","ingredients","seasoning","seafood","meat","juice","plant products","black pepper","salt"]
+["onions","liquid products","herbs","vegetables","fruity vegetables","bulbs","pepper","animal products","spices","sauce","oil","olive oil","ingredients","seasoning","vinegar","meat","plant products","salt","sugar"]
+["peppers","onions","liquid products","garlic","herbs","vegetables","pepper","bulbs","fruity vegetables","animal products","spices","sauce","oil","ingredients","olive oil","seasoning","meat","plant products","salt"]
+["peppers","onions","garlic","liquid products","herbs","vegetables","bulbs","fruity vegetables","pepper","animal products","tomatoes","spices","sauce","oil","ingredients","olive oil","seasoning","meat","juice","plant products","salt"]
+["onions","liquid products","garlic","herbs","vegetables","cheese","fruity vegetables","bulbs","dairy","pepper","animal products","spices","sauce","oil","ingredients","seasoning","eggs","bread","meat","dough products","plant products","salt"]
+["garlic cloves","liquid products","garlic","herbs","vegetables","bulbs","pepper","fruity vegetables","animal products","spices","oil","olive oil","ingredients","seasoning","juice","meat","plant products","salt"]
+[]
+["onions","liquid products","herbs","fish","vegetables","fruity vegetables","pepper","bulbs","animal products","spices","tomatoes","oil","ingredients","seasoning","seafood","meat","plant products","salt"]
+["fruit","liquid products","herbs","fish","vegetables","ground black pepper","fruity vegetables","pepper","bulbs","animal products","spices","oil","ingredients","olive oil","seasoning","seafood","meat","cooking spray","plant products","salt"]
+["fruit","garlic","liquid products","vegetables","pepper","bulbs","animal products","spices","sauce","chili","oil","ingredients","seasoning","citrus","vinegar","meat","pork","plant products","salt","sugar"]
+["onions","fruit","peppers","liquid products","garlic","herbs","vegetables","bulbs","fruity vegetables","pepper","animal products","spices","tomatoes","oil","ingredients","olive oil","seasoning","meat","plant products","salt"]
+Ordinal,6
+4
+4
+0
+4
+4
+0
+5
+3
+4
+4
+0
+Ternary
+0
+2
+2
+0
+0
+2
+2
+0
+2
+0
+0
+Boolean
+0
+0
+0
+0
+0
+0
+1
+0
+0
+1
+0
+Boolean
+1
+0
+1
+0
+0
+1
+1
+1
+0
+0
+1
+Boolean
+0
+1
+1
+0
+0
+0
+0
+1
+0
+1
+1
+Boolean
+0
+0
+1
+0
+0
+1
+0
+1
+1
+0
+0
+Boolean
+1
+0
+1
+0
+1
+0
+1
+0
+0
+0
+1
+Boolean
+1
+0
+0
+1
+0
+1
+0
+1
+0
+1
+1
+

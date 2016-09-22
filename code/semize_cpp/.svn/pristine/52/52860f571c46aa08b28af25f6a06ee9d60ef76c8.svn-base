@@ -1,0 +1,113 @@
+/* 
+ * File:   Semize.cpp
+ * Author: sam
+ * 
+ * Created on April 24, 2015, 1:49 PM
+ */
+
+#include "Semize.h"
+#include "DiscreteVectorBitwiseAndExecutorChunked.h"
+#include "DiscreteVectorScalarProductCalculator.h"
+#include <limits>
+
+Semize::Semize(int** dataMatrix, int** dataMatrixTransposed, int numDataMatrixRows, int numDataMatrixCols, int k, int numScaleElements) {
+    this->dataMatrix = dataMatrix;
+    this->dataMatrixTransposed = dataMatrixTransposed;
+    this->n = numDataMatrixRows;
+    this->m = numDataMatrixCols;
+    this->k = k;
+    this->numScaleElements = numScaleElements;
+    int numBitsRequiredForVector = k * (numScaleElements - 1);
+    int bitWidth = sizeof (unsigned long long)*8; // typically gives 64
+    int numElementsRequiredToRepresentVectorInTotal = (numBitsRequiredForVector + bitWidth - 1) / bitWidth;
+    int numNormalChunksIn128Bits = 128 / bitWidth; // usually gives 2
+    int num128BitChunksRequiredForVector = numElementsRequiredToRepresentVectorInTotal / numNormalChunksIn128Bits;
+    int numExtraChunksRequiredForVector = numElementsRequiredToRepresentVectorInTotal % numNormalChunksIn128Bits;
+    this->discreteVectorBitwiseAndExecutor = new DiscreteVectorBitwiseAndExecutorChunked(num128BitChunksRequiredForVector, numExtraChunksRequiredForVector);
+    this->discreteVectorValueSetter = new DiscreteVectorValueSetter(k, numScaleElements);
+    this->discreteVectorSupremumCalculator = new DiscreteVectorSupremumCalculator(k, numScaleElements);
+    this->discreteVectorScalarProductCalculator = new DiscreteVectorScalarProductCalculator(discreteVectorBitwiseAndExecutor, discreteVectorSupremumCalculator, k, numScaleElements);
+    this->greedyCoverCalculator = new GreedyCoverCalculator(discreteVectorScalarProductCalculator, discreteVectorValueSetter, k, numScaleElements);
+    this->discreteVectorValueGetter = new DiscreteVectorValueGetter(k, numScaleElements);
+
+    this->basisMatrixTransposed = new DiscreteFactorMatrix(k, m, numScaleElements);
+    this->usageMatrix = new DiscreteFactorMatrix(k, n, numScaleElements);
+    this->semizeInitializer = new SemizeInitializer(dataMatrix, n, m, k, this->discreteVectorValueSetter);
+}
+
+Semize::Semize(const Semize& orig) {
+}
+
+Semize::~Semize() {
+    delete this->discreteVectorBitwiseAndExecutor;
+    delete this->discreteVectorValueSetter;
+    delete this->discreteVectorSupremumCalculator;
+    delete this->discreteVectorScalarProductCalculator;
+    delete this->greedyCoverCalculator;
+    delete this->basisMatrixTransposed;
+    delete this->usageMatrix;
+    delete this->semizeInitializer;
+    delete this->discreteVectorValueGetter;
+}
+
+void Semize::Run(int** usageMatrix, int** basisMatrixTransposed, double* objectiveMeasure) {
+
+    // Initialize
+    this->semizeInitializer->Initialize(this->basisMatrixTransposed);
+
+    int delta;
+    int e_b = std::numeric_limits<int>::max();
+    do {
+        // Make a copy of our factors (we'll persist them once we know they're better than the old ones)
+        DiscreteFactorMatrix* usageMatrixTemp = new DiscreteFactorMatrix(*this->usageMatrix);
+        DiscreteFactorMatrix* basisMatrixTransposedTemp = new DiscreteFactorMatrix(*this->basisMatrixTransposed);
+
+        for (int i = 0; i < this->n; i++) {
+            this->greedyCoverCalculator->CalculateGreedyCover(this->dataMatrix[i], this->m, this->numScaleElements, basisMatrixTransposedTemp, usageMatrixTemp->vectors[i]);            
+        }
+        for (int i = 0; i < this->m; i++) {
+            this->greedyCoverCalculator->CalculateGreedyCover(this->dataMatrixTransposed[i], this->n, this->numScaleElements, usageMatrixTemp, basisMatrixTransposedTemp->vectors[i]);
+            int breakHere = 1;
+        }
+
+        // Calculate the global error
+        int e = 0;
+        for (int i = 0; i < this->n; i++) {
+            for (int j = 0; j < this->m; j++) {
+                DiscreteVector* usageRow = usageMatrixTemp->vectors[i];
+                DiscreteVector* basisColumn = basisMatrixTransposedTemp->vectors[j];
+                int scalarProductResult = this->discreteVectorScalarProductCalculator->CalculateScalarProduct(usageRow, basisColumn);
+                e += std::abs(scalarProductResult - this->dataMatrix[i][j]);                
+            }            
+        }
+
+        delta = e - e_b;
+        if (delta < 0) {
+            // Here we know this iteration was profitable. Persist the better factors
+            e_b = e;
+            delete this->basisMatrixTransposed;
+            delete this->usageMatrix;
+            this->basisMatrixTransposed = basisMatrixTransposedTemp;
+            this->usageMatrix = usageMatrixTemp;
+        } else {
+            // Here we know this iteration wasn't profitable. Delete the temp factors...we're finished.
+            delete basisMatrixTransposedTemp;
+            delete usageMatrixTemp;
+        }
+    } while (delta < 0);
+
+    // Finally, we need to convert the factors back to normal integers, storing them in the result
+    for (int i = 0; i < this->n; i++) {
+        for (int j = 0; j < this->k; j++) {
+            usageMatrix[i][j] = this->discreteVectorValueGetter->GetValue(this->usageMatrix->vectors[i], j);
+        }
+    }
+
+    for (int i = 0; i < this->m; i++) {
+        for (int j = 0; j < this->k; j++) {
+            basisMatrixTransposed[i][j] = this->discreteVectorValueGetter->GetValue(this->basisMatrixTransposed->vectors[i], j);
+        }
+    }
+    
+    *objectiveMeasure = (double) (e_b) / (this->numScaleElements - 1);
+}

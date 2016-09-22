@@ -1,0 +1,119 @@
+#
+# Generated Makefile - do not edit!
+#
+# Edit the Makefile in the project folder instead (../Makefile). Each target
+# has a -pre and a -post target defined where you can add customized code.
+#
+# This makefile implements configuration specific macros and targets.
+
+
+# Environment
+MKDIR=mkdir
+CP=cp
+GREP=grep
+NM=nm
+CCADMIN=CCadmin
+RANLIB=ranlib
+CC=gcc
+CCC=g++
+CXX=g++
+FC=gfortran
+AS=as
+
+# Macros
+CND_PLATFORM=GNU-Linux-x86
+CND_CONF=Release
+CND_DISTDIR=dist
+CND_BUILDDIR=build
+
+# Include project Makefile
+include Makefile
+
+# Object Directory
+OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
+
+# Object Files
+OBJECTFILES= \
+	${OBJECTDIR}/DiscreteVector.o \
+	${OBJECTDIR}/DiscreteVectorBitwiseAndExecutorChunked.o \
+	${OBJECTDIR}/DiscreteVectorValueSetterInfo.o \
+	${OBJECTDIR}/DiscreteVectorBitwiseAndExecutorStandard.o \
+	${OBJECTDIR}/main.o \
+	${OBJECTDIR}/DiscreteVectorValueSetter.o \
+	${OBJECTDIR}/DiscreteVectorSupremumCalculator.o
+
+
+# C Compiler Flags
+CFLAGS=
+
+# CC Compiler Flags
+CCFLAGS=
+CXXFLAGS=
+
+# Fortran Compiler Flags
+FFLAGS=
+
+# Assembler Flags
+ASFLAGS=
+
+# Link Libraries and Options
+LDLIBSOPTIONS=
+
+# Build Targets
+.build-conf: ${BUILD_SUBPROJECTS}
+	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/semize
+
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/semize: ${OBJECTFILES}
+	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
+	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/semize ${OBJECTFILES} ${LDLIBSOPTIONS} 
+
+${OBJECTDIR}/DiscreteVector.o: DiscreteVector.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/DiscreteVector.o DiscreteVector.cpp
+
+${OBJECTDIR}/DiscreteVectorBitwiseAndExecutorChunked.o: DiscreteVectorBitwiseAndExecutorChunked.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/DiscreteVectorBitwiseAndExecutorChunked.o DiscreteVectorBitwiseAndExecutorChunked.cpp
+
+${OBJECTDIR}/DiscreteVectorValueSetterInfo.o: DiscreteVectorValueSetterInfo.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/DiscreteVectorValueSetterInfo.o DiscreteVectorValueSetterInfo.cpp
+
+${OBJECTDIR}/DiscreteVectorBitwiseAndExecutorStandard.o: DiscreteVectorBitwiseAndExecutorStandard.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/DiscreteVectorBitwiseAndExecutorStandard.o DiscreteVectorBitwiseAndExecutorStandard.cpp
+
+${OBJECTDIR}/main.o: main.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/main.o main.cpp
+
+${OBJECTDIR}/DiscreteVectorValueSetter.o: DiscreteVectorValueSetter.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/DiscreteVectorValueSetter.o DiscreteVectorValueSetter.cpp
+
+${OBJECTDIR}/DiscreteVectorSupremumCalculator.o: DiscreteVectorSupremumCalculator.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/DiscreteVectorSupremumCalculator.o DiscreteVectorSupremumCalculator.cpp
+
+# Subprojects
+.build-subprojects:
+
+# Clean Targets
+.clean-conf: ${CLEAN_SUBPROJECTS}
+	${RM} -r ${CND_BUILDDIR}/${CND_CONF}
+	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/semize
+
+# Subprojects
+.clean-subprojects:
+
+# Enable dependency checking
+.dep.inc: .depcheck-impl
+
+include .dep.inc

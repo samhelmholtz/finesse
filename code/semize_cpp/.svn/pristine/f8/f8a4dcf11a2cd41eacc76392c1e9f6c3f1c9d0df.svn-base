@@ -1,0 +1,27 @@
+/* 
+ * File:   DiscreteFactorMatrix.h
+ * Author: sam
+ *
+ * Created on April 24, 2015, 10:53 AM
+ */
+
+#ifndef DISCRETEFACTORMATRIX_H
+#define	DISCRETEFACTORMATRIX_H
+
+#include "DiscreteVector.h"
+
+
+class DiscreteFactorMatrix {
+public:
+    // Constructs the matrix, initializing all elements to zero
+    DiscreteFactorMatrix(int k, int otherDimension, int numScaleValues);
+    DiscreteFactorMatrix(const DiscreteFactorMatrix& orig);
+    virtual ~DiscreteFactorMatrix();
+    // Here our collection of discrete vector pointers (numVectors of them)    
+    DiscreteVector** vectors;
+    int numVectors;
+        
+};
+
+#endif	/* DISCRETEFACTORMATRIX_H */
+

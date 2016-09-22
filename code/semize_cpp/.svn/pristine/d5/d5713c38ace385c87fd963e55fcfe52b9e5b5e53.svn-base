@@ -1,0 +1,30 @@
+/* 
+ * File:   Stochastic.h
+ * Author: sam
+ *
+ * Created on April 28, 2015, 1:12 PM
+ */
+
+#ifndef STOCHASTIC_H
+#define	STOCHASTIC_H
+
+#include <random>
+
+using namespace std;
+
+typedef std::minstd_rand G;
+typedef std::uniform_int_distribution<> D;
+
+class Stochastic {
+public:
+    Stochastic(int upperLimitExclusive);
+    Stochastic(const Stochastic& orig);
+    virtual ~Stochastic();
+    virtual int NextInt();
+private:
+    G generator;
+    D distribution;    
+};
+
+#endif	/* STOCHASTIC_H */
+

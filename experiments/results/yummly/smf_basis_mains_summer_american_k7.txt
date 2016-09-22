@@ -1,0 +1,75 @@
+7
+9
+Tree,/home/asc/samuel.maurus/scratch/smf/smf/java/SmfExperimentRunner/data/yummly/master_ingredients_ontology_mains_summer_american.json
+["fruit","onions","peppers","garlic","liquid products","herbs","vegetables","bulbs","fruity vegetables","pepper","animal products","tomatoes","spices","oil","olive oil","ingredients","seasoning","vinegar","meat","plant products","salt"]
+["fruit","onions","liquid products","herbs","vegetables","pepper","bulbs","fruity vegetables","animal products","spices","sauce","oil","ingredients","olive oil","seasoning","pork","meat","plant products","salt"]
+["onions","liquid products","garlic","vegetables","bulbs","animal products","spices","oil","ingredients","seasoning","vinegar","meat","plant products","salt"]
+["garlic","herbs","fish","fruity vegetables","pepper","animal products","spices","oil","ingredients","fresh lemon juice","seasoning","meat","juice","fruit","garlic cloves","liquid products","vegetables","bulbs","sauce","chili","olive oil","citrus","seafood","dough products","plant products","black pepper"]
+["onions","garlic cloves","liquid products","garlic","herbs","fish","vegetables","bulbs","fruity vegetables","pepper","animal products","spices","tomatoes","sauce","oil","ingredients","seasoning","seafood","meat","plant products","salt"]
+["worcestershire sauce","liquid products","garlic","vegetables","bulbs","animal products","spices","chili","sauce","oil","ingredients","seasoning","meat","pork","ketchup","plant products","sugar","salt"]
+["fruit","onions","garlic","liquid products","herbs","vegetables","pepper","bulbs","fruity vegetables","dairy","animal products","spices","sauce","oil","ingredients","olive oil","seasoning","bread","meat","juice","dough products","plant products","salt"]
+Ordinal,6
+4
+4
+0
+4
+0
+5
+4
+Ternary
+0
+2
+2
+0
+0
+2
+0
+Boolean
+0
+0
+0
+1
+0
+1
+0
+Boolean
+0
+0
+1
+0
+1
+1
+0
+Boolean
+1
+0
+1
+0
+1
+0
+0
+Boolean
+0
+1
+1
+0
+1
+0
+0
+Boolean
+0
+0
+1
+0
+0
+1
+1
+Boolean
+1
+0
+0
+1
+1
+0
+0
+

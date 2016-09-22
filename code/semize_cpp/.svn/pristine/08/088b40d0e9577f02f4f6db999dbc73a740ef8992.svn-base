@@ -1,0 +1,27 @@
+/* 
+ * File:   DiscreteVectorBitwiseAndExecutorChunked.h
+ * Author: sam
+ *
+ * Created on April 23, 2015, 10:02 AM
+ */
+
+#ifndef DISCRETEVECTORBITWISEANDEXECUTORCHUNKED_H
+#define	DISCRETEVECTORBITWISEANDEXECUTORCHUNKED_H
+
+#include "IDiscreteVectorBitwiseAndExecutor.h"
+
+
+class DiscreteVectorBitwiseAndExecutorChunked : public IDiscreteVectorBitwiseAndExecutor {
+public:
+    DiscreteVectorBitwiseAndExecutorChunked(int number128BitChunksInVector, int numberExtraChunks);
+    DiscreteVectorBitwiseAndExecutorChunked(const DiscreteVectorBitwiseAndExecutorChunked& orig);
+    virtual ~DiscreteVectorBitwiseAndExecutorChunked();
+    virtual void BitwiseAnd(DiscreteVector* vector1, DiscreteVector* vector2, DiscreteVector* result);
+private:
+    int num128BitChunksInVector;
+    int startIndexExtraChunksInclusive;
+    int endIndexExtraChunksExclusive;
+};
+
+#endif	/* DISCRETEVECTORBITWISEANDEXECUTORCHUNKED_H */
+

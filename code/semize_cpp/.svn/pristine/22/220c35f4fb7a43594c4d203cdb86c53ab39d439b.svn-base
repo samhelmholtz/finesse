@@ -1,0 +1,46 @@
+/* 
+ * File:   DiscreteVectorValueSetter.cpp
+ * Author: sam
+ * 
+ * Created on April 22, 2015, 10:51 AM
+ */
+
+#include "DiscreteVectorValueSetter.h"
+#include "DiscreteVector.h"
+
+DiscreteVectorValueSetter::DiscreteVectorValueSetter(int k, int s) {
+    this->setterInfos = new DiscreteVectorValueSetterInfo**[k];
+    this->k = k;
+    this->s = s;
+    // Allocate and setup each setter info object
+    for (int i = 0; i < k; i++) {
+        this->setterInfos[i] = new DiscreteVectorValueSetterInfo*[s];
+        for (int j = 0; j < s; j++) {
+            this->setterInfos[i][j] = new DiscreteVectorValueSetterInfo(i, j, k, s);
+        }        
+    }
+}
+
+DiscreteVectorValueSetter::DiscreteVectorValueSetter(const DiscreteVectorValueSetter& orig) {
+}
+
+DiscreteVectorValueSetter::~DiscreteVectorValueSetter() {
+    for (int i = 0; i < k; i++) {
+        for (int j = 0; j < s; j++) {
+            delete this->setterInfos[i][j];
+        }
+        delete[] this->setterInfos[i];
+    }
+    delete[] this->setterInfos;    
+}
+
+void DiscreteVectorValueSetter::SetValue(DiscreteVector* vector1, int index, int value) {
+    DiscreteVectorValueSetterInfo* setterInfo = this->setterInfos[index][value];
+    for (int i = 0; i < setterInfo->numDiscreteVectorElementIndicesToSet; i++) {
+        int indexOfUlongToModify = setterInfo->discreteVectorElementIndicesToSet[i];
+        // To actually set the value, we have to AND the vector ULONG entry with our clearing mask, then
+        // OR it with our setting mask
+        vector1->entries[indexOfUlongToModify] = vector1->entries[indexOfUlongToModify] & setterInfo->correspondingBitwiseAndMasksToUseForSetting[indexOfUlongToModify];
+        vector1->entries[indexOfUlongToModify] = vector1->entries[indexOfUlongToModify] | setterInfo->correspondingBitwiseOrMasksToUseForSetting[indexOfUlongToModify];                
+    }
+}

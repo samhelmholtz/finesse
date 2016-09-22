@@ -1,0 +1,33 @@
+/* 
+ * File:   DiscreteVector.cpp
+ * Author: sam
+ * 
+ * Created on April 21, 2015, 3:44 PM
+ */
+
+#include "DiscreteVector.h"
+#include <string.h>
+
+DiscreteVector::DiscreteVector(int numBits) {
+    // Here we're just setting up the vector metadata. We need to know about the size of an unsigned long long (usually 64 bits),
+    // which is only evaulated at compile time (no performance hit here). Based on that we can find out how many
+    // ulongs are required to store our entire vector in binary format (based on the number of bits).
+    this->numBits = numBits;
+    int sizeOfLongLong = sizeof(unsigned long long)*8;
+    this->numArrayEntries = (numBits + sizeOfLongLong - 1) / sizeOfLongLong;
+    this->entries = new unsigned long long[this->numArrayEntries](); // Note that the entries are initialized to zero here
+}
+
+DiscreteVector::DiscreteVector(const DiscreteVector& orig) {
+    this->numBits = orig.numBits;
+    this->numArrayEntries = orig.numArrayEntries;
+    this->entries = new unsigned long long[this->numArrayEntries]; // No need to initialize to zero here
+    
+    // Copy the array values
+    memcpy(this->entries, orig.entries, this->numArrayEntries*sizeof(unsigned long long));    
+}
+
+DiscreteVector::~DiscreteVector() {
+    delete[] this->entries;
+}
+

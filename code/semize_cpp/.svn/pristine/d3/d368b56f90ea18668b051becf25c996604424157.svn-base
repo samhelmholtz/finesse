@@ -1,0 +1,7 @@
+build/Debug/GNU-Linux-x86/DiscreteVectorSupremumCalculator.o: \
+ DiscreteVectorSupremumCalculator.cpp DiscreteVectorSupremumCalculator.h \
+ DiscreteVector.h
+
+DiscreteVectorSupremumCalculator.h:
+
+DiscreteVector.h:

@@ -1,0 +1,32 @@
+/* 
+ * File:   SemizeInitializer.h
+ * Author: sam
+ *
+ * Created on April 28, 2015, 1:03 PM
+ */
+
+#ifndef SEMIZEINITIALIZER_H
+#define	SEMIZEINITIALIZER_H
+
+#include "Stochastic.h"
+#include "DiscreteFactorMatrix.h"
+#include "DiscreteVectorValueSetter.h"
+
+
+class SemizeInitializer {
+public:
+    SemizeInitializer(int** dataMatrix, int n, int m, int k, DiscreteVectorValueSetter* discreteVectorValueSetter);
+    SemizeInitializer(const SemizeInitializer& orig);
+    virtual ~SemizeInitializer();
+    void Initialize(DiscreteFactorMatrix* basisMatrixTransposed);
+private:
+    Stochastic* stochastic;
+    int n;
+    int m;
+    int k;
+    int** dataMatrix;
+    DiscreteVectorValueSetter* discreteVectorValueSetter;
+};
+
+#endif	/* SEMIZEINITIALIZER_H */
+

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>    
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Ternary Matrix Factorization">
+        <meta name="author" content="Samuel Maurus">
+
+        <title>
+            Semiring Matrix Factorization
+        </title>
+
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    </head>
+    <body class="bs-docs-home">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1>Factorizing Complex Discrete Data "with Finesse"</h1>                    
+                    <h3>Code, data, results and supplementary material</h3>
+                </div>
+            </div>
+            <div class="row alert alert-warning">
+                <h2><span class="glyphicon glyphicon-exclamation-sign"></span>&nbsp;Most importantly: use at your own risk!</h2>                
+                <p>From a software-engineering perspective, the implementations are not optimal. There are no unit tests and error-handling/reporting is weak. <i>Take home message: do NOT use this implementation in any kind of production/live scenario</i>. It should be used for experimental/research purposes only, and we cannot be held liable for any consequences of using this material in any way.</p>
+            </div>          
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading" role="tab" id="headingOne">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseTwo">
+                                        Code: Finesse Compilation and Usage
+                                    </a>                                    
+                                </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                <div class="panel-body">
+                                    <h2>Environment</h2>
+                                    <p>This version of Finesse is written in Java with the Java 1.7 SDK (java version 1.7.0_65). The Java code language level is 7 (it uses diamonds, for example). It was developed with IntelliJ IDEA on 64-bit ubuntu 14.04 LTS. Compilation on other operating systems "should" not cause any problems, but this was not tested.</p>
+                                    
+                                    <h2>Dependencies</h2>
+                                    <p>The source for Finesse is in two directories under 'code' in this package. Most of the core logic is in the directory 'smfcore'. The source for the executable Finesse application is in 'smf'.</p>
+                                    <p><a href='https://code.google.com/p/google-gson/'>GSON</a> is used for serializing/deserializing Java objects to/from JSON. <a href='http://commons.apache.org/proper/commons-cli/'>Apache Commons CLI</a> is used for easier parsing of command-line arguments. These dependencies are included in the 'jars' folder inside each respective code directory.</p>
+
+                                    <h2>Compilation</h2>
+                                    <p>In the following, <code>$basedir</code> refers to the absolute path to the base directory of this package on your system.</p>
+                                    <p>Compile the core library "smfcore" first with:</p>
+                                    <pre>cd $basedir/code/smfcore/src/smfcore</pre>
+                                    <pre>javac -cp "$basedir/code/smfcore/jars/gson-2.3.1.jar" *.java</pre>
+                                    
+                                    <p>Then compile the "smf" (Finesse) application with:</p>
+                                    <pre>cd $basedir/code/smf/src/smf</pre>
+                                    <pre>javac -cp "$basedir/code/smfcore/src/:$basedir/code/smf/jars/commons-cli-1.2.jar:." *.java</pre>
+                                    
+                                    <h2>Usage</h2>
+                                    
+                                    <pre>java -cp "$basedir/code/smfcore/src/:$basedir/code/smf/jars/commons-cli-1.2.jar:$basedir/smfcore/jars/gson-2.3.1.jar:$basedir/code/smf/src/" smf/Smf -k2 -s "$basedir/code/smfTestData/data.txt" -b "$basedir/code/smfTestData/basis.txt" -D "$basedir/code/smfTestData/usage.txt"</pre>
+                                    
+                                    <p>The parameters are:</p>
+                                    <ul>
+                                        <li>k: The decomposition rank (positive integer)</li>
+                                        <li>s: The path to the input data file</li>
+                                        <li>b: The path to the output basis file</li>
+                                        <li>D: The path to the output usage file</li>
+                                    </ul>
+                                    
+                                    <h2>File format</h2>
+                                    <p>Below is the format of <code>$basedir/code/smfTestData/data.txt</code>, which corresponds to the example Boolean data set on the first page of the SMF paper. The first two rows are the dimensions <em>n</em> and <em>m</em> respectively. Then, the <em>columns</em> are listed sequentially. Each column begins with its type (Boolean in this case) followed by the <em>n</em> values for that column. There are <em>m</em> columns.</p>
+                                    <pre>
+3
+3
+Boolean
+1
+0
+1
+Boolean
+1
+1
+1
+Boolean
+0
+1
+1
+                                    </pre>
+                                    
+                                    <p>With this input file, the <em>basis</em> file that Finesse generates (<code>$basedir/code/smfTestData/basis.txt</code>), which in turn corresponds to the basis matrix in the first Boolean example in the paper, is:</p>
+                                    <pre>
+2
+3
+Boolean
+1
+0
+Boolean
+1
+1
+Boolean
+0
+1
+                                    </pre>                                    
+                                    
+                                    <p>The <em>usage</em> file that Finesse generates (<code>$basedir/code/smfTestData/usage.txt</code>), which in turn corresponds to the usage matrix in the first Boolean example in the paper, is:</p>
+                                    <pre>
+3
+2
+Boolean
+1
+0
+1
+Boolean
+0
+1
+1
+                                    </pre>       
+                                    
+                                    <p>(Note: Finesse is of course non-deterministic&hellip;the factors may be listed in a different order)</p>                                    
+                                                                        
+                                    <p>Other feature types are of course supported:</p>
+                                    <ul>
+                                        <li>The <em>ternary</em> feature has values 0 (false), 1 (unknown) and 2 (true). In the data matrix, use the string "Ternary" to specify that a column is ternary. Modify the dissimilarity measure in TernarySemiringFeature.java in the smfcore directory if need be (e.g. if you want missing-value dissimilarity). See also the TMF paper (Maurus, Plant, Ternary Matrix Factorization, ICDM '14).</li>
+                                        <li>The <em>ordinal</em> feature has values 0 through (L-1), where L is the number of elements in the scale. In the data matrix, use the string "OrdinalBinU L" (where L is the integer number of elements in the scale) to specify that a column is ordinal and that the usage matrix should be binary (use "Ordinal L" if you want entries from the full scale in the usage matrix).</li>
+                                        <li>The <em>tree</em> feature has set values. In the data matrix, use the JSON array syntax ["a","b","c"] for each value, where "a", "b" and "c" together represent the FULL collection of subtree nodes corresponding to that matrix entry. Use the string "Tree path" in the column header of the data matrix, where path is the absolute path to the master ontology (see below for more details).</li>
+                                    </ul>
+                                    <p>For an example of a data file that uses all these features, check out e.g. the Yummly data in <code>$basedir/experiments/data/yummly/smf_data_mains_summer_american.txt</code>. That file shows how a tree feature needs the path to the corresponding master ontology.</p>
+                                    
+                                    <p>Ontology files are in JSON format. The contents are a JSON serialization of an instance of the <code>Tree</code> class in the 'smfcore' code. That class has static methods <code>ToJson</code> and <code>FromJson</code> for serializing and deserializing. If you need to create your own master ontology, use the following approach in your own Java code that includes the 'smfcore' dependencies:</p>
+                                    <pre>
+Tree myTree = new Tree("rootId");
+// Code for adding (recursively perhaps) the required children to the tree.
+String serializedTree = Tree.ToJson(myTree);
+// Code for writing the serialized tree to a file.
+                                    </pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-success">
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Code: Synthetic Data-Set Generator Compilation and Usage
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="panel-body">
+                                                                        
+                                    <h2>Compilation</h2>
+                                    <p>First, compile the 'smfcore' code (it's a dependency) as explained above. Then you can compile the 'ordinalsynthgen' code with:</p>
+                                    <pre>
+cd $basedir/code/ordinalsynthgen/src/ordinalsynthgen
+javac -cp "$basedir/code/smfcore/src/:$basedir/code/ordinalsynthgen/jars/commons-cli-1.2.jar" *.java                                   
+                                    </pre>
+                                    
+                                    <h2>Usage</h2>
+                                    <pre>
+java -cp "$basedir/code/smfcore/src/:$basedir/code/ordinalsynthgen/src/:$basedir/code/ordinalsynthgen/jars/commons-cli-1.2.jar" ordinalsynthgen/Ordinalsynthgen -n8000 -m100 -k16 -o10 -u0 -b -1.1 -s7 -a1 -l3 -f "$basedir/code/smfTestData/synthData.txt" -r1
+                                    </pre>
+                                    <p>See the source code in <code>$basedir/code/ordinalsynthgen/src/ordinalsynthgen/Ordinalsynthgen.java</code> for an explanation of these parameters. The example above uses the default parameters from the paper (i.e. approximately uniform distribution of entries in the resulting matrix). Executing the above will overwrite the file <code>$basedir/code/smfTestData/synthData.txt</code> with a new synthetically-generated ordinal matrix based on these parameters. This data file can then be used as an input to Finesse.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-primary">
+                            <div class="panel-heading" role="tab" id="headingThree">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Experiments: Data Sets
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                              <div class="panel-body">
+
+				<p>The "personality testing" data sets all came from <a href="http://personality-testing.info/_rawdata/">personality-testing.info</a>. We reported the results for the following ten data sets (here presented in the order as shown in the paper):</p>
+				<ul>
+				  <!-- experiencecloserelationships -->
+				  <li><a href="http://personality-testing.info/_rawdata/ECR.zip">Experinces in Close Relationships Scale ("Relationships")</a></li>
+				  <!-- feminism -->
+				  <li><a href="http://personality-testing.info/_rawdata/FPS.zip">Feminist Perspectives Scale ("Feminism")</a></li>
+				  <!-- assertiveness -->
+				  <li><a href="http://personality-testing.info/_rawdata/AS+SC+AD+DO.zip">IPIP Assertiveness, Social confidence, Adventurousness, and Dominance scales ("Assertiveness")</a></li>
+				  <!-- cattell -->
+				  <li><a href="http://personality-testing.info/_rawdata/16PF.zip">Cattell's 16 Personality Factors Test ("Personality 1")</a></li>
+				  <!-- holland -->
+				  <li><a href="http://personality-testing.info/_rawdata/RIASEC.zip">Holland Code (RIASEC) Test ("Occupation")</a></li>
+				  <!-- humorstyles -->
+				  <li><a href="http://personality-testing.info/_rawdata/HSQ.zip">Humor Styles Questionnaire ("Humor styles")</a></li>
+				  <!-- mindfulness -->
+				  <li><a href="http://personality-testing.info/_rawdata/KIMS.zip">Kentucky Inventory of Mindfulness Skills ("Mindfulness")</a></li>
+				  <!-- opensexrole -->
+				  <li><a href="http://personality-testing.info/_rawdata/OSRI.zip">Open Sex Role Inventory ("Masc./Fem.")</a></li>
+				  <!-- personality -->
+				  <li><a href="http://personality-testing.info/_rawdata/HEXACO.zip">IPIP HEXACO equivalent scales ("Personality 2")</a></li>
+				  <!-- sexualselfconcept -->
+				  <li><a href="http://personality-testing.info/_rawdata/MSSCQ.zip">Multidimensional Sexual Self-Concept Questionnaire ("Sexual self")</a></li>
+				</ul>
+
+				<p>Some of the original data sets included additional features (e.g. participant ID) which were not relevant. During preprocessing, we hence ensured that only ordinal features were included. Any observations with missing values were removed. The original and preprocessed versions of the data (as presented to each algorithm), as well as the codebooks, are included in the directory <code>$basedir/experiments/data/psych</code>.</p>
+				
+                                    <p>The Yummly and IMDB data used for the experiments in the paper are in <code>$basedir/experiments/data</code>. Each directory there has the SMF data file, the corresponding master ontology file (JSON) and a file with the list of the recipe/film names. Note that if you wish to reproduce the examples in the paper, you'll need to update the path to the master ontology in the data file in each case.</p>                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-success">
+                            <div class="panel-heading" role="tab" id="headingFour">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        Experiments: Additional Plots
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                <div class="panel-body">
+                                    <p>The file <code>$basedir/experiments/plots/supplement.pdf</code> includes the following plots (as discussed in the paper):</p>
+                                    <ul>
+                                        <li>Ordinal Matrix Factorization experiments that include the results from GreEss on smaller data sets, 50x50.</li>
+                                        <li>Boolean Matrix Factorization experiments on large data sets (comparison with Asso and PaNDa).</li>
+                                        <li>Justification of the model-order selection (<em>k=6</em>) for the Yummly data.</li>
+                                        <li>Justification of the model-order selection (<em>k=9</em>) for the IMDB data.</li>
+                                    </ul>                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-primary">
+                            <div class="panel-heading" role="tab" id="headingFive">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        Experiments: Detailed Results
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                                <div class="panel-body">
+                                    <p>The directory <code>$basedir/experiments/results</code> includes detailed results from experiments on the Yummly and IMDB data. Finesse's output basis and usage matrices are given for <em>k=3</em> to <em>k=16</em> in both cases.</p>                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-success">
+                            <div class="panel-heading" role="tab" id="headingSix">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseFive">
+                                        Code: C++ Version
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                                <div class="panel-body">
+
+                                    <h2>Environment</h2>
+                                    <p>The C++ of Finesse is written in C++ against the C++11 standard. The g++ (SUSE Linux) 4.3.4 compiler version was used. For bitwise operations it uses Streaming SIMD Extensions 2 (SSE2) instructions intrinsics (emmintrin.h, smmintrin.h). It was developed with Netbeans 8 on 64-bit ubuntu 14.04 LTS. Compilation on other operating systems "should" not cause any problems as long as the same intrinsics are available, but this was not tested.</p>
+
+                                    <h2>Dependencies</h2>
+                                    <p>There are no dependencies for the C++ version.</p>
+
+                                    <h2>Compilation</h2>
+                                    <p>In the following, <code>$basedir</code> refers to the absolute path to the base directory of this package on your system.</p>
+                                    <p>Compile the program with:</p>
+                                    <pre>cd $basedir/code/semize_cpp</pre>
+                                    <pre>make all</pre>
+
+                                    <p>Note the various flags that are passed to the C++ compiler during make. Specifically, <code>-msse4.1</code> is used for SSE and <code>-std=gnu++0x</code> for the C++ standard we want. The flag <code>-fopenmp</code> is included by default to exploit concurrency as described in the paper (simply remove this flag in the makefile to disable this feature).</p>
+
+                                    <p>When 'make all' is complete, the executable, called <code>semize</code>, is available in <code>dist/Release/GNU-Linux-x86/</code>.</p>
+
+                                    <h2>Usage (from within <code>$basedir/code/semize_cpp</code>)</h2>
+
+                                    <pre>./dist/Release/GNU-Linux-x86/semize -k2 -s "$basedir/code/smfTestData_cpp/data.txt" -b "$basedir/code/smfTestData_cpp/basis.txt" -D "$basedir/code/smfTestData_cpp/usage.txt"</pre>
+
+                                    <p>The parameters are:</p>
+                                    <ul>
+                                        <li>k: The decomposition rank (positive integer)</li>
+                                        <li>s: The path to the input data file</li>
+                                        <li>b: The path to the output basis file</li>
+                                        <li>D: The path to the output usage file</li>
+                                    </ul>
+
+                                    <h2>File format</h2>
+                                    <p>Below is the format of <code>$basedir/code/smfTestData_cpp/data.txt</code>. The first two rows are the dimensions <em>n</em> and <em>m</em> respectively. Then, the number of values in the ordinal scale is listed (2 in this case...Boolean). Then the matrix is written row-wise (dense format, not sparse).</p>
+                                    <pre>
+3
+3
+2
+1 1 0
+0 1 1
+1 1 1
+                                    </pre>
+
+                                    <p>With this input file, the <em>transposed basis</em> file that Finesse generates (<code>$basedir/code/smfTestData_cpp/basis.txt</code>) is:</p>
+                                    <pre>
+3
+2
+2
+0 1
+1 1
+1 0
+                                    </pre>
+
+                                    <p>The <em>usage</em> file that Finesse generates (<code>$basedir/code/smfTestData_cpp/usage.txt</code>) is:</p>
+                                    <pre>
+3
+2
+2
+0 1
+1 0
+1 1
+                                    </pre>
+
+                                    <p>(Note: Finesse is of course non-deterministic&hellip;the factors may be listed in a different order)</p>
+
+                                    <p>Note that the C++ version is only for ordinal problems (simply a prototype to demonstrate the high-performance options)...it does not yet support arbitrary feature types (use the Java version for this). Note also that when using the synthetic data generation tool above to generate data matrices for use with the C++ version, use the <code>-r0</code> option to specify the "normal" format, which is what the C++ version expects.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+        <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    </body>
+</html>

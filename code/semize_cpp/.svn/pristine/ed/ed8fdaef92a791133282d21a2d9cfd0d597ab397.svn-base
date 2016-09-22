@@ -1,0 +1,28 @@
+/* 
+ * File:   DiscreteVectorScalarProductCalculator.cpp
+ * Author: sam
+ * 
+ * Created on April 23, 2015, 4:44 PM
+ */
+
+#include "DiscreteVectorScalarProductCalculator.h"
+
+DiscreteVectorScalarProductCalculator::DiscreteVectorScalarProductCalculator(IDiscreteVectorBitwiseAndExecutor* discreteVectorBitwiseAndExecutor, DiscreteVectorSupremumCalculator* discreteVectorSupremumCalculator, int k, int s){
+    this->discreteVectorBitwiseAndExecutor = discreteVectorBitwiseAndExecutor;
+    this->discreteVectorSupremumCalculator = discreteVectorSupremumCalculator;
+    int numBitsRequiredForVectors = k*(s-1);
+    this->temporaryVector = new DiscreteVector(numBitsRequiredForVectors);    
+}
+
+DiscreteVectorScalarProductCalculator::DiscreteVectorScalarProductCalculator(const DiscreteVectorScalarProductCalculator& orig) {
+}
+
+DiscreteVectorScalarProductCalculator::~DiscreteVectorScalarProductCalculator() {
+    delete this->temporaryVector;
+}
+
+int DiscreteVectorScalarProductCalculator::CalculateScalarProduct(DiscreteVector* vector1, DiscreteVector* vector2){    
+    this->discreteVectorBitwiseAndExecutor->BitwiseAnd(vector1, vector2, this->temporaryVector);
+    return this->discreteVectorSupremumCalculator->CalculateSupremum(this->temporaryVector);
+}
+

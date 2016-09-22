@@ -1,0 +1,44 @@
+/* 
+ * File:   Semize.h
+ * Author: sam
+ *
+ * Created on April 24, 2015, 1:49 PM
+ */
+
+#ifndef SEMIZE_H
+#define	SEMIZE_H
+
+#include "GreedyCoverCalculator.h"
+#include "SemizeInitializer.h"
+#include "DiscreteVectorValueGetter.h"
+
+
+class Semize {
+public:
+    Semize(int* dataMatrix, int* dataMatrixTransposed, int numDataMatrixRows, int numDataMatrixCols, int k, int numScaleElements);
+    Semize(const Semize& orig);
+    virtual ~Semize();
+    
+    // Runs a single randomization round for Semize
+    void Run(int* usageMatrix, int* basisMatrixTransposed, double* objectiveMeasure);
+private:    
+    int* dataMatrix;
+    int* dataMatrixTransposed;
+    int n;
+    int m;
+    int k;
+    int numScaleElements;    
+    
+    IDiscreteVectorBitwiseAndExecutor* discreteVectorBitwiseAndExecutor;
+    DiscreteVectorValueSetter* discreteVectorValueSetter;
+    DiscreteVectorSupremumCalculator* discreteVectorSupremumCalculator;
+    DiscreteVectorScalarProductCalculator* discreteVectorScalarProductCalculator;
+    GreedyCoverCalculator* greedyCoverCalculator;
+    DiscreteFactorMatrix* basisMatrixTransposed;
+    DiscreteFactorMatrix* usageMatrix;
+    SemizeInitializer* semizeInitializer;
+    DiscreteVectorValueGetter* discreteVectorValueGetter;
+};
+
+#endif	/* SEMIZE_H */
+

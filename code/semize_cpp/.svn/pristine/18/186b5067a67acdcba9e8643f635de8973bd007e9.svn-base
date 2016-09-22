@@ -1,0 +1,30 @@
+/* 
+ * File:   DiscreteVectorValueSetter.h
+ * Author: sam
+ *
+ * Created on April 22, 2015, 10:51 AM
+ */
+
+#ifndef DISCRETEVECTORVALUESETTER_H
+#define	DISCRETEVECTORVALUESETTER_H
+
+#include "DiscreteVectorValueSetterInfo.h"
+#include "DiscreteVector.h"
+
+
+class DiscreteVectorValueSetter {
+public:
+    DiscreteVectorValueSetter(int k, int s);
+    DiscreteVectorValueSetter(const DiscreteVectorValueSetter& orig);
+    virtual void SetValue(DiscreteVector* vector1, int index, int value);
+    virtual ~DiscreteVectorValueSetter();
+private:
+    // Here a 2d array over vector indices (0 to k-1) and values (0 to s-1), which we setup to make our bitwise value setting 
+    // more efficient. (Note we can think of it as a 2d array of pointers)
+    DiscreteVectorValueSetterInfo*** setterInfos;
+    int k;
+    int s;
+};
+
+#endif	/* DISCRETEVECTORVALUESETTER_H */
+

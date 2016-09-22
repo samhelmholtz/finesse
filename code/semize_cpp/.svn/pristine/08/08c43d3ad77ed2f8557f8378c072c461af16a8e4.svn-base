@@ -1,0 +1,9 @@
+build/Debug/GNU-Linux-x86/DiscreteVectorValueSetter.o: \
+ DiscreteVectorValueSetter.cpp DiscreteVectorValueSetter.h \
+ DiscreteVectorValueSetterInfo.h DiscreteVector.h
+
+DiscreteVectorValueSetter.h:
+
+DiscreteVectorValueSetterInfo.h:
+
+DiscreteVector.h:

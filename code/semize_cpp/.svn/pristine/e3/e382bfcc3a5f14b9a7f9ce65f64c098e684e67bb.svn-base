@@ -1,0 +1,20 @@
+build/Debug/GNU-Linux-x86/main.o: main.cpp \
+ DiscreteVectorValueSetterInfo.h \
+ DiscreteVectorBitwiseAndExecutorStandard.h \
+ IDiscreteVectorBitwiseAndExecutor.h DiscreteVector.h \
+ DiscreteVectorBitwiseAndExecutorChunked.h DiscreteVectorValueSetter.h \
+ DiscreteVectorSupremumCalculator.h
+
+DiscreteVectorValueSetterInfo.h:
+
+DiscreteVectorBitwiseAndExecutorStandard.h:
+
+IDiscreteVectorBitwiseAndExecutor.h:
+
+DiscreteVector.h:
+
+DiscreteVectorBitwiseAndExecutorChunked.h:
+
+DiscreteVectorValueSetter.h:
+
+DiscreteVectorSupremumCalculator.h:

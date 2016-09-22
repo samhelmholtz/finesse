@@ -1,0 +1,142 @@
+/* 
+ * File:   main.cpp
+ * Author: sam
+ *
+ * Created on April 21, 2015, 3:44 PM
+ */
+
+#include <cstdlib>
+#include <iostream>
+#include <fstream>
+
+#include "DiscreteVectorValueSetterInfo.h"
+#include "emmintrin.h"
+#include "ctime"
+#include "Stochastic.h"
+#include "Semize.h"
+#include "RandomizationRoundRunner.h"
+#include <unistd.h>
+#include "omp.h"
+#include "emmintrin.h"
+
+using namespace std;
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+
+    char* inFile = NULL;
+    char* basisFile = NULL;
+    char* usageFile = NULL;
+    int c;
+    int k;
+
+    while ((c = getopt(argc, argv, "k:s:b:D:")) != -1) {
+        switch (c) {
+            case 'k':
+                k = atoi(optarg);
+                break;
+            case 's':
+                inFile = optarg;
+                break;
+            case 'b':
+                basisFile = optarg;
+                break;
+            case 'D':
+                usageFile = optarg;
+                break;
+            default:
+                abort();
+        }
+    }
+
+    // Read the data matrix
+    int n, m, numScaleElements;
+    ifstream inFileStream(inFile, ios::in);
+    inFileStream >> n;
+    inFileStream >> m;
+    inFileStream >> numScaleElements;
+
+    Stochastic* stochastic = new Stochastic(n);
+    
+    // Build our storage info instances, one for the two main dimensions n and m
+    DiscreteVectorStorageInfo* storageInfoForVectorsOfDimensionM = new DiscreteVectorStorageInfo(m, numScaleElements);
+    DiscreteVectorStorageInfo* storageInfoForVectorsOfDimensionN = new DiscreteVectorStorageInfo(n, numScaleElements);
+
+    DiscreteMatrix* dataMatrix = new DiscreteMatrix(n, m, storageInfoForVectorsOfDimensionM);
+    DiscreteMatrix* dataMatrixTransposed = new DiscreteMatrix(m, n, storageInfoForVectorsOfDimensionN);
+    DiscreteMatrix* usageMatrixTransposed = new DiscreteMatrix(k, n, storageInfoForVectorsOfDimensionN);
+    DiscreteMatrix* basisMatrix = new DiscreteMatrix(k, m, storageInfoForVectorsOfDimensionM);
+
+    // Read the data matrix    
+    int tempValue;
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < m; j++) {
+            inFileStream >> tempValue;
+            dataMatrix->SetValue(i, j, tempValue, storageInfoForVectorsOfDimensionM);
+            dataMatrixTransposed->SetValue(j, i, tempValue, storageInfoForVectorsOfDimensionN);
+        }
+    }
+    inFileStream.close();
+
+    // Setup the row and column value mask matrices
+    DiscreteMatrix* rowValueMaskMatrix = new DiscreteMatrix(numScaleElements, m, storageInfoForVectorsOfDimensionM);
+    for (int i = 0; i < numScaleElements; i++) {
+        for (int j = 0; j < m; j++) {
+            rowValueMaskMatrix->SetValue(i, j, i, storageInfoForVectorsOfDimensionM);
+        }
+    }
+    DiscreteMatrix* colValueMaskMatrix = new DiscreteMatrix(numScaleElements, n, storageInfoForVectorsOfDimensionN);
+    for (int i = 0; i < numScaleElements; i++) {
+        for (int j = 0; j < n; j++) {
+            colValueMaskMatrix->SetValue(i, j, i, storageInfoForVectorsOfDimensionN);
+        }
+    }
+
+    Semize* semize = new Semize(stochastic);
+    RandomizationRoundRunner* randomizationRoundRunner = new RandomizationRoundRunner(semize);
+
+    double result = 0;
+    randomizationRoundRunner->Run(dataMatrix, dataMatrixTransposed, usageMatrixTransposed, basisMatrix, &result, 20, storageInfoForVectorsOfDimensionM, storageInfoForVectorsOfDimensionN, rowValueMaskMatrix, colValueMaskMatrix);
+    cout << "Done: best result=" << result;
+
+    // Save factors
+    // We print the usage matrix 'normally', and the basis matrix transposed (i.e. opposite of the way we store them for computation)
+    ofstream usageFileStream(usageFile);
+    usageFileStream << n << endl << k << endl << numScaleElements << endl;
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < k; j++) {
+            usageFileStream << usageMatrixTransposed->GetValue(j, i, storageInfoForVectorsOfDimensionN) << " ";
+        }
+        usageFileStream << endl;
+    }
+    usageFileStream.close();
+
+    ofstream basisTransposedFileStream(basisFile);
+    basisTransposedFileStream << m << endl << k << endl << numScaleElements << endl;
+    for (int i = 0; i < m; i++) {
+        for (int j = 0; j < k; j++) {
+            basisTransposedFileStream << basisMatrix->GetValue(j, i, storageInfoForVectorsOfDimensionM) << " ";
+        }
+        basisTransposedFileStream << endl;
+    }
+    basisTransposedFileStream.close();
+
+    delete dataMatrix;
+    delete dataMatrixTransposed;
+    delete usageMatrixTransposed;
+    delete basisMatrix;
+
+    delete storageInfoForVectorsOfDimensionM;
+    delete storageInfoForVectorsOfDimensionN;
+    delete rowValueMaskMatrix;
+    delete colValueMaskMatrix;
+
+    delete semize;
+    delete randomizationRoundRunner;
+    delete stochastic;
+
+    return 0;
+}
+

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <data xmlns="http://www.netbeans.org/ns/make-project-private/1">
+        <activeConfTypeElem>1</activeConfTypeElem>
+        <activeConfIndexElem>0</activeConfIndexElem>
+    </data>
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/1"/>
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/home/sam/NetBeansProjects/semize/DiscreteVectorBitMagician.cpp</file>
+            <file>file:/home/sam/NetBeansProjects/semize/DiscreteVectorValueGetterInfo.cpp</file>
+            <file>file:/home/sam/NetBeansProjects/semize/DiscreteVectorValueSetter.cpp</file>
+            <file>file:/home/sam/NetBeansProjects/semize/GreedyCoverCalculator.h</file>
+            <file>file:/home/sam/NetBeansProjects/semize/DiscreteVectorValueSetterInfo.h</file>
+            <file>file:/home/sam/NetBeansProjects/semize/DiscreteMatrix.h</file>
+            <file>file:/home/sam/NetBeansProjects/semize/GreedyCoverCalculator.cpp</file>
+            <file>file:/home/sam/NetBeansProjects/semize/Semize.h</file>
+            <file>file:/home/sam/NetBeansProjects/semize/DiscreteVectorBitwiseAndExecutorChunked.h</file>
+            <file>file:/home/sam/NetBeansProjects/semize/DiscreteVectorBitwiseAndExecutorChunked.cpp</file>
+            <file>file:/home/sam/NetBeansProjects/semize/main.cpp</file>
+            <file>file:/home/sam/NetBeansProjects/semize/DiscreteMatrix.cpp</file>
+            <file>file:/home/sam/NetBeansProjects/semize/RandomizationRoundRunner.h</file>
+            <file>file:/home/sam/NetBeansProjects/semize/RandomizationRoundRunner.cpp</file>
+            <file>file:/home/sam/NetBeansProjects/semize/Semize.cpp</file>
+            <file>file:/home/sam/NetBeansProjects/semize/SemizeInitializer.h</file>
+            <file>file:/home/sam/NetBeansProjects/semize/DiscreteFactorMatrix.cpp</file>
+            <file>file:/home/sam/NetBeansProjects/semize/Stochastic.cpp</file>
+            <file>file:/home/sam/NetBeansProjects/semize/DiscreteVector.h</file>
+            <file>file:/home/sam/NetBeansProjects/semize/DiscreteVectorValueGetter.cpp</file>
+            <file>file:/home/sam/NetBeansProjects/semize/DiscreteVectorStorageInfo.h</file>
+            <file>file:/home/sam/NetBeansProjects/semize/SemizeInitializer.cpp</file>
+            <file>file:/home/sam/NetBeansProjects/semize/DiscreteVectorScalarProductCalculator.h</file>
+            <file>file:/home/sam/NetBeansProjects/semize/DiscreteFactorMatrix.h</file>
+            <file>file:/home/sam/NetBeansProjects/semize/DiscreteVectorSupremumCalculator.h</file>
+            <file>file:/home/sam/NetBeansProjects/semize/DiscreteVectorBitMagician.h</file>
+            <file>file:/home/sam/NetBeansProjects/semize/DiscreteVectorValueGetterInfo.h</file>
+            <file>file:/home/sam/NetBeansProjects/semize/DiscreteVector.cpp</file>
+            <file>file:/home/sam/NetBeansProjects/semize/DiscreteVectorBitwiseAndExecutorStandard.cpp</file>
+            <file>file:/home/sam/NetBeansProjects/semize/DiscreteVectorValueSetterInfo.cpp</file>
+            <file>file:/home/sam/NetBeansProjects/semize/DiscreteVectorSupremumCalculator.cpp</file>
+            <file>file:/home/sam/NetBeansProjects/semize/DiscreteVectorStorageInfo.cpp</file>
+            <file>file:/home/sam/NetBeansProjects/semize/DiscreteVectorScalarProductCalculator.cpp</file>
+        </group>
+    </open-files>
+</project-private>

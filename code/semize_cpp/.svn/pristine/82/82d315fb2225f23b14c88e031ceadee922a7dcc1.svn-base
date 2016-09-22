@@ -1,0 +1,23 @@
+/* 
+ * File:   DiscreteVectorBitwiseAndExecutorStandard.cpp
+ * Author: sam
+ * 
+ * Created on April 23, 2015, 9:59 AM
+ */
+
+#include "DiscreteVectorBitwiseAndExecutorStandard.h"
+
+DiscreteVectorBitwiseAndExecutorStandard::DiscreteVectorBitwiseAndExecutorStandard() {
+}
+
+DiscreteVectorBitwiseAndExecutorStandard::DiscreteVectorBitwiseAndExecutorStandard(const DiscreteVectorBitwiseAndExecutorStandard& orig) {
+}
+
+DiscreteVectorBitwiseAndExecutorStandard::~DiscreteVectorBitwiseAndExecutorStandard() {
+}
+
+void DiscreteVectorBitwiseAndExecutorStandard::BitwiseAnd(DiscreteVector* vector1, DiscreteVector* vector2, DiscreteVector* result) {
+    for (int i = 0; i < vector1->numArrayEntries; i++) {
+        result->entries[i] = vector1->entries[i] & vector2->entries[i];
+    }
+}

@@ -1,0 +1,85 @@
+/* 
+ * File:   GreedyCoverCalculator.cpp
+ * Author: sam
+ * 
+ * Created on April 24, 2015, 11:52 AM
+ */
+
+#include "GreedyCoverCalculator.h"
+#include <string.h>
+#include <cstdlib>
+
+GreedyCoverCalculator::GreedyCoverCalculator(DiscreteVectorScalarProductCalculator* discreteVectorScalarProductCalculator, DiscreteVectorValueSetter* discreteVectorValueSetter, int k, int s) {
+    this->discreteVectorScalarProductCalculator = discreteVectorScalarProductCalculator;
+    int numBits = k * (s - 1);
+    int bitWidth = sizeof (unsigned long long)*8; // typically gives 64
+    int numElementsRequiredToRepresentVectorInTotal = (numBits + bitWidth - 1) / bitWidth;
+    this->vectorToModify = new DiscreteVector(numBits);
+    this->integerRepresentationOfOptimalVector = new int[this->k]();
+    this->numBytesInVector = numElementsRequiredToRepresentVectorInTotal * sizeof (unsigned long long);
+    this->k = k;
+    this->s = s;
+    this->discreteVectorValueSetter = discreteVectorValueSetter;
+}
+
+GreedyCoverCalculator::GreedyCoverCalculator(const GreedyCoverCalculator& orig) {
+}
+
+GreedyCoverCalculator::~GreedyCoverCalculator() {
+    delete[] this->integerRepresentationOfOptimalVector;
+    delete this->vectorToModify;
+}
+
+void GreedyCoverCalculator::CalculateGreedyCover(int* dataVector, int dataVectorLength, int numScaleValues, DiscreteFactorMatrix* otherMatrix, DiscreteVector* vectorBeingOptimized) {
+    // First, set the vector being optimized to zero (empty cover)
+    memset(vectorBeingOptimized->entries, 0, this->numBytesInVector);
+    memset(integerRepresentationOfOptimalVector, 0, sizeof(int)*k);    
+
+    // Next, find the initial error associated with an empty cover
+    int e_b = 0;
+    for (int i = 0; i < dataVectorLength; i++) {
+        e_b += std::abs(this->discreteVectorScalarProductCalculator->CalculateScalarProduct(vectorBeingOptimized, otherMatrix->vectors[i]) - dataVector[i]);
+    }
+
+    int delta = -1;
+    while (delta < 0) {
+
+        // Assume we won't make any change in this round.
+        delta = 0;
+
+        // Now we want to make a SINGLE change to the vector. This involves setting one of the k elements of the vector to another
+        // value. We track which is the most profitable with two variables here:
+        int mostProfitableValueToSet = -1;
+        int mostProfitableIndexToSet = -1;
+        for (int j = 0; j < k; j++) {
+            // For each index, get a copy of the best vector so far, that we can modify.
+            memcpy(this->vectorToModify->entries, vectorBeingOptimized->entries, this->numBytesInVector);
+
+            // Then set values in that vector, one after another, and test if the change is profitable.
+            // If it is, update the most profitable value/index to set.
+            for (int a = integerRepresentationOfOptimalVector[j] + 1; a < numScaleValues; a++) {
+                // Set the value in the appropriate position and test if it's profitable
+                discreteVectorValueSetter->SetValue(this->vectorToModify, j, a);
+
+                int e = 0;
+                for (int i = 0; i < dataVectorLength; i++) {
+                    e += std::abs(this->discreteVectorScalarProductCalculator->CalculateScalarProduct(this->vectorToModify, otherMatrix->vectors[i]) - dataVector[i]);
+                }
+
+                // If it's profitable, record the change, otherwise set the value back and break out of this loop (if it wasn't profitable to move one step up, then it won't be profitable to move two up either)
+                if (e < e_b) {
+                    delta = e - e_b;
+                    mostProfitableValueToSet = a;
+                    mostProfitableIndexToSet = j;
+                    e_b = e;
+                }
+            }
+        }
+        
+        if (mostProfitableIndexToSet > -1) {
+            // Persist the value
+            discreteVectorValueSetter->SetValue(vectorBeingOptimized, mostProfitableIndexToSet, mostProfitableValueToSet);
+            integerRepresentationOfOptimalVector[mostProfitableIndexToSet] = mostProfitableValueToSet;
+        }
+    }    
+}

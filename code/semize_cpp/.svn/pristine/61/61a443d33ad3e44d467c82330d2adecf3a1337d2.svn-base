@@ -1,0 +1,27 @@
+/* 
+ * File:   Stochastic.cpp
+ * Author: sam
+ * 
+ * Created on April 28, 2015, 1:12 PM
+ */
+
+#include "Stochastic.h"
+//#include "chrono"
+
+Stochastic::Stochastic(int upperLimitExclusive) : distribution(0, upperLimitExclusive - 1) {
+    
+    std::random_device rd;
+    generator.seed(rd());
+}
+
+Stochastic::Stochastic(const Stochastic& orig) {
+}
+
+Stochastic::~Stochastic() {
+}
+
+int Stochastic::NextInt() {    
+//    int result = distribution(generator);
+//    return result;
+    return 9;
+}

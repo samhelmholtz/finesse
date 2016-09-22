@@ -1,0 +1,111 @@
+/* 
+ * File:   DiscreteVectorSupremumCalculator.cpp
+ * Author: sam
+ * 
+ * Created on April 21, 2015, 4:44 PM
+ */
+
+#include "DiscreteVectorSupremumCalculator.h"
+#include <iostream>
+
+DiscreteVectorSupremumCalculator::DiscreteVectorSupremumCalculator(int k, int s) {
+    //    this->masks = masks;
+    //    this->numMasks = numMasks;
+    int bitWidth = sizeof (unsigned long long) *8; // typically gives 64
+    int widthOfAValueInBits = s - 1;
+    int totalNumberOfBitsRequiredToRepresentVector = k*widthOfAValueInBits;
+    this->numElementsRequiredToRepresentVectorInTotal = (totalNumberOfBitsRequiredToRepresentVector + bitWidth - 1) / bitWidth;
+    this->s = s;
+    
+    this->masks = new unsigned long long*[s];
+    for (int i = 0; i < s; i++) {
+        this->masks[i] = new unsigned long long[numElementsRequiredToRepresentVectorInTotal](); // Note the zero initializer
+
+        // Build the masks for this s value. We do this in a rather crude way. 
+        // We loop over every value index from 0 to k-1
+        // For each, we calculate the starting global index for setting a value to one, and the ending global index for setting a value to one
+
+        for (int j = 0; j < k; j++) {
+
+            // First we need to find the index of the start and end bits that we need to set to 1, in the absolute sense (i.e. assuming we didn't have to break it down into different 64-bit ulongs)
+            int endingBitIndexInclusiveForValueToBeSetToOne = (j + 1) * widthOfAValueInBits - 1;
+            int startingBitIndexInclusiveForValueToBeSetToOne = endingBitIndexInclusiveForValueToBeSetToOne - i + 1;
+
+            // Then we just loop through those indices, finding the relevant element and offset, and put a one into that position
+            for (int l = startingBitIndexInclusiveForValueToBeSetToOne; l <= endingBitIndexInclusiveForValueToBeSetToOne; l++) {
+                int elementIndex = l / bitWidth;
+                int elementOffset = l % bitWidth;
+                unsigned long long mask = ((unsigned long long) 1) << (bitWidth - elementOffset - 1);
+                this->masks[i][elementIndex] = this->masks[i][elementIndex] | mask;
+            }
+        }
+    }
+}
+
+DiscreteVectorSupremumCalculator::DiscreteVectorSupremumCalculator(const DiscreteVectorSupremumCalculator& orig) {
+}
+
+DiscreteVectorSupremumCalculator::~DiscreteVectorSupremumCalculator() {
+    for (int i = 0; i < s; i++) {
+        delete[] this->masks[i];
+    }
+    delete[] this->masks;
+}
+
+int DiscreteVectorSupremumCalculator::CalculateSupremum(DiscreteVector* vector) {
+    // So...the idea here is as follows.
+    // We know we have numMasks possible values to choose from
+    // We do a binary search over the masks.
+    // For each one, we go through each entry in our vector and do an OR on it.
+    // If the OR turns out larger than the mask, we know we have to look higher.
+
+    // Here we declare starting limits for the binary search. Note that these are indices into the masks array.
+    int imax = this->s - 1;
+    int imin = 0;
+
+    // Handle the zero case separately, so that we can always say "the result is higher than imin" in the subsequent iteration loop
+    bool isGreater = false;
+    for (int i = 0; i < vector->numArrayEntries; i++) {
+        if ((vector->entries[i] | masks[0][i]) > masks[0][i]) {
+            isGreater = true;
+            break;
+        }
+    }
+    if (!isGreater) {
+        return 0;
+    }
+
+    // Iterate over the mask collection until we find a solution
+    while (imax >= imin) {
+        int mid = (imin + imax) / 2;
+        // Now that we have the midpoint, we have to ask: is the vector value OR'd with the mask at the midpoint index greater than that mask?
+        // If yes, then we know we have to look higher
+        isGreater = false;
+        for (int i = 0; i < vector->numArrayEntries; i++) {
+            if ((vector->entries[i] | masks[mid][i]) > masks[mid][i]) {
+                isGreater = true;
+                break;
+            }
+        }
+
+        if (isGreater) {
+            // Here we know we have to look upwards. If there are no more values to search, however, we can stop (we know the result must be the upper index)
+            if (imax == imin + 1) {
+                return imax;
+            }
+            imin = mid;
+        } else {
+            // Here we have to look downwards. We know the result must be higher than imin though, so if there are no more values to search, we know the result is just imid.
+            if (mid == imin + 1) {
+                return mid;
+            }
+            // Otherwise, the result could possibly still be mid, so we set imax to mid
+            imax = mid;
+        }
+    }
+
+    // We should never get here, so return an error if we do for some reason
+    std::cout << "ERROR IN BINARY SEARCH: NO MATCH WAS FOUND" << std::endl;
+    return -1;
+}
+

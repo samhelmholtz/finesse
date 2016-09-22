@@ -1,0 +1,28 @@
+/* 
+ * File:   DiscreteVectorSupremumCalculator.h
+ * Author: sam
+ *
+ * Created on April 21, 2015, 4:44 PM
+ */
+
+#ifndef DISCRETEVECTORSUPREMUMCALCULATOR_H
+#define	DISCRETEVECTORSUPREMUMCALCULATOR_H
+
+#include "DiscreteVector.h"
+
+
+class DiscreteVectorSupremumCalculator {
+public:
+    DiscreteVectorSupremumCalculator(int k, int s);
+    DiscreteVectorSupremumCalculator(const DiscreteVectorSupremumCalculator& orig);
+    virtual ~DiscreteVectorSupremumCalculator();
+    int CalculateSupremum(DiscreteVector* vector);
+private:
+    // Here we have our 2d array of masks. That is, we have a collection of masks for each s value
+    unsigned long long** masks;    
+    int numElementsRequiredToRepresentVectorInTotal;
+    int s;
+};
+
+#endif	/* DISCRETEVECTORSUPREMUMCALCULATOR_H */
+

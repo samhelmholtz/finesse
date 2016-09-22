@@ -1,0 +1,10 @@
+build/Debug/GNU-Linux-x86/DiscreteVectorBitwiseAndExecutorChunked.o: \
+ DiscreteVectorBitwiseAndExecutorChunked.cpp \
+ DiscreteVectorBitwiseAndExecutorChunked.h \
+ IDiscreteVectorBitwiseAndExecutor.h DiscreteVector.h
+
+DiscreteVectorBitwiseAndExecutorChunked.h:
+
+IDiscreteVectorBitwiseAndExecutor.h:
+
+DiscreteVector.h:

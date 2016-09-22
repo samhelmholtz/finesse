@@ -1,0 +1,78 @@
+/* 
+ * File:   SemizeInitializer.cpp
+ * Author: sam
+ * 
+ * Created on April 28, 2015, 1:03 PM
+ */
+
+#include "SemizeInitializer.h"
+#include <vector>
+#include <algorithm>
+
+SemizeInitializer::SemizeInitializer(int** dataMatrix, int n, int m, int k, DiscreteVectorValueSetter* discreteVectorValueSetter) {
+    this->stochastic = new Stochastic(n);
+    this->n = n;
+    this->m = m;
+    this->k = k;
+    this->dataMatrix = dataMatrix;
+    this->discreteVectorValueSetter = discreteVectorValueSetter;
+}
+
+SemizeInitializer::SemizeInitializer(const SemizeInitializer& orig) {
+}
+
+SemizeInitializer::~SemizeInitializer() {
+    delete this->stochastic;
+}
+
+void SemizeInitializer::Initialize(DiscreteFactorMatrix* basisMatrixTransposed) {
+
+    std::vector<int> selectedBasisVectors;
+
+    // Select the first basis vector at random
+    selectedBasisVectors.push_back(this->stochastic->NextInt());
+
+    while (selectedBasisVectors.size() < k) {
+        // Here we want to get the index of the data row vector that has the maximum difference to those selected
+        int indexToAdd = -1;
+        int maxDistance = -1;
+
+        // Look through the collection and find the next one
+        for (int i = 0; i < this->n; i++) {
+            if (std::find(selectedBasisVectors.begin(), selectedBasisVectors.end(), i) != selectedBasisVectors.end()) {
+                continue;
+            }
+
+            int* candidateBasisVector = dataMatrix[i];
+
+            int dissimilarity = 0;
+            for (std::vector<int>::iterator it = selectedBasisVectors.begin(); it != selectedBasisVectors.end(); ++it) {
+                int* alreadySelectedVector = dataMatrix[*it];
+
+                for (int j = 0; j < m; j++) {
+                    dissimilarity += std::abs(alreadySelectedVector[j] - candidateBasisVector[j]);
+                }
+
+            }
+
+            if (dissimilarity > maxDistance) {
+                indexToAdd = i;
+                maxDistance = dissimilarity;
+            }
+        }
+
+        selectedBasisVectors.push_back(indexToAdd);
+    }
+
+    // Now we have the k vectors that we need
+    // We can now set our basis matrix appropriately
+    // Each vector of the basis matrix is of length k...each vector corresponds to a column of the basis matrix.
+    for (int i = 0; i < k; i++) {
+        // Get the index of the data row we're using
+        int dataRowIndex = selectedBasisVectors[i];
+        for (int j = 0; j < m; j++) {
+            // ...and set the values of that data vector in the corresponding basis column vectors
+            discreteVectorValueSetter->SetValue(basisMatrixTransposed->vectors[j], i, dataMatrix[dataRowIndex][j]);
+        }
+    }
+}

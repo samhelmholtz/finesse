@@ -1,0 +1,48 @@
+4
+9
+Tree,/home/asc/samuel.maurus/scratch/smf/smf/java/SmfExperimentRunner/data/yummly/master_ingredients_ontology_mains_summer_american.json
+["peppers","onions","liquid products","garlic","herbs","vegetables","dairy","fruity vegetables","bulbs","pepper","animal products","tomatoes","spices","sauce","oil","olive oil","ingredients","seasoning","bread","meat","dough products","plant products","salt"]
+["fruit","liquid products","herbs","fish","vegetables","bulbs","pepper","fruity vegetables","animal products","spices","oil","olive oil","ingredients","seasoning","seafood","juice","meat","plant products","salt"]
+["onions","peppers","garlic","liquid products","garlic cloves","herbs","vegetables","fruity vegetables","bulbs","pepper","animal products","spices","sauce","oil","olive oil","ingredients","seasoning","meat","dough products","plant products","salt"]
+["peppers","fruit","onions","liquid products","herbs","vegetables","fruity vegetables","bulbs","pepper","animal products","spices","sauce","oil","ingredients","olive oil","seasoning","vinegar","meat","plant products","salt","sugar"]
+Ordinal,6
+4
+4
+4
+4
+Ternary
+0
+0
+2
+2
+Boolean
+0
+0
+0
+0
+Boolean
+1
+0
+1
+0
+Boolean
+1
+0
+0
+1
+Boolean
+0
+1
+1
+0
+Boolean
+1
+0
+1
+0
+Boolean
+1
+1
+1
+0
+

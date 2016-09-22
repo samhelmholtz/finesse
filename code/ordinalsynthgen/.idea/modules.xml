@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ordinalsynthgen.iml" filepath="$PROJECT_DIR$/ordinalsynthgen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../smfcore/smfcore.iml" filepath="$PROJECT_DIR$/../smfcore/smfcore.iml" />
+    </modules>
+  </component>
+</project>

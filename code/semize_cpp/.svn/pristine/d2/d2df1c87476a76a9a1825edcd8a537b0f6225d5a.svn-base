@@ -1,0 +1,121 @@
+/* 
+ * File:   main.cpp
+ * Author: sam
+ *
+ * Created on April 21, 2015, 3:44 PM
+ */
+
+#include <cstdlib>
+#include <iostream>
+#include <fstream>
+
+#include "DiscreteVectorValueSetterInfo.h"
+#include "emmintrin.h"
+#include "ctime"
+#include "DiscreteVectorBitwiseAndExecutorStandard.h"
+#include "DiscreteVectorBitwiseAndExecutorChunked.h"
+#include "DiscreteVectorValueSetter.h"
+#include "DiscreteVectorSupremumCalculator.h"
+#include "DiscreteVectorScalarProductCalculator.h"
+#include "Stochastic.h"
+#include "DiscreteVectorValueGetter.h"
+#include "Semize.h"
+#include "RandomizationRoundRunner.h"
+#include <unistd.h>
+#include "omp.h"
+
+using namespace std;
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+    char* inFile = NULL;
+    char* basisFile = NULL;
+    char* usageFile = NULL;
+    int c;
+    int k;
+
+    while ((c = getopt(argc, argv, "k:s:b:D:")) != -1) {
+        switch (c) {
+            case 'k':
+                k = atoi(optarg);
+                break;
+            case 's':
+                inFile = optarg;
+                break;
+            case 'b':
+                basisFile = optarg;
+                break;
+            case 'D':
+                usageFile = optarg;
+                break;
+            default:
+                abort();
+        }
+    }
+
+    // Read the data matrix
+    int n, m, numScaleElements;
+    ifstream inFileStream(inFile, ios::in);
+    inFileStream >> n;
+    inFileStream >> m;
+    inFileStream >> numScaleElements;
+    
+    // We allocate the data matrix as a 1d array for memory-access purposes (it's then allocated in contiguous memory)
+    int* dataMatrix = new int[n*m];
+    for (int i = 0; i < n; i++) {        
+        for (int j = 0; j < m; j++) {
+            inFileStream >> dataMatrix[i*m + j];
+        }
+    }
+    inFileStream.close();
+
+    int* dataMatrixTransposed = new int[n*m];
+    for (int i = 0; i < n; i++) {        
+        for (int j = 0; j < m; j++) {
+            dataMatrixTransposed[j*n + i] = dataMatrix[i*m + j];
+        }
+    }
+
+    int* usageMatrix = new int[n*k];
+    int* basisMatrixTransposed = new int[m*k];
+    
+    Semize* semize = new Semize(dataMatrix, dataMatrixTransposed, n, m, k, numScaleElements);
+    RandomizationRoundRunner* randomizationRoundRunner = new RandomizationRoundRunner(semize, n, m, k);
+    double result = 0;
+    randomizationRoundRunner->Run(usageMatrix, basisMatrixTransposed, &result, 20);
+    cout << "Done: best result=" << result;
+
+    // Save matrices
+    ofstream usageFileStream(usageFile);
+    usageFileStream << n << endl << k << endl << numScaleElements << endl;
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < k; j++) {
+            usageFileStream << usageMatrix[i*k + j] << " ";
+        }
+        usageFileStream << endl;
+    }
+    usageFileStream.close();
+    
+    ofstream basisTransposedFileStream(basisFile);
+    basisTransposedFileStream << m << endl << k << endl << numScaleElements << endl;
+    for (int i = 0; i < m; i++) {
+        for (int j = 0; j < k; j++) {
+            basisTransposedFileStream << basisMatrixTransposed[i*k + j] << " ";
+        }
+        basisTransposedFileStream << endl;
+    }
+    basisTransposedFileStream.close();
+
+
+    // Cleanup
+    delete[] usageMatrix;    
+    delete[] basisMatrixTransposed;
+    delete[] dataMatrix;    
+    delete[] dataMatrixTransposed;
+    delete semize;
+
+    return 0;
+}
+

@@ -1,0 +1,25 @@
+/* 
+ * File:   DiscreteVectorBitwiseAndExecutorStandard.h
+ * Author: sam
+ *
+ * Created on April 23, 2015, 9:59 AM
+ */
+
+#ifndef DISCRETEVECTORBITWISEANDEXECUTORSTANDARD_H
+#define	DISCRETEVECTORBITWISEANDEXECUTORSTANDARD_H
+
+#include "IDiscreteVectorBitwiseAndExecutor.h"
+
+
+class DiscreteVectorBitwiseAndExecutorStandard : public IDiscreteVectorBitwiseAndExecutor {
+public:
+    DiscreteVectorBitwiseAndExecutorStandard();
+    DiscreteVectorBitwiseAndExecutorStandard(const DiscreteVectorBitwiseAndExecutorStandard& orig);
+    virtual ~DiscreteVectorBitwiseAndExecutorStandard();
+    virtual void BitwiseAnd(DiscreteVector* vector1, DiscreteVector* vector2, DiscreteVector* result);
+private:
+
+};
+
+#endif	/* DISCRETEVECTORBITWISEANDEXECUTORSTANDARD_H */
+

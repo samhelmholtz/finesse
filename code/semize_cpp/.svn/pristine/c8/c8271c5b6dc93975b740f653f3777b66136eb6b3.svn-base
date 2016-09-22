@@ -1,0 +1,39 @@
+/* 
+ * File:   GreedyCoverCalculator.h
+ * Author: sam
+ *
+ * Created on April 24, 2015, 11:52 AM
+ */
+
+#ifndef GREEDYCOVERCALCULATOR_H
+#define	GREEDYCOVERCALCULATOR_H
+
+#include "DiscreteMatrix.h"
+#include "DiscreteVectorBitMagician.h"
+
+
+class GreedyCoverCalculator {
+public:
+    GreedyCoverCalculator();
+    GreedyCoverCalculator(const GreedyCoverCalculator& orig);
+    virtual ~GreedyCoverCalculator();
+//    void CalculateGreedyCover(int* dataVector, int dataVectorLength, int numScaleValues, DiscreteFactorMatrix* otherMatrix, DiscreteVector* vectorBeingOptimized);
+    int CalculateGreedyCover(unsigned long long* dataVector, DiscreteMatrix* matrixBeingOptimized, DiscreteMatrix* otherFactorMatrix, int indexOfColumnBeingOptimized, DiscreteMatrix* valueMasks, DiscreteVectorStorageInfo* storageInfoForDataVector, DiscreteVectorStorageInfo* storageInfoForMatrixBeingOptimized);
+private:
+//    DiscreteVectorScalarProductCalculator* discreteVectorScalarProductCalculator;
+//    int numBytesInVector;
+//    int k;
+//    int s;
+//    int numBitsRequiredToRepresentVector;
+//    DiscreteVectorValueSetter* discreteVectorValueSetter;    
+//    
+//    // Our collection of 'temp' vectors for use in CalculateGreedyCover
+//    int* integerRepresentationOfOptimalVectorCollection;
+//    DiscreteVector** vectorsToModify;
+    DiscreteVectorBitMagician* discreteVectorBitMagician;
+    
+    
+};
+
+#endif	/* GREEDYCOVERCALCULATOR_H */
+

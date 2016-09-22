@@ -1,0 +1,59 @@
+/* 
+ * File:   DiscreteVectorScalarProductCalculator.cpp
+ * Author: sam
+ * 
+ * Created on April 23, 2015, 4:44 PM
+ */
+
+#include "DiscreteVectorScalarProductCalculator.h"
+#include "omp.h"
+
+DiscreteVectorScalarProductCalculator::DiscreteVectorScalarProductCalculator(IDiscreteVectorBitwiseAndExecutor* discreteVectorBitwiseAndExecutor, DiscreteVectorSupremumCalculator* discreteVectorSupremumCalculator, int k, int s) {
+    this->discreteVectorBitwiseAndExecutor = discreteVectorBitwiseAndExecutor;
+    this->discreteVectorSupremumCalculator = discreteVectorSupremumCalculator;
+    this->numBitsRequiredForVector = k * (s - 1);
+
+    // To avoid having to dynamically create and delete a temporary vector for use in our core ScalarProduct operation directly in that method,
+    // we create a collection of them for use here.
+    // Because we're potentially doing many in parallel, we need to make sure each thread has a separate temporary vector
+    // This is why we create one discrete 'temp' vector here for each processor
+
+#if defined(_OPENMP)
+    int maxThreads = omp_get_max_threads();
+    this->tempDiscreteVectors = new DiscreteVector*[maxThreads];
+    for (int i = 0; i < maxThreads; i++) {
+        this->tempDiscreteVectors[i] = new DiscreteVector(this->numBitsRequiredForVector);
+    }
+#else
+    this->tempDiscreteVectors = new DiscreteVector*[1];
+    this->tempDiscreteVectors[0] = new DiscreteVector(this->numBitsRequiredForVector);
+#endif
+}
+
+DiscreteVectorScalarProductCalculator::DiscreteVectorScalarProductCalculator(const DiscreteVectorScalarProductCalculator& orig) {
+}
+
+DiscreteVectorScalarProductCalculator::~DiscreteVectorScalarProductCalculator() {
+#if defined(_OPENMP)
+    int maxThreads = omp_get_max_threads();
+    for (int i = 0; i < maxThreads; i++) {
+        delete this->tempDiscreteVectors[i];
+    }    
+#else
+    delete this->tempDiscreteVectors[0];    
+#endif
+    delete[] this->tempDiscreteVectors;
+}
+
+int DiscreteVectorScalarProductCalculator::CalculateScalarProduct(DiscreteVector* vector1, DiscreteVector* vector2) {
+
+#if defined(_OPENMP)
+    int threadNum = omp_get_thread_num();
+    this->discreteVectorBitwiseAndExecutor->BitwiseAnd(vector1, vector2, this->tempDiscreteVectors[threadNum]);
+    return this->discreteVectorSupremumCalculator->CalculateSupremum(this->tempDiscreteVectors[threadNum]);
+#else
+    this->discreteVectorBitwiseAndExecutor->BitwiseAnd(vector1, vector2, this->tempDiscreteVectors[0]);
+    return this->discreteVectorSupremumCalculator->CalculateSupremum(this->tempDiscreteVectors[0]);
+#endif
+}
+

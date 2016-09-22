@@ -1,0 +1,74 @@
+/* 
+ * File:   GreedyCoverCalculator.cpp
+ * Author: sam
+ * 
+ * Created on April 24, 2015, 11:52 AM
+ */
+
+#include "GreedyCoverCalculator.h"
+#include <string.h>
+#include <cstdlib>
+
+GreedyCoverCalculator::GreedyCoverCalculator(DiscreteVectorScalarProductCalculator* discreteVectorScalarProductCalculator, DiscreteVectorValueSetter* discreteVectorValueSetter, int k, int s){
+    this->discreteVectorScalarProductCalculator = discreteVectorScalarProductCalculator;
+    int numBits = k*(s-1);
+    int bitWidth = sizeof(unsigned long long)*8; // typically gives 64
+    int numElementsRequiredToRepresentVectorInTotal = (numBits + bitWidth - 1) / bitWidth;    
+    this->cloneOfOptimum = new DiscreteVector(numBits);
+    this->numBytesInVector = numElementsRequiredToRepresentVectorInTotal*sizeof(unsigned long long);
+    this->k = k;
+    this->s = s;
+    this->discreteVectorValueSetter = discreteVectorValueSetter;
+}
+
+GreedyCoverCalculator::GreedyCoverCalculator(const GreedyCoverCalculator& orig) {
+}
+
+GreedyCoverCalculator::~GreedyCoverCalculator() {
+}
+
+void GreedyCoverCalculator::CalculateGreedyCover(int* dataVector, int dataVectorLength, int numScaleValues, DiscreteFactorMatrix* otherMatrix, DiscreteVector* vectorBeingOptimized){
+    // First, set the vector being optimized to zero (empty cover)
+    memset(vectorBeingOptimized->entries, 0, vectorBeingOptimized->numArrayEntries*sizeof(unsigned long long));
+    int* integerRepresentationOfVector = new int[this->k]();
+    
+    // Next, find the initial error associated with an empty cover
+    int e_b = 0;
+    for (int i = 0; i < dataVectorLength; i++) {
+        e_b += std::abs(this->discreteVectorScalarProductCalculator->CalculateScalarProduct(vectorBeingOptimized, otherMatrix->vectors[i]) - dataVector[i]);
+    }
+    
+    int delta = -1;
+    int e_l;    
+    while(delta < 0){
+        // Clone optimum
+        memcpy(this->cloneOfOptimum->entries, vectorBeingOptimized->entries, this->numBytesInVector);
+        e_l = e_b;
+        for (int j = 0; j < k; j++) {
+            for (int a = integerRepresentationOfVector[j] + 1; a < numScaleValues; a++) {
+                // Set the value in the appropriate position. If it's not profitable, we can set it back afterwards
+                discreteVectorValueSetter->SetValue(this->cloneOfOptimum, j, a);
+        
+                int e = 0;
+                for (int i = 0; i < dataVectorLength; i++) {
+                    e += std::abs(this->discreteVectorScalarProductCalculator->CalculateScalarProduct(this->cloneOfOptimum, otherMatrix->vectors[i]) - dataVector[i]);
+                }
+                
+                // If it's profitable, record the change, otherwise set the value back and break out of this loop (if it wasn't profitable to move one step up, then it won't be profitable to move two up either)
+                if(e < e_l){
+                    e_l = e;
+                    integerRepresentationOfVector[j] = a;
+                } else{
+                    discreteVectorValueSetter->SetValue(this->cloneOfOptimum, j, integerRepresentationOfVector[j]);
+                    break;
+                }
+            }
+        }
+        
+        delta = e_l-e_b;
+        if(delta < 0){
+            e_b = e_l;
+            memcpy(vectorBeingOptimized->entries, this->cloneOfOptimum->entries, this->numBytesInVector);            
+        }
+    }
+}

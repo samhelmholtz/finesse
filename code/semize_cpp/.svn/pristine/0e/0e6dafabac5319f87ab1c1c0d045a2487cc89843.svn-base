@@ -1,0 +1,189 @@
+/* 
+ * File:   main.cpp
+ * Author: sam
+ *
+ * Created on April 21, 2015, 3:44 PM
+ */
+
+#include <cstdlib>
+#include <iostream>
+#include <fstream>
+
+#include "DiscreteVectorValueSetterInfo.h"
+#include "emmintrin.h"
+#include "ctime"
+#include "DiscreteVectorBitwiseAndExecutorStandard.h"
+#include "DiscreteVectorBitwiseAndExecutorChunked.h"
+#include "DiscreteVectorValueSetter.h"
+#include "DiscreteVectorSupremumCalculator.h"
+#include "DiscreteVectorScalarProductCalculator.h"
+#include "Stochastic.h"
+#include "DiscreteVectorValueGetter.h"
+#include "Semize.h"
+#include "RandomizationRoundRunner.h"
+#include <unistd.h>
+
+using namespace std;
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+
+    char* inFile = NULL;
+    char* basisFile = NULL;
+    char* usageFile = NULL;
+    int c;
+    int k;
+
+    while ((c = getopt(argc, argv, "k:s:b:D:")) != -1) {
+        switch (c) {
+            case 'k':
+                k = atoi(optarg);
+                break;
+            case 's':
+                inFile = optarg;
+                break;
+            case 'b':
+                basisFile = optarg;
+                break;
+            case 'D':
+                usageFile = optarg;
+                break;
+            default:
+                abort();
+        }
+    }
+
+    // Read the data matrix
+    int n, m, numScaleElements;
+    ifstream inFileStream(inFile, ios::in);
+    inFileStream >> n;
+    inFileStream >> m;
+    inFileStream >> numScaleElements;
+    int** dataMatrix = new int*[n];
+    for (int i = 0; i < n; i++) {
+        dataMatrix[i] = new int[m];
+        for (int j = 0; j < m; j++) {
+            inFileStream >> dataMatrix[i][j];
+        }
+    }
+    inFileStream.close();
+
+    int** dataMatrixTransposed = new int*[m];
+    for (int i = 0; i < m; i++) {
+        dataMatrixTransposed[i] = new int[n];
+        for (int j = 0; j < n; j++) {
+            dataMatrixTransposed[i][j] = dataMatrix[j][i];
+        }
+    }
+
+    int** usageMatrix = new int*[n];
+    for (int i = 0; i < n; i++) {
+        usageMatrix[i] = new int[k];
+    }
+
+    int** basisMatrixTransposed = new int*[m];
+    for (int i = 0; i < m; i++) {
+        basisMatrixTransposed[i] = new int[k];
+    }
+
+    Semize* semize = new Semize(dataMatrix, dataMatrixTransposed, n, m, k, numScaleElements);
+    RandomizationRoundRunner* randomizationRoundRunner = new RandomizationRoundRunner(semize, n, m, k);
+    double result = 0;
+    randomizationRoundRunner->Run(usageMatrix, basisMatrixTransposed, &result, 20);
+    cout << "Done: best result=" << result;
+
+    // Save matrices
+    ofstream usageFileStream(usageFile);
+    usageFileStream << n << endl << k << endl << numScaleElements << endl;
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < k; j++) {
+            usageFileStream << usageMatrix[i][j] << " ";
+        }
+        usageFileStream << endl;
+    }
+    usageFileStream.close();
+    
+    ofstream basisTransposedFileStream(basisFile);
+    basisTransposedFileStream << m << endl << k << endl << numScaleElements << endl;
+    for (int i = 0; i < m; i++) {
+        for (int j = 0; j < k; j++) {
+            basisTransposedFileStream << basisMatrixTransposed[i][j] << " ";
+        }
+        basisTransposedFileStream << endl;
+    }
+    basisTransposedFileStream.close();
+
+
+    // Cleanup
+    for (int i = 0; i < n; i++) {
+        delete[] usageMatrix[i];
+    }
+    delete[] usageMatrix;
+    for (int i = 0; i < m; i++) {
+        delete[] basisMatrixTransposed[i];
+    }
+    delete[] basisMatrixTransposed;
+    for (int i = 0; i < n; i++) {
+        delete[] dataMatrix[i];
+    }
+    delete[] dataMatrix;
+    for (int i = 0; i < m; i++) {
+        delete[] dataMatrixTransposed[i];
+    }
+    delete[] dataMatrixTransposed;
+
+    delete semize;
+
+
+    //    int k = 32, s = 3;
+    //    DiscreteVectorValueGetter* g = new DiscreteVectorValueGetter(64, 2);
+    //
+    //    char a[8] = {255, 255, 255, 255, 255, 255, 255, 255};
+    //
+    //    DiscreteVector* v = new DiscreteVector(64);
+    //    v->entries = (unsigned long long*) a;
+    //    int temp = __builtin_popcountll(18446744073709551615);
+    //    int value = g->GetValue(v, 1);
+    //
+    //
+    //    Stochastic* st = new Stochastic(4);
+    //    while (true) {
+    //        int r = st->NextInt();
+    //        r++;
+    //    }
+    //
+    //    
+    //    int totalNumberBitsRequiredForVector = k * (s - 1);
+    //    int bitWidth = sizeof (unsigned long long)*8;
+    //    int numElementsRequiredToRepresentVectorInTotal = (totalNumberBitsRequiredForVector + bitWidth - 1) / bitWidth;
+    //    IDiscreteVectorBitwiseAndExecutor* discreteVectorBitwiseAndExecutor = new DiscreteVectorBitwiseAndExecutorChunked(numElementsRequiredToRepresentVectorInTotal / 2, numElementsRequiredToRepresentVectorInTotal % 2);
+    //    DiscreteVectorSupremumCalculator* sc = new DiscreteVectorSupremumCalculator(k, s);
+    //    DiscreteVectorScalarProductCalculator* sp = new DiscreteVectorScalarProductCalculator(discreteVectorBitwiseAndExecutor, sc, k, s);
+    //
+    //    DiscreteVector* vector1 = new DiscreteVector(totalNumberBitsRequiredForVector);
+    //    DiscreteVector* vector2 = new DiscreteVector(totalNumberBitsRequiredForVector);
+    //
+    //    vector1->entries[0] = 15;
+    //    //    vector1->entries[1] = 2;
+    //    //    vector1->entries[2] = 3;
+    //    vector2->entries[0] = 15;
+    //    vector2->entries[1] = 2;
+    //    vector2->entries[2] = 1;
+
+    //    int result = sp->CalculateScalarProduct(vector1, vector2);
+
+    //    DiscreteVector* result = new DiscreteVector(64 * numElements);
+
+
+    //    IDiscreteVectorBitwiseAndExecutor* discreteVectorBitwiseAndExecutor = new DiscreteVectorBitwiseAndExecutorStandard();
+    //    IDiscreteVectorBitwiseAndExecutor* discreteVectorBitwiseAndExecutor2 = new DiscreteVectorBitwiseAndExecutorChunked(numElements / 2, numElements % 2);
+    //
+    //    discreteVectorBitwiseAndExecutor2->BitwiseAnd(vector1, vector2, result);
+    //    std::cout << result->entries[0] << result->entries[1] << result->entries[2] << std::endl;
+
+    return 0;
+
+}
+

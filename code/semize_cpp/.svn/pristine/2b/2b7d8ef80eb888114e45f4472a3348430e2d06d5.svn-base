@@ -1,0 +1,36 @@
+/* 
+ * File:   DiscreteFactorMatrix.cpp
+ * Author: sam
+ * 
+ * Created on April 24, 2015, 10:53 AM
+ */
+
+#include "DiscreteFactorMatrix.h"
+
+DiscreteFactorMatrix::DiscreteFactorMatrix(int k, int otherDimension, int numScaleValues) {
+    this->numVectors = otherDimension;
+    int numBitsForEachVector = k*(numScaleValues-1);
+    this->vectors = new DiscreteVector*[this->numVectors];
+    
+    // Setup each vector
+    for (int i = 0; i < this->numVectors; i++) {
+        this->vectors[i] = new DiscreteVector(numBitsForEachVector);
+    }
+}
+
+DiscreteFactorMatrix::DiscreteFactorMatrix(const DiscreteFactorMatrix& orig) {
+
+    this->numVectors = orig.numVectors;
+    this->vectors = new DiscreteVector*[this->numVectors];
+    for (int i = 0; i < this->numVectors; i++) {
+        this->vectors[i] = new DiscreteVector(*orig.vectors[i]);
+    }    
+}
+
+DiscreteFactorMatrix::~DiscreteFactorMatrix() {
+    for (int i = 0; i < this->numVectors; i++) {
+        delete this->vectors[i];
+    }
+    delete[] this->vectors;
+}
+

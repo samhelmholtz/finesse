@@ -1,0 +1,28 @@
+/* 
+ * File:   Semize.h
+ * Author: sam
+ *
+ * Created on April 24, 2015, 1:49 PM
+ */
+
+#ifndef SEMIZE_H
+#define	SEMIZE_H
+
+#include "GreedyCoverCalculator.h"
+#include "SemizeInitializer.h"
+
+
+class Semize {
+public:
+    Semize(Stochastic* stochastic, bool enforceBinaryUsageMatrix);
+    Semize(const Semize& orig);
+    virtual ~Semize();   
+        
+    void Run(DiscreteMatrix* dataMatrix, DiscreteMatrix* dataMatrixTransposed, DiscreteMatrix* usageMatrixTransposed, DiscreteMatrix* basisMatrix, double* objectiveMeasure, DiscreteVectorStorageInfo* storageInfoForDataMatrix, DiscreteVectorStorageInfo* storageInfoForUsageMatrix, DiscreteMatrix* rowValueMasks, DiscreteMatrix* columnValueMasks);
+private:        
+    Stochastic* stochastic;
+    bool enforceBinaryUsageMatrix;    
+};
+
+#endif	/* SEMIZE_H */
+

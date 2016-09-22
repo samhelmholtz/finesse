@@ -1,0 +1,141 @@
+/* 
+ * File:   main.cpp
+ * Author: sam
+ *
+ * Created on April 21, 2015, 3:44 PM
+ */
+
+#include <cstdlib>
+#include <iostream>
+
+#include "DiscreteVectorValueSetterInfo.h"
+#include "emmintrin.h"
+#include "ctime"
+#include "DiscreteVectorBitwiseAndExecutorStandard.h"
+#include "DiscreteVectorBitwiseAndExecutorChunked.h"
+#include "DiscreteVectorValueSetter.h"
+#include "DiscreteVectorSupremumCalculator.h"
+#include "DiscreteVectorScalarProductCalculator.h"
+
+using namespace std;
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+
+
+
+    //    clock_t begin = clock();
+    //
+    //    unsigned long long sum = 0;
+    //    int numElements = 3;
+    //    DiscreteVector* vector1 = new DiscreteVector(64 * numElements);
+    //    DiscreteVector* vector2 = new DiscreteVector(64 * numElements);
+    //    DiscreteVector* result = new DiscreteVector(64 * numElements);
+    //    vector1->entries[0] = 1;
+    //    vector1->entries[1] = 2;
+    //    vector1->entries[2] = 3;
+    //    vector2->entries[0] = 0;
+    //    vector2->entries[1] = 0;
+    //    vector2->entries[2] = 0;
+    //    
+    ////    for (int i = 0; i < numElements; i++) {
+    ////        vector1->entries[i] = i;
+    ////        vector2->entries[i] = i + 1;
+    ////    }
+    //
+    ////    DiscreteVectorBitwiseAndExecutor* discreteVectorBitwiseAndExecutor = new DiscreteVectorBitwiseAndExecutor(numElements/2, numElements%2);
+    ////    IDiscreteVectorBitwiseAndExecutor* discreteVectorBitwiseAndExecutor = new DiscreteVectorBitwiseAndExecutorStandard();
+    //    IDiscreteVectorBitwiseAndExecutor* discreteVectorBitwiseAndExecutor = new DiscreteVectorBitwiseAndExecutorChunked(numElements/2, numElements%2);
+    //
+    //    discreteVectorBitwiseAndExecutor->BitwiseAnd(vector1, vector2, result);
+    //    
+    //    
+    //    for (int i = 0; i < 1000000000; i++) {
+    //
+    //        //        vector1->entries[0] = i;
+    //        //        vector1->entries[1] = i + 1;
+    //        //        vector1->entries[2] = i + 2;
+    //        //        vector1->entries[3] = i + 3;
+    //        //        vector2->entries[0] = i;
+    //        //        vector2->entries[1] = i + 1;
+    //        //        vector2->entries[2] = i + 2;
+    //        //        vector2->entries[3] = i + 3;
+    //
+    //        discreteVectorBitwiseAndExecutor->BitwiseAnd(vector1, vector2, result);
+    //        sum += result->entries[0];
+    //    }
+    //
+    //    clock_t end = clock();
+    //    double elapsed_secs = double(end - begin) / CLOCKS_PER_SEC;
+    //
+    //
+    //    std::cout << elapsed_secs << std::endl;
+    //
+    //
+    //    int supports_cmov = __builtin_cpu_supports("avx2");
+    //    int supports_mmx = __builtin_cpu_supports("mmx");
+    //    int supports_popcnt = __builtin_cpu_supports("popcnt");
+    //    int supports_sse = __builtin_cpu_supports("sse");
+    //    int supports_sse2 = __builtin_cpu_supports("sse2");
+    //    int supports_sse3 = __builtin_cpu_supports("sse3");
+    //    int supports_ssse3 = __builtin_cpu_supports("ssse3");
+    //    int supports_sse41 = __builtin_cpu_supports("sse4.1");
+    //    int supports_sse42 = __builtin_cpu_supports("sse4.2");
+    //    int supports_avx = __builtin_cpu_supports("avx");
+    //    int supports_avx2 = __builtin_cpu_supports("avx2");
+    //
+    //    char a[16] = {1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+    //    char b[16] = {3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+    //    //    
+    //    __m128i* v0 = (__m128i*) a;
+    //    __m128i* v1 = (__m128i*) b;
+    //    //    __m128i v1  = 255211775190703847597530955573826158592;
+    //    __m128i v2;
+    //    v2 = _mm_and_si128(*v0, *v1); // bitwise AND
+    //
+    //    char* c = (char*) (&v2);
+
+    //    DiscreteVectorValueSetterInfo* dvvsi = new DiscreteVectorValueSetterInfo(0, 65, 1, 66);
+    //    int k = 7;
+    //    int s = 11;
+    //    DiscreteVectorValueSetter* d = new DiscreteVectorValueSetter(k,s); //k,s
+    //    DiscreteVector* v = new DiscreteVector(k*(s-1));
+    //    v->entries[0] = 0;
+    //    v->entries[1] = 0;
+    //    d->SetValue(v, 6, 1);
+    
+    int k = 32, s=3;
+    int totalNumberBitsRequiredForVector = k*(s-1);
+    int bitWidth = sizeof(unsigned long long)*8;
+    int numElementsRequiredToRepresentVectorInTotal = (totalNumberBitsRequiredForVector + bitWidth - 1) / bitWidth;
+    IDiscreteVectorBitwiseAndExecutor* discreteVectorBitwiseAndExecutor = new DiscreteVectorBitwiseAndExecutorChunked(numElementsRequiredToRepresentVectorInTotal / 2, numElementsRequiredToRepresentVectorInTotal % 2);
+    DiscreteVectorSupremumCalculator* sc = new DiscreteVectorSupremumCalculator(k,s);
+    DiscreteVectorScalarProductCalculator* sp = new DiscreteVectorScalarProductCalculator(discreteVectorBitwiseAndExecutor, sc, k, s);
+    
+    DiscreteVector* vector1 = new DiscreteVector(totalNumberBitsRequiredForVector);
+    DiscreteVector* vector2 = new DiscreteVector(totalNumberBitsRequiredForVector);
+
+        vector1->entries[0] = 15;
+//    vector1->entries[1] = 2;
+//    vector1->entries[2] = 3;
+    vector2->entries[0] = 15;
+//    vector2->entries[1] = 2;
+//    vector2->entries[2] = 1;
+    
+    int result = sp->CalculateScalarProduct(vector1, vector2);
+    
+//    DiscreteVector* result = new DiscreteVector(64 * numElements);
+
+
+//    IDiscreteVectorBitwiseAndExecutor* discreteVectorBitwiseAndExecutor = new DiscreteVectorBitwiseAndExecutorStandard();
+//    IDiscreteVectorBitwiseAndExecutor* discreteVectorBitwiseAndExecutor2 = new DiscreteVectorBitwiseAndExecutorChunked(numElements / 2, numElements % 2);
+//
+//    discreteVectorBitwiseAndExecutor2->BitwiseAnd(vector1, vector2, result);
+//    std::cout << result->entries[0] << result->entries[1] << result->entries[2] << std::endl;
+
+    return 0;
+
+}
+

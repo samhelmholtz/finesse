@@ -1,0 +1,29 @@
+/* 
+ * File:   DiscreteVectorScalarProductCalculator.h
+ * Author: sam
+ *
+ * Created on April 23, 2015, 4:43 PM
+ */
+
+#ifndef DISCRETEVECTORSCALARPRODUCTCALCULATOR_H
+#define	DISCRETEVECTORSCALARPRODUCTCALCULATOR_H
+
+#include "IDiscreteVectorBitwiseAndExecutor.h"
+#include "DiscreteVectorSupremumCalculator.h"
+
+
+class DiscreteVectorScalarProductCalculator {
+public:
+    DiscreteVectorScalarProductCalculator(IDiscreteVectorBitwiseAndExecutor* discreteVectorBitwiseAndExecutor, DiscreteVectorSupremumCalculator* discreteVectorSupremumCalculator, int k, int s);
+    DiscreteVectorScalarProductCalculator(const DiscreteVectorScalarProductCalculator& orig);
+    virtual ~DiscreteVectorScalarProductCalculator();
+    int CalculateScalarProduct(DiscreteVector* vector1, DiscreteVector* vector2);
+private:
+    IDiscreteVectorBitwiseAndExecutor* discreteVectorBitwiseAndExecutor;
+    DiscreteVectorSupremumCalculator* discreteVectorSupremumCalculator;
+    DiscreteVector** tempDiscreteVectors;
+    int numBitsRequiredForVector;
+};
+
+#endif	/* DISCRETEVECTORSCALARPRODUCTCALCULATOR_H */
+

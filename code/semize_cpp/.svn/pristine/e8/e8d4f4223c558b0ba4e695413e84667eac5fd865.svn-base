@@ -1,0 +1,24 @@
+/* 
+ * File:   DiscreteVector.h
+ * Author: sam
+ *
+ * Created on April 21, 2015, 3:44 PM
+ */
+
+#ifndef DISCRETEVECTOR_H
+#define	DISCRETEVECTOR_H
+
+class DiscreteVector {
+public:
+    int numBits;
+    int numArrayEntries;
+    unsigned long long* entries;
+    DiscreteVector(int numBits);
+    DiscreteVector(const DiscreteVector& orig);
+    virtual ~DiscreteVector();
+private:
+
+};
+
+#endif	/* DISCRETEVECTOR_H */
+

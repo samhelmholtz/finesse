@@ -1,0 +1,35 @@
+/* 
+ * File:   DiscreteVectorBitwiseAndExecutorChunked.cpp
+ * Author: sam
+ * 
+ * Created on April 23, 2015, 10:02 AM
+ */
+
+#include "DiscreteVectorBitwiseAndExecutorChunked.h"
+#include "emmintrin.h"
+
+DiscreteVectorBitwiseAndExecutorChunked::DiscreteVectorBitwiseAndExecutorChunked(int number128BitChunksInVector, int numberExtraChunks) {
+    this->num128BitChunksInVector = number128BitChunksInVector;
+    int sizeOfUlong = sizeof (unsigned long long) *8;
+    int numNormalChunksIn128bitChunk = 128 / sizeOfUlong; // normally 2 for 64-bit machine
+    this->startIndexExtraChunksInclusive = number128BitChunksInVector*numNormalChunksIn128bitChunk;
+    this->endIndexExtraChunksExclusive = this->startIndexExtraChunksInclusive + numberExtraChunks;
+}
+
+DiscreteVectorBitwiseAndExecutorChunked::DiscreteVectorBitwiseAndExecutorChunked(const DiscreteVectorBitwiseAndExecutorChunked& orig) {
+}
+
+DiscreteVectorBitwiseAndExecutorChunked::~DiscreteVectorBitwiseAndExecutorChunked() {
+}
+
+void DiscreteVectorBitwiseAndExecutorChunked::BitwiseAnd(DiscreteVector* vector1, DiscreteVector* vector2, DiscreteVector* result) {
+    __m128i* v0 = (__m128i*) (vector1->entries);
+    __m128i* v1 = (__m128i*) (vector2->entries);
+    __m128i* vresult = (__m128i*) (result->entries);
+    for (int i = 0; i < this->num128BitChunksInVector; i++) {
+        vresult[i] = _mm_and_si128(v0[i], v1[i]); // bitwise AND over 128 bits
+    }
+    for (int i = startIndexExtraChunksInclusive; i < endIndexExtraChunksExclusive; i++) {
+        result->entries[i] = vector1->entries[i] & vector2->entries[i];
+    }
+}

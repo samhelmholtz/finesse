@@ -1,0 +1,140 @@
+/* 
+ * File:   GreedyCoverCalculator.cpp
+ * Author: sam
+ * 
+ * Created on April 24, 2015, 11:52 AM
+ */
+
+#include "GreedyCoverCalculator.h"
+#include <string.h>
+#include <cstdlib>
+#include "omp.h"
+#include <stdio.h>
+#include <iostream>
+
+GreedyCoverCalculator::GreedyCoverCalculator(DiscreteVectorScalarProductCalculator* discreteVectorScalarProductCalculator, DiscreteVectorValueSetter* discreteVectorValueSetter, int k, int s) {
+    this->discreteVectorScalarProductCalculator = discreteVectorScalarProductCalculator;
+    this->numBitsRequiredToRepresentVector = k * (s - 1);
+    int bitWidth = sizeof (unsigned long long)*8; // typically gives 64
+    int numElementsRequiredToRepresentVectorInTotal = (this->numBitsRequiredToRepresentVector + bitWidth - 1) / bitWidth;
+    this->k = k;
+    this->numBytesInVector = numElementsRequiredToRepresentVectorInTotal * sizeof (unsigned long long);
+    this->s = s;
+    this->discreteVectorValueSetter = discreteVectorValueSetter;
+
+    // To avoid having to dynamically create and delete temporary vectors for use in the CalculateGreedyCover method,
+    // we set them up 'globally' here. One is fine if we're running sequentially, but in parallel we need one per thread
+    // to prevent concurrent write problems
+
+#if defined(_OPENMP)
+
+    int maxThreads = omp_get_max_threads();
+    this->vectorsToModify = new DiscreteVector*[maxThreads];
+    for (int i = 0; i < maxThreads; i++) {
+        this->vectorsToModify[i] = new DiscreteVector(numBitsRequiredToRepresentVector);
+    }
+    this->integerRepresentationOfOptimalVectorCollection = new int[maxThreads * this->k];
+#else
+    this->vectorsToModify = new DiscreteVector*[1];
+    this->vectorsToModify[0] = new DiscreteVector(numBitsRequiredToRepresentVector);
+    this->integerRepresentationOfOptimalVectorCollection = new int[this->k];
+#endif
+
+}
+
+GreedyCoverCalculator::GreedyCoverCalculator(const GreedyCoverCalculator& orig) {
+}
+
+GreedyCoverCalculator::~GreedyCoverCalculator() {
+#if defined(_OPENMP)
+    int maxThreads = omp_get_max_threads();
+    for (int i = 0; i < maxThreads; i++) {
+        delete this->vectorsToModify[i];
+    }
+#else
+    delete this->vectorsToModify[0];
+#endif
+    delete[] this->vectorsToModify;
+    delete[] this->integerRepresentationOfOptimalVectorCollection;
+}
+
+void GreedyCoverCalculator::CalculateGreedyCover(int* dataVector, int dataVectorLength, int numScaleValues, DiscreteFactorMatrix* otherMatrix, DiscreteVector* vectorBeingOptimized) {
+
+    DiscreteVector* vectorToModify;
+    int* integerRepresentationOfOptimalVector;
+#if defined(_OPENMP)
+    int threadNum = omp_get_thread_num();
+    vectorToModify = this->vectorsToModify[threadNum];
+    integerRepresentationOfOptimalVector = integerRepresentationOfOptimalVectorCollection + (threadNum*this->k);
+#else
+    vectorToModify = this->vectorsToModify[0];
+    integerRepresentationOfOptimalVector = integerRepresentationOfOptimalVectorCollection;
+#endif
+    // First, set the vector being optimized to zero (empty cover)
+    memset(vectorBeingOptimized->entries, 0, this->numBytesInVector);
+    memset(integerRepresentationOfOptimalVector, 0, sizeof (int)*k);
+
+    // Next, find the initial error associated with an empty cover
+    int e_b = 0;
+    for (int i = 0; i < dataVectorLength; i++) {
+        e_b += std::abs(this->discreteVectorScalarProductCalculator->CalculateScalarProduct(vectorBeingOptimized, otherMatrix->vectors[i]) - dataVector[i]);
+    }
+
+    // Here: setup a dummy data matrix row, full of zeros (that's what our initial vector gives when we multiply it with the other matrix)
+    
+    int delta = -1;
+    while (delta < 0) {
+
+        // Here we want to find the SINGLE change that is the most profitable
+        // There are k*numScaleElements possible single changes that we can make
+        // So we loop over all possible combinations, and set the value that wins us the most
+        // with respect to our data vector.
+        for (int i = 0; i < k; i++) {
+            for (int j = 0; j < numScaleValues; j++) {
+                // Here we know that we want to set element (i) of our vector to the value (j)
+                // We also know what the value in the intermediate vector is for each data-vector position
+                // So, to test the usefulness of the change, we simply need to AND each candidate with each of the 
+                // relevant entries in 
+            }
+        }
+
+        
+//        // Assume we won't make any change in this round.
+//        delta = 0;
+//
+//        // Now we want to make a SINGLE change to the vector. This involves setting one of the k elements of the vector to another
+//        // value. We track which is the most profitable with two variables here:
+//        int mostProfitableValueToSet = -1;
+//        int mostProfitableIndexToSet = -1;
+//        for (int j = 0; j < k; j++) {
+//            // For each index, get a copy of the best vector so far, that we can modify.
+//            memcpy(vectorToModify->entries, vectorBeingOptimized->entries, this->numBytesInVector);
+//
+//            // Then set values in that vector, one after another, and test if the change is profitable.
+//            // If it is, update the most profitable value/index to set.
+//            for (int a = integerRepresentationOfOptimalVector[j] + 1; a < numScaleValues; a++) {
+//                // Set the value in the appropriate position and test if it's profitable
+//                discreteVectorValueSetter->SetValue(vectorToModify, j, a);
+//
+//                int e = 0;
+//                for (int i = 0; i < dataVectorLength; i++) {
+//                    e += std::abs(this->discreteVectorScalarProductCalculator->CalculateScalarProduct(vectorToModify, otherMatrix->vectors[i]) - dataVector[i]);
+//                }
+//
+//                // If it's profitable, record the change
+//                if (e < e_b) {
+//                    delta = e - e_b;
+//                    mostProfitableValueToSet = a;
+//                    mostProfitableIndexToSet = j;
+//                    e_b = e;
+//                }                
+//            }
+//        }
+//
+//        if (mostProfitableIndexToSet > -1) {
+//            // Persist the value
+//            discreteVectorValueSetter->SetValue(vectorBeingOptimized, mostProfitableIndexToSet, mostProfitableValueToSet);
+//            integerRepresentationOfOptimalVector[mostProfitableIndexToSet] = mostProfitableValueToSet;
+//        }
+    }
+}

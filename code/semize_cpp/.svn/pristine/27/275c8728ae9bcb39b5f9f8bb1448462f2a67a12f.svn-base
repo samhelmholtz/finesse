@@ -1,0 +1,32 @@
+/* 
+ * File:   DiscreteVectorValueGetter.h
+ * Author: sam
+ *
+ * Created on April 28, 2015, 3:42 PM
+ */
+
+#ifndef DISCRETEVECTORVALUEGETTER_H
+#define	DISCRETEVECTORVALUEGETTER_H
+
+#include "DiscreteVector.h"
+#include "DiscreteVectorValueGetterInfo.h"
+#include "IDiscreteVectorBitwiseAndExecutor.h"
+
+
+class DiscreteVectorValueGetter {
+public:
+    DiscreteVectorValueGetter(int k, int s);
+    DiscreteVectorValueGetter(const DiscreteVectorValueGetter& orig);
+    virtual ~DiscreteVectorValueGetter();
+    int GetValue(DiscreteVector* vector, int index);
+private:
+    // Here an array of pointers to getter info objects, one for each index value 0 to (k-1)
+    DiscreteVectorValueGetterInfo** getterInfos;
+    int k;
+    int number128BitChunksInVector;
+    int startIndexExtraChunksInclusive;
+    int endIndexExtraChunksExclusive;
+};
+
+#endif	/* DISCRETEVECTORVALUEGETTER_H */
+
